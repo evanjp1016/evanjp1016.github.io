@@ -1,1 +1,374 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:300,400, 600|Pirata+One|PT+Mono|Open+Sans:300,400,600,700,800|Quando" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<style>
+
+		body {
+			background-color: #ffffff;
+			overflow: hidden;
+		}
+
+		/*#box2 {
+			position: absolute;
+		}*/
+
+		/*#landing_page {
+			position: relative;
+		    animation:opac 1s;
+			-moz-animation:opac 1s;
+			-webkit-animation:opac 1s;
+			
+		}*/
+
+		#landing_page h3{
+			position: absolute;
+			color: #5a7184;
+			/*text-align: center;*/
+			margin-left: 10%;
+			margin-top: 23%;
+			padding-bottom: 10px;
+			font-family: 'Merriweather', serif;
+			font-weight: 900;
+			font-size: 3.9em;
+			opacity:1;
+			animation:mymove 1s;
+			-moz-animation:mymove 1s; /* Firefox */
+			-webkit-animation:mymove 1s; /* Safari and Chrome */
+		}
+
+		#landing_page p {
+			color: #5a7184;
+			position: absolute;
+			width: 60%;
+			margin-left: 10%;
+			/*margin-right: 35%;*/
+			/*text-align: justify;*/
+		    /*text-justify: inter-word;*/
+		    line-height: 2em;
+		    font-family: 'Roboto', sans-serif;
+		    font-weight: 400;
+		    opacity: 0;
+		    animation:opacp 1s;
+			-moz-animation:opacp 1s; /* Firefox */
+			-webkit-animation:opacp 1s; /* Safari and Chrome */
+			-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+			-webkit-animation-fill-mode: forwards;
+		}
+
+		@keyframes opac {
+		  0% {opacity:0;}
+		  100% {opacity:1;}
+		}
+
+		@-moz-keyframes opac /* Firefox */ {
+		  0% {opacity:0;}
+		  100% {opacity:1;}
+		}
+
+		@-webkit-keyframes opac /* Safari and Chrome */ {
+		  0% {opacity:0;}
+		  100% {opacity:1;}
+		}
+
+		@keyframes opacp {
+		  0% {opacity:0;}
+		  100% {opacity:1;}
+		}
+
+		@-moz-keyframes opacp /* Firefox */ {
+		  0% {opacity:0;}
+		  100% {opacity:1;}
+		}
+
+		@-webkit-keyframes opacp /* Safari and Chrome */ {
+		  0% {opacity:0;}
+		  100% {opacity:1;}
+		}
+
+		@keyframes mymove {
+		  0% {top: 170px;}
+		  100% {top: 0px;}
+		}
+
+		@-moz-keyframes mymove /* Firefox */ {
+		  0% {top: 170px;}
+		  100% {top: 0px;}
+		}
+
+		@-webkit-keyframes mymove /* Safari and Chrome */ {
+		  0% {top: 170px;}
+		  100% {top: 0px;}
+		}
+		
+		.page_title h2{
+			position: absolute;
+			font-family: 'Merriweather', serif;
+			color: #5a7184;
+			font-weight: 900;
+			font-size: 1.5em;
+			top: 10%;
+			left: 10%;
+			margin: 0;
+		}
+
+		.page_title h2:hover{
+			color: #ed2024;
+			/*transition: 0.4s;*/
+		}
+
+		.nav_list {
+			text-align: right;
+			position: absolute;
+			display: inline;
+			top: 10%;
+			right: 10%;
+			list-style: none;
+			-webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+		}
+
+		.nav_list li {
+			padding-top: 20px;
+			opacity: 1;
+			display: inline;
+			-webkit-transition: all 0.2s ease;
+		    -moz-transition: all 0.2s ease;
+		    -o-transition: all 0.2s ease;
+		    transition: all 0.2s ease;
+		   }
+
+		.nav_list li:not(:last-child) {
+			padding-right: 70px;
+		}
+
+		.nav_list li a {
+			color: #5a7184;
+			font-family: "Roboto", sans-serif;
+			font-weight: 400;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 0.9em;
+			transition: 0.2s; /* vendorless fallback */
+
+		}
+
+		.nav_list li a:hover {
+			transition: 0.2s;
+			font-size: 1.6em;
+
+		}
+
+
+		/*#########################################################################################################*/
+
+		/*Constants*/
+
+		.hor1 {
+			width: 80%;
+			border-bottom: 2px solid #5a7184;
+			margin-left: 10%;
+			margin-right: 10%;
+		    /*height: 100%;*/
+		    /*-index: -1000;*/
+		    margin-top: 15%;
+		    position: relative;
+		    opacity: 0.3;
+		}
+
+		.hor2 {
+			width: 16%;
+			border-bottom: 2px solid #5a7184;
+			margin-left: 10%;
+		    /*height: 100%;*/
+		    /*-index: -1000;*/
+		    margin-top: -2px;
+		    position: relative;
+		    opacity: 1;
+		    animation:mymoveh 1s;
+			-moz-animation:mymoveh 1s; /* Firefox */
+			-webkit-animation:mymoveh 1s; /* Safari and Chrome */
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+			-webkit-animation-fill-mode: forwards;
+		}
+
+		@keyframes mymoveh {
+		  0% {margin-left: 10%;}
+		  100% {margin-left: 30%;}
+		}
+
+		@-moz-keyframes mymoveh /* Firefox */ {
+		  0% {margin-left: 10%;}
+		  100% {margin-left: 30%;}
+		}
+
+		@-webkit-keyframes mymoveh /* Safari and Chrome */ {
+		  0% {margin-left: 10%;}
+		  100% {margin-left: 30%;}
+		}
+
+		.social-media {
+			position: absolute;
+			margin-left: 10%;
+			margin-bottom: 10%;
+			
+		}
+
+		.fa {
+			/*padding: 20px;*/
+			color: #5a7184;
+			font-size: 1.5em;
+			width: 35px;
+			/*width: 10px;*/
+			/*text-align: center;*/
+			text-decoration: none;
+			/*margin-left: 10%;*/
+		}
+
+		.fa:hover {
+			/*opacity: 0.7;*/
+			color: red;
+			text-decoration: none;
+		}
+
+		a .fa {
+			text-decoration: none;
+		}
+
+		.v1 {
+			border-left: 1px solid black;
+			margin-left: 10%;
+		    height: 100%;
+		    z-index: -1000;
+		    opacity: 0.03;
+		    margin-top: -360px;
+		    position: fixed;
+		}
+
+		.v2 {
+			border-left: 1px solid black;
+			margin-left: 30%;
+		    height: 100%;
+		    z-index: -1000;
+		    opacity: 0.03;
+		    margin-top: -360px;
+		    position: fixed;
+		}
+
+		.v3 {
+			border-left: 1px solid black;
+			margin-left: 50%;
+		    height: 100%;
+		    z-index: -1000;
+		    opacity: 0.03;
+		    margin-top: -360px;
+		    position: fixed;
+		}
+
+		.v4 {
+			border-left: 1px solid black;
+			margin-left: 70%;
+		    height: 100%;
+		    z-index: -1000;
+		    opacity: 0.03;
+		    margin-top: -360px;
+		    position: fixed;
+		}
+
+		.v5 {
+			border-left: 1px solid black;
+			margin-left: 90%;
+		    height: 100%;
+		    z-index: -1000;
+		    opacity: 0.03;
+		    margin-top: -360px;
+		    position: fixed;
+		}
+
+	</style>
+
+	<div class="v1"></div>
+	<div class="v2"></div>
+	<div class="v3"></div>
+	<div class="v4"></div>
+	<div class="v5"></div>
+
+	<div>
+		<ul class="nav_list">
+			<li><a id="about" href="">About</a></li>
+			<li><a id="design" href="">Design</a></li>
+			<li><a id="development" href="">Development</a></li>
+			<li><a id="music" href="">Music</a></li>
+			<li><a id="video" href="">Video</a></li>
+		</ul>
+	</div>
+
+	<div class="page_title">
+		<h2>Fresch</h2>
+	</div>
+
+	<div id='box2'>
+		<div id='landing_page'>
+			<h3>Freschman, Undeclared</h3>
+			<!-- <p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves. Apparently everybody else in the city didn’t decide to go out and explore tonight. But we are on vacation. That’s what you do on vacation. Explore.
+			</br>
+			</br>
+			Anyways, whoever is currently sifting through our belongings in our hotel room just signed my ticket to transfer out of art school.</p> -->
+		</div>
+	</div>
+
+	<!-- <div class="hor1"></div>
+	<div class="hor2"></div>
+
+
+	<div class = "social-media">
+			<a href="https://www.facebook.com/evan.pesch" class="fa fa-facebook" target="_blank"></a>
+			<a href="https://twitter.com/evanjp1016" class="fa fa-twitter" target="_blank"></a>
+			<a href="https://www.instagram.com/evanjp/" class="fa fa-instagram" target="_blank"></a>
+			<a href="https://www.linkedin.com/in/evan-pesch" class="fa fa-linkedin" target="_blank"></a>
+			<a href="https://www.behance.net/evanjp1016" class="fa fa-behance" target="_blank"></a>
+	</div> -->
+
+	
+
+	<script>
+		// $(function() {
+		//     $("#landing_page").animate(
+		//         {bottom : "+=20", opacity: '+=20'}, 500, function() {}
+		//     );
+		// });
+
+		$('.burger').on('click', function() {
+		    return $(this).toggleClass('open');
+		});
+
+		$('.burger').on('click', function() {
+		    return $('.nav_list').toggleClass('nav_open');
+		});
+
+	</script>
+
+
+
+</body>
+</html>
