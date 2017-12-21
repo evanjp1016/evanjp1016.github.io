@@ -15,41 +15,46 @@ body {
 			
 		}*/
 
+		#landing_page {
+			animation:opacp 1s;*/
+			-moz-animation:opacp 1s; /* Firefox */
+			-webkit-animation:opacp 1s; /* Safari and Chrome */
+		}
+
 		#landing_page h3{
 			position: absolute;
 			color: #383838;
 			/*text-align: center;*/
 			margin-left: 10%;
-			margin-top: 23%;
+			margin-top: 18%;
 			padding-bottom: 10px;
-			font-family: 'Merriweather', serif;
-			font-weight: 900;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
 			font-size: 3.9em;
 			opacity:1;
+			width: 70%;
+			line-height: 1.3em;
 			animation:mymove 1s;
 			-moz-animation:mymove 1s; /* Firefox */
 			-webkit-animation:mymove 1s; /* Safari and Chrome */
 		}
 
-		#landing_page p {
+		/*#landing_page p {
 			color: #383838;
 			position: absolute;
 			width: 60%;
 			margin-left: 10%;
-			/*margin-right: 35%;*/
-			/*text-align: justify;*/
-		    /*text-justify: inter-word;*/
 		    line-height: 2em;
 		    font-family: 'Roboto', sans-serif;
 		    font-weight: 400;
 		    opacity: 0;
-		    animation:opacp 1s;
-			-moz-animation:opacp 1s; /* Firefox */
-			-webkit-animation:opacp 1s; /* Safari and Chrome */
-			-webkit-animation-delay: 1s;
-			animation-delay: 1s;
-			-webkit-animation-fill-mode: forwards;
-		}
+		    animation:opacp 1s;*/
+			/*-moz-animation:opacp 1s; /* Firefox */
+			/*-webkit-animation:opacp 1s; /* Safari and Chrome */
+			/*-webkit-animation-delay: 1s;*/
+			/*animation-delay: 1s;*/
+			/*-webkit-animation-fill-mode: forwards;*/
+		/*}*/
 
 		@keyframes opac {
 		  0% {opacity:0;}
@@ -240,7 +245,6 @@ body {
 		    height: 100%;
 		    z-index: -1000;
 		    opacity: 0.03;
-		    margin-top: -360px;
 		    position: fixed;
 		}
 
@@ -250,7 +254,6 @@ body {
 		    height: 100%;
 		    z-index: -1000;
 		    opacity: 0.03;
-		    margin-top: -360px;
 		    position: fixed;
 		}
 
@@ -260,7 +263,6 @@ body {
 		    height: 100%;
 		    z-index: -1000;
 		    opacity: 0.03;
-		    margin-top: -360px;
 		    position: fixed;
 		}
 
@@ -270,7 +272,6 @@ body {
 		    height: 100%;
 		    z-index: -1000;
 		    opacity: 0.03;
-		    margin-top: -360px;
 		    position: fixed;
 		}
 
@@ -280,6 +281,11 @@ body {
 		    height: 100%;
 		    z-index: -1000;
 		    opacity: 0.03;
-		    margin-top: -360px;
 		    position: fixed;
 		}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
