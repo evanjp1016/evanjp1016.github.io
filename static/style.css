@@ -1,6 +1,14 @@
 body {
 		background-color: #f7f5f0;
 		overflow: hidden;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 ::selection {
@@ -11,7 +19,9 @@ body {
 }
 
 #landing_page {
-	animation:opacp 1s;*/
+	position: absolute;
+	margin-top: 30vh;
+	animation:opacp 1s;
 	-moz-animation:opacp 1s; /* Firefox */
 	-webkit-animation:opacp 1s; /* Safari and Chrome */
 }
@@ -21,7 +31,9 @@ body {
 	color: #383838;
 	/*text-align: center;*/
 	margin-left: 10%;
-	margin-top: 30vh;
+	/*margin-top: 30vh;*/
+	margin-top: 0;
+	/*padding-top: 170px;*/
 	padding-bottom: 10px;
 	font-family: 'Merriweather', serif;
 	font-weight: 800;
@@ -36,9 +48,11 @@ body {
 
 #landing_page p {
 	color: #383838;
-	position: absolute;
+	/*position: relative;*/
 	width: 35%;
 	margin-left: 10%;
+	margin-top: 165px;
+	/*padding-top: 50vh;*/
     line-height: 2em;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -46,8 +60,8 @@ body {
     animation:opacp 1s;
 	-moz-animation:opacp 1s; /* Firefox */
 	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
 	-webkit-animation-fill-mode: forwards;
 	}
 
@@ -105,6 +119,13 @@ body {
 	top: 10%;
 	left: 10%;
 	margin: 0;
+	opacity: 0;
+	animation:opacp 1s;
+	-moz-animation:opacp 1s; /* Firefox */
+	-webkit-animation:opacp 1s; /* Safari and Chrome */
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .page_title h2:hover{
@@ -122,11 +143,18 @@ body {
 	width: 80%;
 	list-style: none;
 	padding-bottom: 20px;
+	opacity: 0;
 	border-bottom: 2px solid rgba(56, 56, 56, .3);
 	-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    animation:opacp 1s;
+	-moz-animation:opacp 1s; /* Firefox */
+	-webkit-animation:opacp 1s; /* Safari and Chrome */
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .nav_list li {
@@ -238,6 +266,13 @@ footer {
 	/*text-align: center;*/
 	text-decoration: none;
 	/*margin-left: 10%;*/
+	opacity: 0;
+	animation:opacp 1s;
+	-moz-animation:opacp 1s; /* Firefox */
+	-webkit-animation:opacp 1s; /* Safari and Chrome */
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .fa:hover {
@@ -295,6 +330,108 @@ a .fa {
     position: fixed;
 }
 
+.burger {
+    display: none;
+    vertical-align: left;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+    margin-bottom: 0px;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.burger.open div {
+    background: none;
+}
+
+.burger.open div:before, .burger.open div:after {
+    top: 0;
+}
+
+.burger.open div:before {
+	width: 100%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.burger.open div:after {
+	width: 100%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.burger.open:hover div:before {
+	/*background: lightgray;*/
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.burger.open:hover div:after {
+	/*background: lightgray;*/
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.burger:hover:not(.open) div:before {
+    width: 70%;
+}
+
+.burger:hover:not(.open) div:after {
+    width: 80%;
+}
+
+.burger div:before {
+    width: 80%;
+    height: 3px;
+    background: #383838;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; 
+}
+
+.burger div {
+    width: 100%;
+    height: 3px;
+    background: #383838;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; 
+}
+
+.burger div:after {
+    width: 70%;
+    height: 3px;
+    background: #383838;
+    text-align: right
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; 
+}
+
+.burger div {
+    position: relative;
+    margin: 10px auto 0;
+}
+
+.burger div:before, div:after {
+    content: "";
+    position: absolute;
+}
+
+.burger div:before {
+    top: -7px;
+}
+
+.burger div:after {
+    top: 7px;
+}
+
 /*#########################################################################################################*/
 /* Responsiveness */
 
@@ -307,6 +444,10 @@ a .fa {
 		width: 70%;
 		
 	}
+	#landing_page p{
+		width: 80%;
+		margin-top: 125px;
+	}
 }
 
 @media only screen and (max-width: 580px) {
@@ -315,9 +456,32 @@ a .fa {
 	}
 	
 	#landing_page h3{
-		font-size: 3em;
+		font-size: 2.7em;
 		width: 70%;
-		
+	}
+
+	#landing_page p{
+		width: 80%;
+		margin-top: 105px;
+	}
+
+	.v2 {
+		display: none;
+	}
+
+	.v3 {
+		display: none;
+	}
+
+	.v4 {
+		display: none;
+	}
+	.burger {
+		display: block;
+	}
+
+	.nav_list {
+		display: none;
 	}
 
 }
