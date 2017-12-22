@@ -3,6 +3,13 @@ body {
 		overflow: hidden;
 	}
 
+::selection {
+  background: red; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: red; /* Gecko Browsers */
+}
+
 #landing_page {
 	animation:opacp 1s;*/
 	-moz-animation:opacp 1s; /* Firefox */
@@ -16,33 +23,33 @@ body {
 	margin-left: 10%;
 	margin-top: 30vh;
 	padding-bottom: 10px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-size: 3.9em;
+	font-family: 'Merriweather', serif;
+	font-weight: 800;
+	font-size: 4.9em;
 	opacity:1;
 	width: 70%;
-	line-height: 1.3em;
+	line-height: 1.1em;
 	animation:mymove 1s;
 	-moz-animation:mymove 1s; /* Firefox */
 	-webkit-animation:mymove 1s; /* Safari and Chrome */
 }
 
-/*#landing_page p {
+#landing_page p {
 	color: #383838;
 	position: absolute;
-	width: 60%;
+	width: 35%;
 	margin-left: 10%;
     line-height: 2em;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     opacity: 0;
-    animation:opacp 1s;*/
-	/*-moz-animation:opacp 1s; /* Firefox */
-	/*-webkit-animation:opacp 1s; /* Safari and Chrome */
-	/*-webkit-animation-delay: 1s;*/
-	/*animation-delay: 1s;*/
-	/*-webkit-animation-fill-mode: forwards;*/
-/*}*/
+    animation:opacp 1s;
+	-moz-animation:opacp 1s; /* Firefox */
+	-webkit-animation:opacp 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+	}
 
 @keyframes opac {
   0% {opacity:0;}
@@ -135,7 +142,7 @@ body {
    }
 
 .nav_list li:not(:last-child) {
-	padding-right: 70px;
+	padding-right: 6%;
 }
 
 .nav_list li a {
@@ -248,7 +255,7 @@ a .fa {
 	margin-left: 10%;
     height: 100%;
     z-index: -1000;
-    opacity: 0.03;
+    opacity: 0.07;
     position: fixed;
 }
 
@@ -257,7 +264,7 @@ a .fa {
 	margin-left: 30%;
     height: 100%;
     z-index: -1000;
-    opacity: 0.03;
+    opacity: 0.07;
     position: fixed;
 }
 
@@ -266,7 +273,7 @@ a .fa {
 	margin-left: 50%;
     height: 100%;
     z-index: -1000;
-    opacity: 0.03;
+    opacity: 0.07;
     position: fixed;
 }
 
@@ -275,7 +282,7 @@ a .fa {
 	margin-left: 70%;
     height: 100%;
     z-index: -1000;
-    opacity: 0.03;
+    opacity: 0.07;
     position: fixed;
 }
 
@@ -284,12 +291,33 @@ a .fa {
 	margin-left: 90%;
     height: 100%;
     z-index: -1000;
-    opacity: 0.03;
+    opacity: 0.07;
     position: fixed;
 }
 
-@media only screen and (max-width: 500px) {
+/*#########################################################################################################*/
+/* Responsiveness */
+
+@media only screen and (max-width:1024px) {
+	body {
+		background-color: red;
+	}
+	#landing_page h3{
+		font-size: 3.7em;
+		width: 70%;
+		
+	}
+}
+
+@media only screen and (max-width: 580px) {
 	body {
 		background-color: lightblue;
 	}
+	
+	#landing_page h3{
+		font-size: 3em;
+		width: 70%;
+		
+	}
+
 }
