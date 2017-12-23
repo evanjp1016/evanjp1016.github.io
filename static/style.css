@@ -15,7 +15,8 @@ body {
 		padding-right: 0;
 	}
 .site_wrapper {
-	overflow-x: hidden;
+	overflow: hidden;
+	position: fixed;
 }
 
 ::selection {
@@ -563,7 +564,7 @@ a .fa {
 		padding-left: 10%;
 		/*margin: 0;*/
 		border-left: 2px solid rgba(56, 56, 56, .3);;
-		background-color: white;
+		background-color: red;
 		width: 100%;
 		-webkit-transition: all 0.3s ease;
 	    -moz-transition: all 0.3s ease;
