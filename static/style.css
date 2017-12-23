@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -13,11 +14,9 @@ body {
 		padding-bottom: 0;
 		padding-left: 0;
 		padding-right: 0;
+		overflow: hidden;
 	}
-.site_wrapper {
-	overflow: hidden;
-	position: fixed;
-}
+
 
 ::selection {
   background: red; /* WebKit/Blink Browsers */
