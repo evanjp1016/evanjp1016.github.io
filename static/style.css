@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 		background-color: #f7f5f0;
 		overflow: hidden;
@@ -41,9 +45,9 @@ body {
 	opacity:1;
 	width: 70%;
 	line-height: 1.1em;
-	animation:mymove 1s;
-	-moz-animation:mymove 1s; /* Firefox */
-	-webkit-animation:mymove 1s; /* Safari and Chrome */
+	animation:mymove 0.7s;
+	-moz-animation:mymove 0.7s; /* Firefox */
+	-webkit-animation:mymove 0.7s; /* Safari and Chrome */
 }
 
 #landing_page p {
@@ -162,7 +166,7 @@ body {
 	padding-bottom: 22px;
 	opacity: 1;
 	display: inline;
-	border-bottom: 2px solid #383838;
+	/*border-bottom: 2px solid #383838;*/
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -181,15 +185,68 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.9em;
-	transition: 0.2s;  /* vendorless fallback */
+	/*transition: 0.2s;   vendorless fallback */
 
 }
 
-.nav_list li a:hover {
-	transition: 0.2s;
-	font-size: 1em;
 
+
+
+
+
+
+/*.container {
+  width: 50%;
+  margin: 0 auto;
+  top: 10%;
+  right: 10%;
 }
+
+.container ul li {
+  display: inline;
+  text-align: right;
+}
+
+.container li:not(:last-child) {
+	padding-right: 6%;
+}
+
+.container a {
+	color: #383838;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.9em;
+}
+
+.two:hover ~ hr {
+  margin-left: 13%;
+  width: 73px;
+}
+
+.three:hover ~ hr {
+  margin-left: 30.5%;
+  width: 54px;
+}
+
+.four:hover ~ hr {
+  margin-left: 45%;
+  width: 60px;
+}
+
+hr {
+  height: .25rem;
+  width: 43px;
+  margin: 0;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}*/
+
+
+
 
 
 /*#########################################################################################################*/
@@ -432,6 +489,10 @@ a .fa {
     top: 7px;
 }
 
+.mobile_nav {
+	display: none;
+}
+
 /*#########################################################################################################*/
 /* Responsiveness */
 
@@ -482,6 +543,78 @@ a .fa {
 
 	.nav_list {
 		display: none;
+	}
+
+	
+
+
+
+
+	.mobile_nav {
+		overflow: hidden;
+		display: block;
+		position: absolute;
+		list-style: none;
+		left: 110%;
+		top: 30vh;
+		padding-left: 10%;
+		/*margin: 0;*/
+		border-left: 2px solid rgba(56, 56, 56, .3);;
+		background-color: white;
+		width: 100%;
+		-webkit-transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease; 
+
+	}
+
+	.mobile_nav li a {
+		color: #383838;
+		font-family: "Roboto", sans-serif;
+		font-weight: 600;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 1.3em;
+	}
+
+	.mobile_nav li:not(:last-child) {
+		padding-bottom: 8vh;
+	}
+
+
+
+
+
+
+	.nav_open {
+		display: block;
+		position: absolute;
+		list-style: none;
+		left: 10%;
+		top: 30vh;
+		padding-left: 10%;
+		/*margin: 0;*/
+		border-left: 2px solid rgba(56, 56, 56, .3);;
+		-webkit-transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease; 
+	}
+
+	.nav_open li a {
+		color: #383838;
+		font-family: "Roboto", sans-serif;
+		font-weight: 600;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 1.3em;
+	}
+
+	.nav_open li:not(:last-child) {
+		padding-bottom: 8vh;
 	}
 
 }

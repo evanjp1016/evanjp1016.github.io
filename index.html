@@ -27,18 +27,25 @@
 	<div class="v4"></div>
 	<div class="v5"></div>
 	
+	<!-- Mobile Navigation. Hidden Otherwise -->
 	<div>
 		<a class="burger">
 		    <div></div>
 		</a>
+		<ul class="mobile_nav">
+			<li><a class="about" href="">About</a></li>
+			<li><a class="portfolio" href="">Portfolio</a></li>
+			<li><a class="resume" href="">Resume</a></li>
+			<li><a class="contact" href="">Contact</a></li>
+		</ul>
 	</div>
 
 	<div>
 		<ul class="nav_list">
-			<li><a id="about" href="">About</a></li>
-			<li><a id="portfolio" href="">Portfolio</a></li>
-			<li><a id="resume" href="">Resume</a></li>
-			<li><a id="contact" href="">Contact</a></li>
+			<li><a class="about" href="">About</a></li>
+			<li><a class="portfolio" href="">Portfolio</a></li>
+			<li><a class="resume" href="">Resume</a></li>
+			<li><a class="contact" href="">Contact</a></li>
 		</ul>
 	</div>
 
@@ -53,6 +60,16 @@
 		<h3>Introduction</br>Goes Here.</h3>
 		<p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves.</p>
 	</div>
+
+				<!-- <div class="container">
+			  <ul>
+			    <li class="one"><a href="#">About</a></li>
+			 	<li class="two"><a href="#">Portfolio</a></li>
+			 	<li class="three"><a href="#">Resume</a></li>
+			 	<li class="four"><a href="#">Contact</a></li>
+			    <hr />
+			  </ul>
+			</div> -->
 
 	<footer class = "social-media">
 			<a href="https://www.facebook.com/evan.pesch" class="fa fa-facebook" target="_blank"></a>
@@ -76,7 +93,7 @@
 		});
 
 		$('.burger').on('click', function() {
-		    return $('.nav_list').toggleClass('nav_open');
+		    return $('.mobile_nav').toggleClass('nav_open');
 		});
 
 	</script>
