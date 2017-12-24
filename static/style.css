@@ -352,6 +352,7 @@ a .fa {
     z-index: -1000;
     opacity: 0.07;
     position: fixed;
+    z-index: 10000;
 }
 
 .v2 {
@@ -361,6 +362,7 @@ a .fa {
     z-index: -1000;
     opacity: 0.07;
     position: fixed;
+    z-index: 10000;
 }
 
 .v3 {
@@ -370,6 +372,7 @@ a .fa {
     z-index: -1000;
     opacity: 0.07;
     position: fixed;
+    z-index: 10000;
 }
 
 .v4 {
@@ -379,6 +382,7 @@ a .fa {
     z-index: -1000;
     opacity: 0.07;
     position: fixed;
+    z-index: 10000;
 }
 
 .v5 {
@@ -388,6 +392,7 @@ a .fa {
     z-index: -1000;
     opacity: 0.07;
     position: fixed;
+    z-index: 10000;
 }
 
 .burger {
@@ -516,7 +521,7 @@ a .fa {
 
 @media only screen and (max-width: 580px) {
 	body {
-		background-color: lightblue;
+		background-color: #f7f5f0;
 	}
 	
 	#landing_page h3{
@@ -563,8 +568,8 @@ a .fa {
 		padding-left: 10%;
 		/*margin: 0;*/
 		border-left: 2px solid rgba(56, 56, 56, .3);;
-		background-color: red;
-		width: 100%;
+		background-color: #f7f5f0;
+		width: 80%;
 		-webkit-transition: all 0.3s ease;
 	    -moz-transition: all 0.3s ease;
 	    -o-transition: all 0.3s ease;
@@ -590,9 +595,9 @@ a .fa {
 
 
 
-
 	.nav_open {
 		display: block;
+		z-index: 1000;
 		position: absolute;
 		list-style: none;
 		left: 10%;
@@ -600,10 +605,10 @@ a .fa {
 		padding-left: 10%;
 		/*margin: 0;*/
 		border-left: 2px solid rgba(56, 56, 56, .3);;
-		-webkit-transition: all 0.3s ease;
-	    -moz-transition: all 0.3s ease;
-	    -o-transition: all 0.3s ease;
-	    transition: all 0.3s ease; 
+		-webkit-transition: all 0.5s ease;
+	    -moz-transition: all 0.5s ease;
+	    -o-transition: all 0.5s ease;
+	    transition: all 0.5s ease;
 	}
 
 	.nav_open li a {
@@ -614,10 +619,22 @@ a .fa {
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: 1.3em;
+		opacity: 0;
+		animation:opacp 1s;
+		-moz-animation:opacp 1s; /* Firefox */
+		-webkit-animation:opacp 1s; /* Safari and Chrome */
+		-webkit-animation-delay: 0.1s;
+		animation-delay: 0.1s;
+		-webkit-animation-fill-mode: forwards;
 	}
 
 	.nav_open li:not(:last-child) {
 		padding-bottom: 8vh;
+	}
+
+	.nav_open  li .current {
+		color: red;
+		border-left: 2px solid #383838;
 	}
 
 }
