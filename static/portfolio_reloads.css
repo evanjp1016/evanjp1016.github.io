@@ -42,9 +42,6 @@ body {
 	position: absolute;
 	margin-top: 30vh;
 	margin-left: 10%;
-	animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
 }
 
 .landing_page h3{
@@ -62,9 +59,6 @@ body {
 	opacity:1;
 	width: 70%;
 	line-height: 1.1em;
-	animation:mymove 0.7s;
-	-moz-animation:mymove 0.7s; /* Firefox */
-	-webkit-animation:mymove 0.7s; /* Safari and Chrome */
 }
 
 .landing_par {
@@ -82,13 +76,7 @@ body {
     line-height: 2em;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    opacity: 0;
-    animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-delay: .7s;
-	animation-delay: .7s;
-	-webkit-animation-fill-mode: forwards;
+    opacity: 1;
 	}
 
 .contact_par {
@@ -106,22 +94,7 @@ body {
     line-height: 2em;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    opacity: 0;
-    animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-delay: .7s;
-	animation-delay: .7s;
-	-webkit-animation-fill-mode: forwards;
-}
-
-.contact_par p a{
-	text-decoration: none;
-	color: red;
-}
-
-.contact_par p a:hover{
-	color: gray;
+    opacity: 1;
 }
 
 .page_title h2{
@@ -132,13 +105,7 @@ body {
 	top: 10%;
 	left: 10%;
 	margin: 0;
-	opacity: 0;
-	animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-delay: .7s;
-	animation-delay: .7s;
-	-webkit-animation-fill-mode: forwards;
+	opacity: 1;
 }
 
 .page_title h2 a {
@@ -151,53 +118,6 @@ body {
 	/*transition: 0.4s;*/
 }
 
-/*#########################################################################################################*/
-/*Animations*/
-
-@keyframes opac {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes opac /* Firefox */ {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes opac /* Safari and Chrome */ {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@keyframes opacp {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes opacp /* Firefox */ {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes opacp /* Safari and Chrome */ {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@keyframes mymove {
-  0% {top: 170px;}
-  100% {top: 0px;}
-}
-
-@-moz-keyframes mymove /* Firefox */ {
-  0% {top: 170px;}
-  100% {top: 0px;}
-}
-
-@-webkit-keyframes mymove /* Safari and Chrome */ {
-  0% {top: 170px;}
-  100% {top: 0px;}
-}
 
 /*#########################################################################################################*/
 /*Navigation*/
@@ -210,15 +130,9 @@ body {
 	left: 10%;
 	width: 80%;
 	list-style: none;
-	opacity: 0;
+	opacity: 1;
 	border-bottom: 2px solid rgba(56, 56, 56, .3);
 	background-color: #ffffff;
-	animation:opacp 1s;
-	-moz-animation:opacp 1s;
-	-webkit-animation:opacp 1s;
-	-webkit-animation-delay: .7s;
-	animation-delay: .7s;
-	-webkit-animation-fill-mode: forwards;
 }
 
 .nav_list ul li {
@@ -322,13 +236,7 @@ footer {
 	font-size: 1.5em;
 	width: 35px;
 	text-decoration: none;
-	opacity: 0;
-	animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-delay: .7s;
-	animation-delay: .7s;
-	-webkit-animation-fill-mode: forwards;
+	opacity: 1;
 }
 
 .fa:hover {
@@ -409,14 +317,8 @@ a .fa {
     cursor: pointer;
     margin-bottom: 0px;
     z-index: 2000;
-    opacity: 0;
+    opacity: 1;
     /*transform: translate(-50%, -50%);*/
-    animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-delay: .7s;
-	animation-delay: .7s;
-	-webkit-animation-fill-mode: forwards;
 }
 
 .burger.open div {
@@ -529,6 +431,25 @@ a .fa {
     transform: translate(-50%, 0);
 	top: 85%;
 	/*width: 576;*/
+	animation:opacp 1s;
+	-moz-animation:opacp 1s; /* Firefox */
+	-webkit-animation:opacp 1s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes opacp {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes opacp /* Firefox */ {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes opacp /* Safari and Chrome */ {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 .port_sections ul{
@@ -762,7 +683,7 @@ a .fa {
 		/*padding-left: 10%;*/
 		/*margin: 0;*/
 		/*border-left: 2px solid rgba(56, 56, 56, .3);;*/
-		opacity: 0;
+		opacity: 1;
 		animation:opacp 0.3s;
 		-moz-animation:opacp 0.3s; /* Firefox */
 		-webkit-animation:opacp 0.3s; /* Safari and Chrome */
