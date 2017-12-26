@@ -431,10 +431,6 @@ a .fa {
     transform: translate(-50%, 0);
 	top: 85%;
 	/*width: 576;*/
-	animation:opacp 1s;
-	-moz-animation:opacp 1s; /* Firefox */
-	-webkit-animation:opacp 1s; /* Safari and Chrome */
-	-webkit-animation-fill-mode: forwards;
 }
 
 @keyframes opacp {
