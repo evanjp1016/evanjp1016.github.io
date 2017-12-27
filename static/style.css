@@ -24,9 +24,11 @@ body {
 		
 	}
 
-.main_container {
+.maincontainer {
 	/*position: relative;*/
 	/*overflow: hidden;*/
+	min-height: 100vh;
+	padding-bottom: 100px;
 }
 
 /*Rad little highlighting selecton color trick*/
@@ -307,7 +309,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 80%;
-	/*height: 100px;*/
+	height: 100px;
 }
 
 .social-media {
@@ -594,9 +596,9 @@ a .fa {
 }
 
 /*#########################################################################################################*/
-/* Portfolio Sections */
+/* Portfolio Content */
 
-.des_vis {
+/*.des_vis {
 	display: block;
 }
 
@@ -634,6 +636,97 @@ a .fa {
 
 .proj_hide {
 	display: none;
+}*/
+.portfolio_content {
+	position: absolute;
+	top: 95vh;
+	padding-top: 10px;
+	padding-bottom: 10%;
+}
+
+.row1 {
+	/*position: absolute;
+	top: 95vh;*/
+	width: 80%;
+	display: inline-block;
+	margin: 0;
+	margin-left: 10%;
+	padding: 0;
+	/*padding-top: 10px;*/
+}
+
+.row2 {
+	/*position: absolute;*/
+	/*top: 10px;*/
+	width: 80%;
+	display: inline-block;
+	margin: 0;
+	margin-left: 10%;
+	padding: 0;
+	/*padding-top: 10px;*/
+}
+
+.row div{
+	margin: 0;
+	padding: 0;
+}
+
+.column {
+  position: relative;
+  width: 33%;
+  display: inline-block;
+  padding: 0;
+	margin: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0;
+	margin: 0;
+}
+
+/*.column:not(:last-child) {
+	padding-right: 5%;
+}*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(56, 56, 56, 0.7);
+  padding: 0;
+  margin: 0;
+}
+
+/*.overlay:not(:last-child) {
+	padding-right: 2.5%;
+}*/
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 50px;
+  opacity: 1;
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
 }
 
 /*#########################################################################################################*/
@@ -662,6 +755,10 @@ a .fa {
 
 	.port_sections {
 		width: 510px;
+	}
+
+	.column {
+		width: 49%;
 	}
 }
 
@@ -765,7 +862,7 @@ a .fa {
 		opacity: 0;
 		animation:opacp 0.3s;
 		-moz-animation:opacp 0.3s; /* Firefox */
-		-webkit-animation:opacp 0.3s; /* Safari and Chrome */
+		-webkit-animation:opacp 0.3s;
 		-webkit-animation-fill-mode: forwards;
 		-webkit-transition: all 0.3s ease;
 	    -moz-transition: all 0.3s ease;
@@ -788,7 +885,7 @@ a .fa {
 		letter-spacing: 1px;
 		font-size: 1.3em;
 		opacity: 0.5;
-		margin-left: -1px;
+		margin-left: 0px;
 		padding-left: 10%;
 		padding-top: 2vh;
 		/*z-index: 5000;*/
@@ -830,6 +927,10 @@ a .fa {
 		border-left: 2px solid #383838;
 		border-bottom: none;
 		opacity: 1;
+	}
+
+	.column {
+		width: 100%;
 	}
 
 }
