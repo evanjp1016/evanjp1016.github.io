@@ -24,11 +24,10 @@ body {
 		
 	}
 
-.maincontainer {
-	/*position: relative;*/
-	/*overflow: hidden;*/
+.main_container {
 	min-height: 100vh;
-	padding-bottom: 100px;
+	position: relative;
+	/*padding-bottom: 100px;*/
 }
 
 /*Rad little highlighting selecton color trick*/
@@ -44,6 +43,7 @@ body {
 	position: absolute;
 	margin-top: 30vh;
 	margin-left: 10%;
+	padding-bottom: 100px;
 	animation:opacp 1s;
 	-moz-animation:opacp 1s; /* Firefox */
 	-webkit-animation:opacp 1s; /* Safari and Chrome */
@@ -127,7 +127,7 @@ body {
 }
 
 .page_title h2{
-	position: absolute;
+	position: fixed;
 	font-family: 'Merriweather', serif;
 	font-weight: 900;
 	font-size: 1.5em;
@@ -135,6 +135,7 @@ body {
 	left: 10%;
 	margin: 0;
 	opacity: 0;
+	z-index: 10001;
 	animation:opacp 1s;
 	-moz-animation:opacp 1s; /* Firefox */
 	-webkit-animation:opacp 1s; /* Safari and Chrome */
@@ -206,7 +207,7 @@ body {
 
 .nav_list {
 	text-align: right;
-	position: absolute;
+	position: fixed;
 	padding-top: 10vh;
 	right: 10%;
 	left: 10%;
@@ -215,6 +216,7 @@ body {
 	opacity: 0;
 	border-bottom: 2px solid rgba(56, 56, 56, .3);
 	background-color: #ffffff;
+	z-index: 10000;
 	animation:opacp 1s;
 	-moz-animation:opacp 1s;
 	-webkit-animation:opacp 1s;
@@ -305,17 +307,16 @@ hr {
 
 footer {
 	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	bottom: 7%;
+	left: 10%;
 	width: 80%;
 	height: 100px;
 }
 
 .social-media {
-	position: absolute;
+	/*position: absolute;
 	margin-left: 10%;
-	margin-bottom: 7%;
+	margin-bottom: 7%;*/
 	
 }
 
@@ -350,55 +351,49 @@ a .fa {
 	border-left: 1px solid black;
 	margin-left: 10%;
     height: 100%;
-    z-index: -1000;
     opacity: 0.07;
     position: fixed;
-    z-index: 10000;
+    z-index: 10010;
 }
 
 .v2 {
 	border-left: 1px solid black;
 	margin-left: 30%;
     height: 100%;
-    z-index: -1000;
     opacity: 0.07;
     position: fixed;
-    z-index: 10000;
+    z-index: 10011;
 }
 
 .v3 {
 	border-left: 1px solid black;
 	margin-left: 50%;
     height: 100%;
-    z-index: -1000;
     opacity: 0.07;
     position: fixed;
-    z-index: 10000;
+    z-index: 10012;
 }
 
 .v4 {
 	border-left: 1px solid black;
 	margin-left: 70%;
     height: 100%;
-    z-index: -1000;
     opacity: 0.07;
     position: fixed;
-    z-index: 10000;
+    z-index: 10013;
 }
 
 .v5 {
 	border-left: 1px solid black;
 	margin-left: 90%;
     height: 100%;
-    z-index: -1000;
     opacity: 0.07;
     position: fixed;
-    z-index: 10000;
+    z-index: 10014;
 }
 
 /*#########################################################################################################*/
 /* Burger Icon */
-
 
 .burger {
     display: none;
@@ -410,7 +405,7 @@ a .fa {
     right: 10%;
     cursor: pointer;
     margin-bottom: 0px;
-    z-index: 2000;
+    z-index: 1000000;
     opacity: 0;
     /*transform: translate(-50%, -50%);*/
     animation:opacp 1s;
@@ -530,7 +525,7 @@ a .fa {
 	left: 50%;
     transform: translate(-50%, 0);
 	top: 85%;
-	/*width: 576;*/
+	z-index: 9000;
 }
 
 .port_sections ul{
@@ -542,7 +537,6 @@ a .fa {
 
 .port_sections li{
 	display: inline-block;
-	/*transform: translate(-50%, 0);*/
 	text-align: center;
 }
 
@@ -550,7 +544,7 @@ a .fa {
 	padding-right: 27px;
 }
 
-.port_sections ul li a{
+.port_sections a{
 	color: #383838;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
@@ -558,12 +552,44 @@ a .fa {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.9em;
+	padding-bottom: 12px;
+	padding-top: 12px;
 	opacity: 0.5;
 }
 
 .port_sections ul li a span {
 	font-size: 0.8em;
 }
+
+
+
+
+
+
+/*.design {
+	padding-bottom: 12px;
+}
+
+.development {
+	padding-bottom: 12px;
+}
+
+.video {
+	padding-bottom: 12px;
+}
+
+.music {
+	padding-bottom: 12px;
+}
+
+.projects {
+	padding-bottom: 12px;
+}*/
+
+
+
+
+
 
 .design .current_page {
 	padding-bottom: 12px;
@@ -598,45 +624,6 @@ a .fa {
 /*#########################################################################################################*/
 /* Portfolio Content */
 
-/*.des_vis {
-	display: block;
-}
-
-.des_hide {
-	display: none;
-}
-
-.dev_vis {
-	display: block;
-}
-
-.dev_hide {
-	display: none;
-}
-
-.vid_vis {
-	display: block;
-}
-
-.vid_hide {
-	display: none;
-}
-
-.mus_vis {
-	display: block;
-}
-
-.mus_hide {
-	display: none;
-}
-
-.proj_vis {
-	display: block;
-}
-
-.proj_hide {
-	display: none;
-}*/
 .portfolio_content {
 	position: absolute;
 	top: 95vh;
@@ -676,7 +663,8 @@ a .fa {
   width: 33%;
   display: inline-block;
   padding: 0;
-	margin: 0;
+  margin: 0;
+  /*padding-bottom: 20px;*/
 }
 
 .image {
@@ -685,12 +673,13 @@ a .fa {
   height: auto;
   text-align: center;
   padding: 0;
-	margin: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
-/*.column:not(:last-child) {
-	padding-right: 5%;
-}*/
+.column .image:not(:last-child) {
+	/*padding-right: 5%;*/
+}
 
 .overlay {
   position: absolute;
@@ -701,10 +690,13 @@ a .fa {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.3s ease;
   background-color: rgba(56, 56, 56, 0.7);
   padding: 0;
   margin: 0;
+  cursor: pointer;
+  /*padding-bottom: 20px;*/
+
 }
 
 /*.overlay:not(:last-child) {
@@ -713,6 +705,7 @@ a .fa {
 
 .column:hover .overlay {
   opacity: 1;
+  padding-bottom: 20px;
 }
 
 .text {
@@ -759,6 +752,10 @@ a .fa {
 
 	.column {
 		width: 49%;
+	}
+
+	.column .image:not(:last-child) {
+		padding-right: 0;
 	}
 }
 
@@ -815,7 +812,7 @@ a .fa {
 	.mobile_nav {
 		overflow-x: hidden;
 		display: none;
-		position: absolute;
+		position: fixed;
 		list-style: none;
 		padding-left: 0;
 		/*left: 10%;*/
@@ -825,7 +822,7 @@ a .fa {
 		/*border-left: 2px solid rgba(56, 56, 56, .3);;*/
 		/*background-color: #f7f5f0;*/
 		background-color: #ffffff;
-		width: 80%;
+		width: 100%;
 		-webkit-transition: all 0.3s ease;
 	    -moz-transition: all 0.3s ease;
 	    -o-transition: all 0.3s ease;
@@ -850,15 +847,17 @@ a .fa {
 
 	.nav_open {
 		display: block;
-		z-index: 1000;
-		position: absolute;
+		z-index: 100000;
+		position: fixed;
 		list-style: none;
-		left: 10%;
+		/*left: 10%;*/
 		/*padding-left: -10px;*/
 		height: 100vh;
-		/*padding-left: 10%;*/
+		width: 100%;
+		padding-left: 10%;
+		padding-top: 50%;
 		/*margin: 0;*/
-		/*border-left: 2px solid rgba(56, 56, 56, .3);;*/
+		/*border-left: 2px solid rgba(56, 56, 56, .3);*/
 		opacity: 0;
 		animation:opacp 0.3s;
 		-moz-animation:opacp 0.3s; /* Firefox */
@@ -872,7 +871,7 @@ a .fa {
 
 	.nav_open ul{
 		margin-top: 30vh;
-		/*padding-left: -10px;*/
+		padding-left: 10px;
 		/*margin-left: -10px;*/
 	}
 
@@ -932,5 +931,9 @@ a .fa {
 	.column {
 		width: 100%;
 	}
+
+	.column .image:not(:last-child) {
+	padding-right: 0;
+}
 
 }
