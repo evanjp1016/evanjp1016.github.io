@@ -20,27 +20,33 @@
 	<link rel="stylesheet" type="text/css" href="static/style_test.css">
 </head>
 <body>
-
-<!-- <div class="nav_page">
-	<div class="nav_links">
-		<ul>
-			<li class="portfolio"><a class="current_page" href="test.html">Portfolio</a></li>
-			<li class="about"><a href="about.html">About</a></li>
-			<li class="resume"><a href="resume.html">Resume</a></li>
-			<li class="contact" ><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
-</div>
- -->
 <div class="wrapper">
+
+	
+
 	<div class="header">
+			<!-- Mobile Navigation. Hidden Otherwise -->
+			<!-- <div class="mobile-nav-container">
+					<a class="burger">
+					    <div></div>
+					</a>
+				<ul class="mobile_nav">
+					<li class="portfolio"><a class="current_page" href="test.html">Portfolio</a></li>
+					<li class="about"><a href="about.html">About</a></li>
+					<li class="resume"><a href="resume.html">Resume</a></li>
+					<li class="contact" ><a href="contact.html">Contact</a></li>
+				</ul>
+			</div> -->
+
+			<!-- <div class="page_title">
+				<h2><a href="index.html">Fresch</a></h2>
+			</div> -->
 			<div class="site-title">
 				<h2><a href="index.html">Fresch.</a></h2>
 			</div>
 
 			<div class="menu">
 				<span>Menu</span>
-				<img src="static/navicon.png" alt="navicon" class="navicon" aria-hidden="true">
 			</div>
 
 			<!-- header -->
@@ -70,12 +76,12 @@
 		<div class="v5"></div>
 
 		<div class="jumbotron">
-			<p>I’m Evan Pesch,</br>a senior at the University of Michigan, and I’m currently working 5 jobs to get where I want to be.</p>
+			<p>I’m Evan Pesch,</br>a front-end software engineering intern at Merit Network.</p>
 		</div>
 
 		<div class="arrows">
 			<i class="fa fa-angle-left" aria-hidden="true"></i>
-			<a href="test_merit.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="test.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 		</div>
 
 	</div>
@@ -92,68 +98,7 @@
 
 </div> <!-- Close .wrapper -->
 
-<div class="portfolio-content">
-
-	<div class="gallery">
-			<div class="row1">
-				<div>
-					<a href="#"><img src="static/automate_thumbnail.png" alt="AutoMate Interaction Design"></a>
-				</div>
-
-				<div>
-					<a href="#"><img src="static/mashf_thumbnail.png" alt="Muskegon Area Sports Hall Of Fame User Experience Design"></a>
-				</div>
-			</div>
-
-			<div class="row1">
-				<a href="#"><img src="static/mmb_des_thumbnail.png" alt="Michigan Marching Band Graphic Design"></a>
-			
-
-			
-				<a href="#"><img src="static/solar_thumbnail.png" alt="University of Michigan Solar Car Team Graphic Design"></a>
-			</div>
-
-			<div class="row1">
-				<a href="#"><img src="static/dailyui_thumbnail.png" alt="Daily User Interface Designe"></a>
-			
-
-
-				<a href="#"><img src="static/home_thumbnail.png" alt="Buster Keaton: Home Graphic and Motion Design"></a>
-			</div>
-	</div>
-
-	<!-- <div class="gallery">
-
-		<div class="row">
-			<div>
-				<a href="#" target="_blank">
-					<img src="static/mmb_des_thumbnail.png" alt="Lights">
-				</a>
-			</div>
-			<div>
-				<a href="#" target="_blank">
-					<img src="static/mmb_des_thumbnail.png" alt="Nature">
-		        </a>
-			</div>
-		</div>
-
-		<div class="row">
-			<div>
-				<a href="#" target="_blank">
-					<img src="static/mmb_des_thumbnail.png" alt="Lights">
-				</a>
-			</div>
-			<div>
-				<a href="#" target="_blank">
-					<img src="static/mmb_des_thumbnail.png" alt="Nature">
-		        </a>
-			</div>
-		</div>
-
-	</div> -->
-
-
-</div>
+<div class="portfolio-content"></div>
 
 <div class="footer">
 		<div class="social">
@@ -187,13 +132,13 @@
 		//     );
 		// });
 
-		$('.menu').on('click', function() {
-		    return $(.nav_page).toggleClass('nav_page_open');
+		$('.burger').on('click', function() {
+		    return $(this).toggleClass('open');
 		});
 
-		// $('.burger').on('click', function() {
-		//     return $('.mobile_nav').toggleClass('nav_open');
-		// });
+		$('.burger').on('click', function() {
+		    return $('.mobile_nav').toggleClass('nav_open');
+		});
 
 		// $(window).scroll(function() {    
 		//     var scroll = $(window).scrollTop();
