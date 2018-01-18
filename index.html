@@ -15,70 +15,52 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:300,400, 600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:300,400,500,600|Questrial" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<link rel="stylesheet" type="text/css" href="static/style_test.css">
 </head>
 <body>
-<!-- <div class="main-container"> -->
+<div class="wrapper">
+	<div class="header">
+			<div class="site-title">
+				<h2><a href="index.html">Fresch.</a></h2>
+			</div>
+	</div> <!-- close .header -->
 
+	<div class="content">
 		<div class="v1"></div>
 		<div class="v2"></div>
 		<div class="v3"></div>
 		<div class="v4"></div>
 		<div class="v5"></div>
-		
-		<!-- Mobile Navigation. Hidden Otherwise -->
-		<div>
-				<a class="burger">
-				    <div></div>
-				</a>
-			<ul class="mobile_nav">
-				<li class="about"><a class="current_page" href="index.html">About</a></li>
-				<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-				<li class="resume"><a href="resume.html">Resume</a></li>
-				<li class="contact" ><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
 
-		<div class="nav_list">
+		<div class="jumbotron">
+			<p>This site is under construction.</p>
+		</div>
+	</div>
+</div> <!-- Close .wrapper -->
+
+<div class="footer">
+		<div class="social">
 			<ul>
-			    <li class="about"><a class="current_page" href="index.html">About</a></li>
-			 	<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-			 	<li class="resume"><a href="resume.html">Resume</a></li>
-			 	<li class="contact"><a href="contact.html">Contact</a></li>
-			    <!-- <hr /> -->
+				<li><a href="https://www.facebook.com/evan.pesch" class="fa fa-facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/evanjp1016" class="fa fa-twitter" target="_blank"></a></li>
+				<li><a href="https://www.instagram.com/evanjp/" class="fa fa-instagram" target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com/in/evan-pesch" class="fa fa-linkedin" target="_blank"></a></li>
+				<li><a href="https://www.behance.net/evanjp1016" class="fa fa-behance" target="_blank"></a></li>
 			</ul>
 		</div>
-
-		<div class="page_title">
-			<h2><a href="index.html">Fresch</a></h2>
+		
+		<div class="site-name">
+			<h2><a href="index.html">Fresch.</a></h2>
 		</div>
 
-		<div class='landing_page'>
-			<h3>Introduction</br>Goes Here.</h3>
-			<div class="landing_par">
-				<p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves.</p>
-
-				<p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves.</p>
-
-				<p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves.</p>
-
-				<p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves.</p>
-
-				<p>My fingers are so cold, I can’t grip the zipper well enough to zip up my jacket. Mid-February in Minneapolis is apparently just as unforgiving as it is in Michigan. This may not be the ideal spring break trip for most college students, but at least we have the streets to ourselves.</p>
-			</div>
+		<div class="address">
+			<a href="mailto:epesch@umich.edu?Subject=Fresch%20Connection" target="_top">epesch@umich.edu</a>
 		</div>
 
-	<footer class = "social-media">
-		<a href="https://www.facebook.com/evan.pesch" class="fa fa-facebook" target="_blank"></a>
-		<a href="https://twitter.com/evanjp1016" class="fa fa-twitter" target="_blank"></a>
-		<a href="https://www.instagram.com/evanjp/" class="fa fa-instagram" target="_blank"></a>
-		<a href="https://www.linkedin.com/in/evan-pesch" class="fa fa-linkedin" target="_blank"></a>
-		<a href="https://www.behance.net/evanjp1016" class="fa fa-behance" target="_blank"></a>
-	</footer>
-
-<!-- </div> --> <!-- Close .main_container -->
+		<!-- footer -->
+	</div>
 
 
 	
@@ -90,13 +72,33 @@
 		//     );
 		// });
 
-		$('.burger').on('click', function() {
-		    return $(this).toggleClass('open');
+		$('.menu').on('click', function() {
+		    return $(.nav_page).toggleClass('nav_page_open');
 		});
 
-		$('.burger').on('click', function() {
-		    return $('.mobile_nav').toggleClass('nav_open');
-		});
+		// $('.burger').on('click', function() {
+		//     return $('.mobile_nav').toggleClass('nav_open');
+		// });
+
+		// $(window).scroll(function() {    
+		//     var scroll = $(window).scrollTop();
+
+		//     if (scroll >= 10) {
+		//         $(".jumbo-header1").addClass("hide");
+		//     } else {
+		//         $(".jumbo-header1").removeClass("hide");
+		//     }
+		// });
+
+		// $(window).scroll(function() {    
+		//     var scroll = $(window).scrollTop();
+
+		//     if (scroll >= 10) {
+		//         $(".jumbo-header2").addClass("show");
+		//     } else {
+		//         $(".jumbo-header2").removeClass("show");
+		//     }
+		// });
 
 	</script>
 </body>
