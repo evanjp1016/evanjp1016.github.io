@@ -30,7 +30,7 @@ body {
 
 .header .site-title {
 	float: left;
-	padding-left: 9.8%;
+	padding-left: 9%;
 	padding-top: 6vh;
 	transform: translate(0, -13%);	
 }
@@ -53,7 +53,7 @@ body {
 
 .header .menu {
 	float: right;
-	padding-right: 10%;
+	padding-right: 9%;
 	padding-top: 6vh;
 	transform: translate(0, -13%);
 	cursor: pointer;
@@ -145,13 +145,13 @@ body {
 
 .content .jumbotron p{
 	color: #383838;
-	margin-left: 9.8%;
+	margin-left: 9%;
 	padding-top: 7vh;
 	font-family: 'Nunito Sans', sans-serif;
-	font-weight: 800;
-	font-size: 4.3em;
+	font-weight: 700;
+	font-size: 4.45em;
 	/*letter-spacing: 0.02em;*/
-	line-height: 1.2em;
+	line-height: 1.1em;
 	width: 80%;
 }
 
@@ -225,7 +225,7 @@ body {
   font-size: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 11%;
+  margin-left: 10%;
 }
 
 .gallery a {
@@ -258,9 +258,9 @@ body {
 .gallery .switch:hover img:last-child{display:inline-block;}
 
 .scroll-arrow {
-	/*position: absolute;*/
-	/*padding-top: 70vh;*/
-	/*padding-left: 45%;*/
+	position: absolute;
+	padding-top: 70vh;
+	padding-left: 49.40%;
 	/*transform: translateX(0%);*/
 	text-align: center;
 	animation:scroller 2s;
@@ -528,21 +528,21 @@ body {
 }
 
 @keyframes scroller {
-  0% {padding-top: 15vh;}
-  50% {padding-top: 17vh;}
-  100% {padding-top: 15vh;}
+  0% {padding-top: 80vh;}
+  50% {padding-top: 82vh;}
+  100% {padding-top: 80vh;}
 }
 
 @-moz-keyframes scroller /* Firefox */ {
-  0% {padding-top: 15vh;}
-  50% {padding-top: 17vh;}
-  100% {padding-top: 15vh;}
+  0% {padding-top: 80vh;}
+  50% {padding-top: 82vh;}
+  100% {padding-top: 80vh;}
 }
 
 @-webkit-keyframes scroller /* Safari and Chrome */ {
-  0% {padding-top: 15vh;}
-  50% {padding-top: 17vh;}
-  100% {padding-top: 15vh;}
+  0% {padding-top: 80vh;}
+  50% {padding-top: 82vh;}
+  100% {padding-top: 80vh;}
 }
 
 @keyframes hide {
