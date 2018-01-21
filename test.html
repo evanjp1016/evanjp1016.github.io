@@ -21,17 +21,17 @@
 </head>
 <body>
 
-<!-- <div class="nav_page">
+<div class="nav_page">
 	<div class="nav_links">
 		<ul>
-			<li class="portfolio"><a class="current_page" href="test.html">Portfolio</a></li>
-			<li class="about"><a href="about.html">About</a></li>
+			<li class="about"><a class="current_page" href="test.html">About</a></li>
+			<li class="portfolio"><a href="#work">Portfolio</a></li>
 			<li class="resume"><a href="resume.html">Resume</a></li>
 			<li class="contact" ><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
 </div>
- -->
+
 <div class="wrapper">
 	<div class="header">
 			<div class="site-title">
@@ -76,7 +76,6 @@
 		<div class="arrows">
 			<i class="fa fa-angle-left" aria-hidden="true"></i>
 			<a href="test_merit.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-			<a href="#work">See My Work</a>
 		</div>
 
 	</div>
@@ -125,7 +124,7 @@
 	</div> -->
 
 	<div class="gallery">
-		<a href="#" class="switch"><img src="static/automate_thumbnail.png" alt="AutoMate Interaction Design"><img src="static/mashf_thumbnail.png" alt="Muskegon Area Sports Hall Of Fame User Experience Design"></a>
+		<a href="automate_design.html" class="switch"><img src="static/automate_thumbnail.png" alt="AutoMate Interaction Design"><img src="static/mashf_thumbnail.png" alt="Muskegon Area Sports Hall Of Fame User Experience Design"></a>
 		<a href="#"><img src="static/mashf_thumbnail.png" alt="Muskegon Area Sports Hall Of Fame User Experience Design"></a>
 		<a href="#"><img src="static/mmb_des_thumbnail.png" alt="Michigan Marching Band Graphic Design"></a>	
 		<a href="#"><img src="static/solar_thumbnail.png" alt="University of Michigan Solar Car Team Graphic Design"></a>
@@ -199,7 +198,11 @@
 		// });
 
 		$('.menu').on('click', function() {
-		    return $(.nav_page).toggleClass('nav_page_open');
+		    return $('.nav_page').toggleClass('nav_page_open');
+		});
+
+		$('.nav_links').on('click', function() {
+		    return $('.nav_page').toggleClass('nav_page_open');
 		});
 
 		// $('.burger').on('click', function() {

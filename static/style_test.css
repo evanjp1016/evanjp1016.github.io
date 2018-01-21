@@ -20,7 +20,7 @@ body {
 	min-height: 12vh;
 	background-color: #f4f3ed;
 	border-bottom: 1px solid rgba(56, 56, 56, 0.5);
-	z-index: 500000000;
+	/*z-index: 500000000;*/
 }
 
 .header div {
@@ -68,20 +68,63 @@ body {
 }
 
 .nav_page {
+	display: none;
 	padding-top: 0;
 	margin-top: 0;
 	background-color: white;
 	width: 100%;
 	min-height: 100%;
 	position: fixed;
-	z-index: 400000000;
+	z-index: 4000;
 }
-.nav_links {
-	/*background-color: blue;
+
+.nav_page_open {
+	display: block;
+	padding-top: 0;
+	margin-top: 0;
+	background-color: white;
 	width: 100%;
 	min-height: 100%;
 	position: fixed;
-	z-index: 400000001;*/
+	z-index: 4000000000;
+}
+
+.nav_page_open div {
+	top: 0;
+}
+.nav_links {
+	background: radial-gradient(at top left, #0026c4, #001760);
+	min-height: 96vh;
+	margin: 2vh;
+	padding-top: 25vh;
+	width: calc(100% - 4vh);
+	position: fixed;
+	z-index: 40000000;
+}
+
+.nav_links ul li {
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	transform: translateX(-1%);
+}
+
+.nav_links ul a {
+	color: #001760;
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	font-size: 5em;
+	transition: 0.3s;
+}
+
+.nav_links ul a:hover {
+	text-decoration: none;
+	color: #0026c4;
+	transition: 0.3s;
+}
+
+.nav_links .current_page {
+	color: #ffffff;
 }
 
 .menu img {
@@ -117,7 +160,7 @@ body {
 	font-size: 1.8em;
 	color: #0026c4;
 	margin: 0;
-	margin-right: 8px;
+	margin-right: 5px;
 	padding: 10px 18px 10px 18px;
 	border: 1px solid #0026c4;
 	border-radius: 50px;
