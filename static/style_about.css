@@ -241,22 +241,52 @@ body {
 
 .merit_link {
 	border-bottom: 1px solid #0092ff;
+	transition: 0.3s;
+}
+
+.merit_link:hover {
+	color: #0092ff;
+	transition: 0.3s;
 }
 
 .mmb_link {
 	border-bottom: 1px solid #ffcb05;
+	transition: 0.3s;
+}
+
+.mmb_link:hover {
+	color: #ffcb05;
+	transition: 0.3s;
 }
 
 .solar_link {
 	border-bottom: 1px solid black;
+	transition: 0.3s;
+}
+
+.solar_link:hover {
+	color: #00274c;
+	transition: 0.3s;
 }
 
 .mashf_link {
 	border-bottom: 1px solid #efa733;
+	transition: 0.3s;
+}
+
+.mashf_link:hover {
+	color: #efa733;
+	transition: 0.3s;
 }
 
 .btg_link {
 	border-bottom: 1px solid #e0d5c1;
+	transition: 0.3s;
+}
+
+.btg_link:hover {
+	color: #e0d5c1;
+	transition: 0.3s;
 }
 
 

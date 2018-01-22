@@ -32,7 +32,14 @@ body {
 	float: left;
 	padding-left: 9%;
 	padding-top: 6vh;
-	transform: translate(0, -13%);	
+	transform: translate(0, -13%);
+	opacity: 0;
+	animation:opac 1s;
+	-moz-animation:opac 1s; /* Firefox */
+	-webkit-animation:opac 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	-webkit-animation-fill-mode: forwards;	
 }
 
 .header .site-title h2{
@@ -58,6 +65,13 @@ body {
 	transform: translate(0, -13%);
 	cursor: pointer;
 	z-index: 500000010;
+	opacity: 0;
+	animation:opac 1s;
+	-moz-animation:opac 1s; /* Firefox */
+	-webkit-animation:opac 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .header .menu a {
@@ -149,19 +163,32 @@ body {
 .content .jumbotron p{
 	color: #383838;
 	margin-left: 9%;
-	padding-top: 7vh;
+	padding-top: 12vh;
 	font-family: 'Muli', sans-serif;
 	font-weight: 700;
 	font-size: 4.45em;
 	/*letter-spacing: 0.02em;*/
 	line-height: 1.1em;
 	width: 80%;
+	animation:mymove 0.5s;
+	-moz-animation:mymove 0.5s; /* Firefox */
+	-webkit-animation:mymove 0.5s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .jumbotron {
 	background-color: #f4f3ed;
 	margin-bottom: 0;
 	padding-bottom: 0;
+	opacity: 0;
+	animation:opac 0.5s;
+	-moz-animation:opac 0.5s; /* Firefox */
+	-webkit-animation:opac 0.5s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .content .arrows i {
@@ -266,6 +293,13 @@ body {
 	padding-left: 50%;
 	transform: translateX(-65px);
 	z-index: 6000000;
+	opacity: 0;
+	animation:opac 1s;
+	-moz-animation:opac 1s; /* Firefox */
+	-webkit-animation:opac 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .see_work a {
@@ -552,18 +586,18 @@ body {
 }
 
 @keyframes mymove {
-  0% {padding-top: 40%;}
-  100% {padding-top: 20%;}
+  0% {padding-top: 12vh;}
+  100% {padding-top: 7vh;}
 }
 
 @-moz-keyframes mymove /* Firefox */ {
-  0% {padding-top: 40%;}
-  100% {padding-top: 20%;}
+  0% {padding-top: 12vh;}
+  100% {padding-top: 7vh;}
 }
 
 @-webkit-keyframes mymove /* Safari and Chrome */ {
-  0% {padding-top: 40%;}
-  100% {padding-top: 20%;}
+  0% {padding-top: 12vh;}
+  100% {padding-top: 7vh;}
 }
 
 @keyframes scroller {
