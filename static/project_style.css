@@ -143,13 +143,14 @@ body {
 
 .project_content div {
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
 .title h2 {
 	font-size: 4em;
 	font-weight: 700;
 	text-align: left;
+	padding-bottom: 0;
 	opacity: 0;
 	animation:opac 1s;
 	-moz-animation:opac 1s; /* Firefox */

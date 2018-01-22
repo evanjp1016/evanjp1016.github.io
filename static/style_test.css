@@ -60,16 +60,19 @@ body {
 	z-index: 500000010;
 }
 
-.header .menu span {
+.header .menu a {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.1em;
 	color: #383838;
+	text-decoration: none;
 }
 
-.header .menu span:hover {
+.header .menu a:hover {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.1em;
 	color: gray;
+	text-decoration: none;
+	transition: 0.3s;
 }
 
 .nav_page {
@@ -98,7 +101,7 @@ body {
 	top: 0;
 }
 .nav_links {
-	background: radial-gradient(at top left, #0026c4, #001760);
+	background: #0026c4;
 	min-height: 96vh;
 	margin: 2vh;
 	padding-top: 25vh;
@@ -257,6 +260,36 @@ body {
 .gallery .switch:hover img:first-child{display:none;}
 .gallery .switch:hover img:last-child{display:inline-block;}
 
+.see_work {
+	position: absolute;
+	padding-top: 77vh;
+	padding-left: 50%;
+	transform: translateX(-65px);
+	z-index: 6000000;
+}
+
+.see_work a {
+	text-decoration: none;
+	color: #0026c4;
+	font-family: 'Nunito Sans', sans-serif;
+	/*font-weight: 700;*/
+	font-size: 1.1em;
+	padding-top: 7px;
+	padding-bottom: 9px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border: 1px solid #0026c4;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+.see_work a:hover{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #0026c4;
+	transition: 0.3s;
+}
+
 .scroll-arrow {
 	position: absolute;
 	padding-top: 70vh;
@@ -372,7 +405,7 @@ body {
 	color: white;
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.1em;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .footer .address a:hover {
@@ -528,21 +561,21 @@ body {
 }
 
 @keyframes scroller {
-  0% {padding-top: 80vh;}
-  50% {padding-top: 82vh;}
-  100% {padding-top: 80vh;}
+  0% {padding-top: 84vh;}
+  50% {padding-top: 85vh;}
+  100% {padding-top: 84vh;}
 }
 
 @-moz-keyframes scroller /* Firefox */ {
-  0% {padding-top: 80vh;}
-  50% {padding-top: 82vh;}
-  100% {padding-top: 80vh;}
+  0% {padding-top: 84vh;}
+  50% {padding-top: 85vh;}
+  100% {padding-top: 84vh;}
 }
 
 @-webkit-keyframes scroller /* Safari and Chrome */ {
-  0% {padding-top: 80vh;}
-  50% {padding-top: 82vh;}
-  100% {padding-top: 80vh;}
+  0% {padding-top: 84vh;}
+  50% {padding-top: 85vh;}
+  100% {padding-top: 84vh;}
 }
 
 @keyframes hide {
@@ -944,6 +977,11 @@ hr {
 .mobile_nav {
 	display: none;
 }
+
+/*.hide-white {
+	color: white;
+	background-color: white;
+}*/
 
 /*#########################################################################################################*/
 /* Portfolio Sections */
