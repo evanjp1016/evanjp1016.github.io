@@ -61,14 +61,14 @@ body {
 }
 
 .header .menu a {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 1.1em;
 	color: #383838;
 	text-decoration: none;
 }
 
 .header .menu a:hover {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 1.1em;
 	color: gray;
 	text-decoration: none;
@@ -150,7 +150,7 @@ body {
 	color: #383838;
 	margin-left: 9%;
 	padding-top: 7vh;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 700;
 	font-size: 4.45em;
 	/*letter-spacing: 0.02em;*/
@@ -262,7 +262,7 @@ body {
 
 .see_work {
 	position: absolute;
-	padding-top: 77vh;
+	margin-top: 77vh;
 	padding-left: 50%;
 	transform: translateX(-65px);
 	z-index: 6000000;
@@ -271,7 +271,7 @@ body {
 .see_work a {
 	text-decoration: none;
 	color: #0026c4;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	/*font-weight: 700;*/
 	font-size: 1.1em;
 	padding-top: 7px;
@@ -358,11 +358,13 @@ body {
 	font-size: 1.5em;
 	width: 35px;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer .fa:hover {
 	color: gray;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer a .fa {
@@ -386,11 +388,13 @@ body {
 .footer .site-name h2 a {
 	color: #ffffff;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer .site-name h2 a:hover {
 	color: gray;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer .address {
@@ -403,13 +407,15 @@ body {
 .footer .address a {
 	text-decoration: none;
 	color: white;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 1.1em;
 	font-weight: 400;
+	transition:0.3s;
 }
 
 .footer .address a:hover {
 	color: gray;
+	transition:0.3s;
 }
 
 /*Rad little highlighting selecton color trick*/
@@ -450,7 +456,7 @@ body {
 	margin-bottom: 40px;
 }
 
-.section-title {"
+.section-title {
 	color:red;
 	padding-bottom: 19px;
 	border-bottom: 1px solid rgba(56, 56, 56, 1);
@@ -997,7 +1003,11 @@ hr {
 		background-color: #ffffff;
 	}
 
-
+	.content .jumbotron p{
+		font-size: 3em;
+		letter-spacing: 0em;
+		width: 80%;
+	}
 
 	.gallery {
 	  font-size: 0;
@@ -1068,7 +1078,7 @@ hr {
 
 	.wrapper {
 		margin: 1.5vh;
-		min-height: 75vh;
+		min-height: 96vh;
 	}
 
 	.header .site-title {
@@ -1076,9 +1086,11 @@ hr {
 	}
 	
 	.content .jumbotron p{
+		padding-top: 3vh;
 		font-size: 2.3em;
 		letter-spacing: 0em;
 		width: 80%;
+		/*text-align: center;*/
 	}
 
 
@@ -1105,6 +1117,31 @@ hr {
 		transition: 0.25s;
 		width: 190%;
 		/*margin-right: 1.5vh*/
+	}
+
+	.see_work {
+		position: absolute;
+		margin-top: 80vh;
+		transform: translateX(-60px);
+	}
+
+	.scroll-arrow {
+		padding-top: 85vh;
+		animation: none;
+		-moz-animation: none; /* Firefox */
+		-webkit-animation: none; /* Safari and Chrome */
+	}
+
+	.scroll-arrow i {
+		color: gray;
+		font-size: 2em;
+		/*opacity: 1;*/
+		/*animation:opacp 1s;
+		-moz-animation:opacp 1s; 
+		-webkit-animation:opacp 1s; 
+		-webkit-animation-delay: 1s;
+		animation-delay: 1s;
+		-webkit-animation-fill-mode: forwards;*/
 	}
 
 	.footer {
@@ -1152,7 +1189,7 @@ hr {
 
 	.v5 {
 		height: 63vh;
-		margin-left: 86%;
+		margin-left: 90%;
 	}
 	
 

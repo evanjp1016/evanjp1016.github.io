@@ -47,18 +47,18 @@ body {
 
 .go_back a p {
 	margin: 0;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 1em;
 	text-decoration: none;
 }
 
 .go_back a {
-	transition: 0.25s;
+	transition: 0.2s;
 }
 
 .go_back a:hover {
 	padding-left: 9.5%;
-	transition: 0.25s;
+	transition: 0.1s;
 
 }
 
@@ -68,7 +68,7 @@ body {
 	padding-top: 15vh;
 	padding-left: 0;
 	text-align: justify;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 
 }
 
@@ -187,7 +187,7 @@ body {
 }
 
 .project_content p {
-	font-family: 'Nunito Sans';
+	font-family: 'Muli';
 	font-size: 1.1em;
 	font-weight: 400;
 	line-height: 2em;
@@ -286,7 +286,7 @@ body {
 .footer .address a {
 	text-decoration: none;
 	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
 	letter-spacing: 0.05em;
@@ -312,6 +312,10 @@ body {
 		width: 70%;
 		margin-left: 15%
 	}
+
+	.title h2 {
+		font-size: 3em;
+	}
 }
 
 @media only screen and (max-width:580px) {
@@ -323,5 +327,9 @@ body {
 
 	.go_back a {
 		padding-left: 5%;
+	}
+
+	.title h2 {
+		font-size: 2em;
 	}
 }
