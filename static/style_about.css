@@ -240,23 +240,23 @@ body {
 }
 
 .merit_link {
-	border-bottom: 2px solid #0092ff;
+	border-bottom: 1px solid #0092ff;
 }
 
 .mmb_link {
-	border-bottom: 2px solid #ffcb05;
+	border-bottom: 1px solid #ffcb05;
 }
 
 .solar_link {
-	border-bottom: 2px solid #00274c;
+	border-bottom: 1px solid black;
 }
 
 .mashf_link {
-	border-bottom: 2px solid #efa733;
+	border-bottom: 1px solid #efa733;
 }
 
 .btg_link {
-	border-bottom: 2px solid #e0d5c1;
+	border-bottom: 1px solid #e0d5c1;
 }
 
 
