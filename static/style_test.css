@@ -324,21 +324,28 @@ body {
 
 .scroll-arrow {
 	position: absolute;
-	padding-top: 70vh;
 	padding-left: 49.40%;
 	/*transform: translateX(0%);*/
 	text-align: center;
+	opacity: 0;
+	animation:opac 1s;
+	-moz-animation:opac 1s; /* Firefox */
+	-webkit-animation:opac 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.scroll-arrow i {
+	color: gray;
+	font-size: 2em;
+	padding-top: 70vh;
 	animation:scroller 2s;
 	-moz-animation:scroller 2s; /* Firefox */
 	-webkit-animation:scroller 2s; /* Safari and Chrome */
 	/*-webkit-animation-delay: 1s;*/
 	-webkit-animation-fill-mode: forwards;
 	animation-iteration-count:infinite;
-}
-
-.scroll-arrow i {
-	color: gray;
-	font-size: 2em;
 	/*opacity: 1;*/
 	/*animation:opacp 1s;
 	-moz-animation:opacp 1s; 
