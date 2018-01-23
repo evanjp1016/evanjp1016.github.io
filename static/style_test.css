@@ -298,17 +298,17 @@ body {
 }*/
 
 .gallery {
-  font-size: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10%;
-  opacity: 0;
-animation:opacp 1s;
--moz-animation:opacp 1s; /* Firefox */
--webkit-animation:opacp 1s; /* Safari and Chrome */
--webkit-animation-delay: 0.3s;
-animation-delay: 0.3s;
--webkit-animation-fill-mode: forwards;
+	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10%;
+	opacity: 0;
+	animation:opacp 1s;
+	-moz-animation:opacp 1s; /* Firefox */
+	-webkit-animation:opacp 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .gallery a {
