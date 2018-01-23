@@ -20,7 +20,7 @@ body {
 .header {
 	min-height: 12vh;
 	background-color: #f4f3ed;
-	border-bottom: 1px solid rgba(56, 56, 56, 0.5);
+	/*border-bottom: 1px solid rgba(56, 56, 56, 0.5);*/
 	/*z-index: 500000000;*/
 }
 
@@ -289,9 +289,9 @@ body {
 
 .see_work {
 	position: absolute;
-	margin-top: 77vh;
+	margin-top: 79vh;
 	padding-left: 50%;
-	transform: translateX(-65px);
+	transform: translateX(-45px);
 	z-index: 6000000;
 	opacity: 0;
 	animation:opac 1s;
@@ -304,23 +304,21 @@ body {
 
 .see_work a {
 	text-decoration: none;
-	color: #0026c4;
+	color: gray;
 	font-family: 'Muli', sans-serif;
 	/*font-weight: 700;*/
-	font-size: 1.1em;
+	/*font-size: 1.1em;
 	padding-top: 7px;
 	padding-bottom: 9px;
 	padding-left: 17px;
 	padding-right: 17px;
 	border: 1px solid #0026c4;
-	border-radius: 100px;
+	border-radius: 100px;*/
 	transition: 0.3s;
 }
 
 .see_work a:hover{
 	text-decoration: none;
-	color: #ffffff;
-	background-color: #0026c4;
 	transition: 0.3s;
 }
 
@@ -791,8 +789,8 @@ hr {
 .v1 {
 	border-left: 1px solid #383838;
 	margin-left: 10%;
-	margin-top: 12vh;
-    height: 84vh;
+	/*margin-top: 12vh;*/
+    height: 96vh;
     position: absolute;
     z-index: 30000;
     opacity: 0.1;
@@ -807,8 +805,8 @@ hr {
 .v2 {
 	border-left: 1px solid #383838;
 	margin-left: 30%;
-	margin-top: 12vh;
-    height: 84vh;
+	/*margin-top: 12h;*/
+    height: 96vh;
     position: absolute;
     z-index: 30000;
     opacity: 0.1;
@@ -823,8 +821,8 @@ hr {
 .v3 {
 	border-left: 1px solid #383838;
 	margin-left: 50%;
-	margin-top: 12vh;
-    height: 84vh;
+	/*margin-top: 12vh;*/
+    height: 96vh;
     position: absolute;
     z-index: 30000;
     opacity: 0.1;
@@ -839,8 +837,8 @@ hr {
 .v4 {
 	border-left: 1px solid #383838;
 	margin-left: 70%;
-	margin-top: 12vh;
-    height: 84vh;
+	/*margin-top: 12vh;*/
+    height: 96vh;
     position: absolute;
     z-index: 30000;
     opacity: 0.1;
@@ -855,8 +853,8 @@ hr {
 .v5 {
 	border-left: 1px solid #383838;
 	margin-left: 90%;
-	margin-top: 12vh;
-    height: 84vh;
+	/*margin-top: 12vh;*/
+    height: 96vh;
     position: absolute;
     z-index: 30000;
     opacity: 0.1;
@@ -1156,7 +1154,7 @@ hr {
 	.see_work {
 		position: absolute;
 		margin-top: 80vh;
-		transform: translateX(-60px);
+		transform: translateX(-35px);
 	}
 
 	.scroll-arrow {
@@ -1204,7 +1202,7 @@ hr {
 	}
 
 	.v1 {
-		height: 85vh;
+		height: 97vh;
 		margin-left: 10%;
 	}
 
@@ -1222,7 +1220,7 @@ hr {
 	}
 
 	.v5 {
-		height: 85vh;
+		height: 97vh;
 		margin-left: 90%;
 	}
 	
