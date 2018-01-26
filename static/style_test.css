@@ -340,6 +340,17 @@ body {
 .gallery .switch:hover img:first-child{display:none;}
 .gallery .switch:hover img:last-child{display:inline-block;}
 
+.tidbit {
+	padding-top: 40px;
+	margin-left: 10%;
+	width: 60%;
+	text-align: left;
+	font-family: 'Muli', sans-serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 2em;
+}
+
 .see_work {
 	position: absolute;
 	margin-top: 79vh;
