@@ -58,7 +58,7 @@ body {
 
 .go_back a:hover {
 	padding-left: 9.5%;
-	transition: 0.1s;
+	transition: 0.2s;
 
 }
 
@@ -221,6 +221,10 @@ body {
 	text-decoration: none;
 	color: #0026c4;
 	transition: 0.3s;
+}
+
+.project_info {
+	text-align: left;
 }
 
 iframe {

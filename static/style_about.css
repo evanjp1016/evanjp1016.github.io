@@ -239,43 +239,52 @@ body {
 	padding-bottom: 0;
 }
 
-.merit_link {
+.jumbotron p a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.jumbotron p a:hover {
+	text-decoration: none;
+}
+
+.merit_link a {
 	border-bottom: 1px solid #0092ff;
 	transition: 0.3s;
 }
 
-.merit_link:hover {
+.merit_link a:hover {
 	color: #0092ff;
 	transition: 0.3s;
 }
 
-.mmb_link {
+.mmb_link a {
 	border-bottom: 1px solid #ffcb05;
 	transition: 0.3s;
 }
 
-.mmb_link:hover {
+.mmb_link a:hover {
 	color: #ffcb05;
 	transition: 0.3s;
 }
 
-.solar_link {
-	border-bottom: 1px solid black;
+.solar_link a {
+	border-bottom: 1px solid #007ee5;
 	transition: 0.3s;
 }
 
-.solar_link:hover {
-	color: #00274c;
+.solar_link a:hover {
+	color: #007ee5;
 	transition: 0.3s;
 }
 
-.mashf_link {
-	border-bottom: 1px solid #efa733;
+.mashf_link a {
+	border-bottom: 1px solid #d89350;
 	transition: 0.3s;
 }
 
-.mashf_link:hover {
-	color: #efa733;
+.mashf_link a:hover {
+	color: #d89350;
 	transition: 0.3s;
 }
 
