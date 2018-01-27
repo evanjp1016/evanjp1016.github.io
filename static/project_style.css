@@ -236,6 +236,10 @@ iframe {
 	padding-top: 10px
 }
 
+.music {
+	height: 166px !important;
+}
+
 .footer {
   min-height: 20vh;
   background-color: #383838;
