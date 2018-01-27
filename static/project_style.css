@@ -140,6 +140,7 @@ body {
 .project_content img {
 	width: 100%;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .project_content div {
