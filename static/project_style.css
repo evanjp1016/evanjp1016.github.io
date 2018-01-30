@@ -231,6 +231,13 @@ body {
 	transition: 0.3s;
 }
 
+.project_content .caption {
+	text-align: center;
+	color: gray;
+	font-size: 1em;
+	font-style: italic;
+}
+
 .project_info {
 	text-align: left;
 }
