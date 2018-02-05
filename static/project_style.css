@@ -191,6 +191,24 @@ body {
 	-webkit-animation-fill-mode: forwards;
 }
 
+.project_content h5 {
+	font-size: 1.1em;
+	color: #383838;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	text-align: left;
+	margin-top: 0;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	opacity: 0;
+	animation:opac 1s;
+	-moz-animation:opac 1s; /* Firefox */
+	-webkit-animation:opac 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
 .project_content p {
 	font-family: 'Rubik', sans-serif;
 	font-size: 1.1em;
