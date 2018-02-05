@@ -46,7 +46,8 @@
 		</div>
 
 		<div>
-			<h3>Overview</h3>
+			<h3>The Project</h3>
+			<h4>Overview</h4>
 			<p>
 			This project revolved around discovering relations between student opinion surveys and academic performance in the same classes across various departments in the University of Michigan. The initial goal was to find which majors or departments provided the most difficult curriculum. As the project evolved, the goal turned out to be too narrow in scope and the available data to determine any sort of ranking amongst subjects was either too limited or too subjective. Our group pivoted towards simply exploring the relations between the answers to various aspects of the student surveys and any potential correlation with academic performance.
 			</p>
@@ -56,7 +57,8 @@
 		</div>
 
 		<div>
-			<h3>Data Processing: Umich Courses Data</h3>
+			<h3>The Process</h3>
+			<h4>Data Processing: Umich Courses Data</h4>
 			<p>The first dataset that we cleaned and organized was grade distribution data for courses at the University of Michigan from umichcourses.com</a>. The Umich Courses data was in a format that was quite difficult to analyze and contained far more information than we were interested in.</p>
 
 			<img src="static/grades_raw.png" alt="Raw Grade Distribution Data">
@@ -64,9 +66,8 @@
 			<p>For each course, there was a line on our CSV file for each grade given and the count of that grade, as well as other superfluous information that we were not interested in. To make it more manageable we needed a way to get easy to digest distributions per-class. We created a C++ program that takes in all the data for every grade entry for each class and prints them to a CSV by class instead of grade. It was designed to be extensible so that one could comment out a few lines and get distributions by department, class, professor, etc.</p>
 
 			<img src="static/grades_clean.png" alt="Cleaned Grade Distribution Data">
-		</div>
-		<div>	
-			<h3>Data Processing: Umich Courses Data</h3>
+	
+			<h4>Data Processing: Umich Courses Data</h4>
 
 			<p>Our second source of data, ART, came from on website that provides data from student evaluations of courses, art.ai.umich.edu. This student course evaluation data is collected near the end of an academic term via surveys for every course the university offers. These surveys ask students to rate different aspects of the course, such as workload or difficulty, primarily on a scale that includes “Strongly Disagree,” “Disagree,” “Neutral,” “Agree,” and “Strongly Agree.”
 			</p>
@@ -87,7 +88,8 @@
 
 
 		<div>
-			<h3>Significant Findings</h3>
+			<h3>The Product</h3>
+			<h4>Significant Findings</h4>
 			<div>
 				<p><i>Students in LSA, Ross, and SMTD generally have negative associations between workload and other aspects of the class evaluation, while the opposite is true of the College of Engineering.</i></p>
 
@@ -131,7 +133,7 @@
 		</div>
 
 		<div>
-			<h3>References</h3>
+			<h4>References</h4>
 			<p>Academic Reporting Tools, The Regents of the University of Michigan, https://art.ai.umich.edu/. Accessed Dec. 2017.</p>
 			<p>Herron, Michael C., and Zachary D. Markovich. "Student sorting and implications for grade inflation." Rationality and Society, vol. 29, no. 3, 18 Apr. 2017, pp. 355-86. Accessed Dec. 2017.</p>
 			<p>Kyndt, E., Dochy, F., Struyven, K. "The perception of workload and task complexity and its influence on students' approaches to learning: a study in higher education." Eur J Psychol Educ (2011) 26: 393. https://doi-org.proxy.lib.umich.edu/10.1007/s10212-010-0053-2. Accessed Dec. 2017.</p>
