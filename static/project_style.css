@@ -286,6 +286,10 @@ iframe {
 	padding-top: 10px
 }
 
+video {
+	width: 100%;
+}
+
 .music {
 	height: 166px !important;
 }
