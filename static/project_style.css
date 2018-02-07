@@ -8,6 +8,7 @@ body {
 		margin: 0;
 		padding: 0;
 		height: 100%;
+		-webkit-font-smoothing: antialiased;
 
 	}
 
@@ -289,6 +290,58 @@ iframe {
 	height: 166px !important;
 }
 
+.portfolio-content {
+	min-height: 50vh;
+	padding-top: 15vh;
+	padding-bottom: 20vh;
+	/*margin-right: 30px;*/
+}
+
+.portfolio_categories {
+	text-align: center;
+	padding-bottom: 25vh;
+
+}
+
+.portfolio_categories ul {
+	padding: 0px;
+	/*border-bottom: 1px solid rgba(56, 56, 56, 0.5);*/
+}
+
+.portfolio_categories ul li {
+	display: inline-block;
+	padding-left:4%;
+	font-family: "Rubik", sans-serif;
+	/*text-transform: uppercase;*/
+	font-size: 1.1em;
+	font-weight: 400;
+	text-align: center;
+}
+
+.portfolio_categories ul li:first-child {
+	padding-left: 0;
+}
+
+.portfolio_categories ul li a {
+	text-decoration: none;
+	color: #383838;
+	opacity: 0.3;
+	transition: 0.3s;
+}
+
+.portfolio_categories ul li a:hover {
+	text-decoration: none;
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.portfolio_categories .current_category {
+	opacity: 1;
+	padding-bottom: 15px;
+	font-weight: 400;
+	/*border-bottom: 1px solid #383838;*/
+}
+
 .footer {
   min-height: 20vh;
   background-color: #383838;
@@ -304,7 +357,7 @@ iframe {
 }
 
 .footer .social {
-	margin-left: 9.8%;
+	margin-left: 10%;
 	padding: 0;
 	padding-top: 9vh;
 	/*width: 50%;*/
@@ -323,11 +376,13 @@ iframe {
 	font-size: 1.5em;
 	width: 35px;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer .fa:hover {
 	color: gray;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer a .fa {
@@ -336,13 +391,19 @@ iframe {
 
 .footer .site-name {
 	text-align: center;
-	margin-left: 23.5%;
+	position: absolute;
+	padding-top: 6.3vh;
+	margin-left: auto;
+	margin-right: auto;
+	left: 40%;
+	right: 40%;
 }
 
 .footer .site-name h2 {
 	font-family: 'Merriweather', serif;
 	color: #ffffff;
 	font-weight: 900;
+	padding: 0px;
 	font-size: 1.5em;
 	letter-spacing: 0.03em;
 	text-decoration: none;
@@ -351,15 +412,17 @@ iframe {
 .footer .site-name h2 a {
 	color: #ffffff;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer .site-name h2 a:hover {
 	color: gray;
 	text-decoration: none;
+	transition:0.3s;
 }
 
 .footer .address {
-	margin-right: 9.8%;
+	margin-right: 10%;
 	float: right;
 	padding-bottom: 2vh;
 	padding-top: 9vh;
@@ -371,11 +434,13 @@ iframe {
 	font-family: 'Rubik', sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
-	letter-spacing: 0.05em;
+	transition:0.3s;
+	z z-index: 50000;
 }
 
 .footer .address a:hover {
 	color: gray;
+	transition:0.3s;
 }
 
 /*Rad little highlighting selecton color trick*/
@@ -392,7 +457,8 @@ iframe {
 @media only screen and (max-width:1024px) {
 	.project_content {
 		width: 70%;
-		margin-left: 15%
+		margin-left: 15%;
+		padding-bottom: 10vh;
 	}
 
 	.title h2 {
@@ -402,6 +468,22 @@ iframe {
 	iframe {
 		width: 100%;
 		height: 400px;
+	}
+
+	.portfolio_categories {
+		margin-left: 0%;
+		padding-bottom: 10vh;
+	}
+
+	.portfolio_categories ul li {
+		display: block;
+		padding-left: 0;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.footer .site-name {
+		display: none;
 	}
 }
 
@@ -423,5 +505,41 @@ iframe {
 	iframe {
 		width: 100%;
 		height: 220px;
+	}
+
+	.footer {
+	  margin-bottom: 1.5vh;
+	  margin-left: 1.5vh;
+	  margin-right: 1.5vh;
+	  min-height: 30vh;
+	}
+
+	.footer .site-name {
+		display: none;
+	}
+
+	.footer .social {
+		position: absolute;
+		text-align: center;
+	    margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-top: 0vh;
+	}
+
+
+	.footer .fa {
+		font-size: 1.3em;
+	}
+
+	.footer .address a{
+		position: absolute;
+		margin-top: 10vh;
+		text-align: center;
+	    margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
 	}
 }
