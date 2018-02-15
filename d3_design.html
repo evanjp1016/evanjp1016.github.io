@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="project_info">
-			<p><span>Project Type:</span> User Experience Design, User Exerience Research</p>
+			<p><span>Project Type:</span> User Experience Design, User Experience Research</p>
 			<p><span>Date:</span> January 2018 - April 2018</p>
 			<p><span>Role:</span> User Experience Designer, User Experience Researcher</p>
 			<p><span>Work Setting:</span> Team of 4 collaborating with other student teams and multiple professional clients</p>
@@ -78,7 +78,7 @@
 
 
 		<div>
-			<h3>The Process</h3>
+			<h3>Research Phase</h3>
 			<h4>Competitive Analysis</h4>
 			<p>While D3 looks at other organizations that do similar work to them as <i>allies</i> rather than competitors, we still wanted to get a better feel for what the field looks like in terms of digital product design.</p>
 			<p>We identified two primary direct competitors, <a href="https://www.wprdc.org/" class="in_text_link" target="_blank">Western Pennsylvania Regional Data Center</a> and <a href="https://www.shiftresearchlab.org/" class="in_text_link" target="_blank">Shift Research Lab</a>, that we would analyze, looking at general design choices around the navigation of their websites, the hero space on their sites, and the organization of assets on their sites (especially tools and data if available).</p>
@@ -106,7 +106,7 @@
 
 			<p>
 
-			<h5>Open Data Protal Site</h5>
+			<h5>Open Data Portal Site</h5>
 			<ul>
 				<li>4 issues regard in <i>aesthetic and minimalist design</i> with a severity of 3 or higher (four of which have a severity of 4)</li>
 				<li>2 issues regarding <i>match between system and the real world</i> with a severity of 4</li>
@@ -131,10 +131,59 @@
 			<p>Our heuristic evaluations revealed numerous issues with the current and prototype sites, but since our severity ratings were subjective, we needed to conduct usability tests to validate our claims.</p>
 
 			<p>Though D3’s data primarily focuses on the Metro Detroit area and therefore would be most relevant to Detroit residents, we decided to conduct our first usability tests with Ann Arbor residents. This was more convenient for us for recruiting and scheduling purposes and allowed us to work out any unforeseen issues with our usability tests before visiting Detroit to talk with a more ideal user-base. Traveling to Detroit would be beneficial to assess how users within the community interact with D3’s site.</p>
+
+			<p>Our team recruited participants for the three user groups, conducting five tests in total:</p>
+
+			<p><h5>Urban Planners</h5>
+				<ul>
+					<li>A faculty member of the Taubman College of Architecture and Urban Planning at the University of Michigan</li>
+				</ul>
+			</p>
+			<p><h5>Individuals that regularly work with data</h5>
+				<ul>
+					<li>A senior at the University of Michigan studying information analytics</li>
+					<li>A senior at the University of Michigan studying statistics and psychology</li>
+				</ul>
+			</p>
+			<p><h5>Individuals interested in community information but with little/no data experience</h5>
+				<ul>
+					<li>A sophomore at the University of Michigan studying communications</li>
+					<li>A senior at the University of Michigan studying English</li>
+				</ul>
+			</p>
+
+			<h4>Card Sorting</h4>
+			<p>We conducted open card sorting with individuals using the content from D3’s Navigation Bar on their prototype.</p>
+			<img src="static/cardsorting-01.png" alt="D3 Card Sorting">
+			<p><h5>First participant created four categories:</h5>
+				<ul>
+					<li>D3 Assets</li>
+					<li>About</li>
+					<li>User Interaction</li>
+					<li>Miscellaneous</li>
+				</ul>
+			</p>
+			<p><h5>Second participant created four categories:</h5>
+				<ul>
+					<li>Who We Are</li>
+					<li>History</li>
+					<li>Resources</li>
+					<li>Outliers (Blog)</li>
+				</ul>
+			</p>
+			<p><h5>Third participant created five categories:</h5>
+				<ul>
+					<li>Core Product/Purpose</li>
+					<li>“About” Info</li>
+					<li>“Join” Info</li>
+					<li>“Helpful” Info</li>
+					<li>Outliers (Blog, Other Resources)</li>
+				</ul>
+			</p>
 		</div>
 
 		<div>
-			<h3>Preliminary Findings</h3>
+			<h3>Key Findings</h3>
 			<p>We label these findings as "preliminary" as we have not tested with Detroit-based users yet. We feel as though research with these Detroit-based users will produce more accurate or relevant results.</p>
 
 			<h4>Findings from Usability Tests and Heuristic Evaluation</h4>
@@ -153,7 +202,7 @@
 			<h5>Unseen Search and Filtering</h5>
 			<p><i>On the current site’s Portfolio page, the search and filtering mechanism is not obvious. Many users were drawn to the colored containers for tools, projects, datasets, etc. and didn’t notice that it was possible to search for a particular resource. Therefore, when asked to find a particular resource, users spent a long time searching each container instead of simply searching for the tool.</i>
 			<ul>
-				<li>2 of 4 user testers did not notice search and filtering machanism</li>
+				<li>2 of 4 user testers did not notice search and filtering mechanism</li>
 				<li>User testing validated this issue, which we had originally noted in heuristic evaluations</li>
 			</ul>
 			</p>
@@ -184,7 +233,7 @@
 			<h5>Excessive Hover Effects and Animations</h5>
 			<p><i>On the prototype site, an overuse of hover effects and animations are used for interactions, complicating a user’s access to important information. The prevalence and intensity of the animations disorients the user and hinders their ability to find this information quickly.</i>
 			<ul>
-				<li>2 of 4 user testers commented and/or displayed concern with the numerous hover effects nad animations.</li>
+				<li>2 of 4 user testers commented and/or displayed concern with the numerous hover effects and animations.</li>
 				<li>According to an Urban Planner that we tested with, “the flash is a little unnecessary.”</li>
 			</ul>
 			</p>
@@ -194,32 +243,41 @@
 		</div>
 
 		<div>
+			<h3>Design Requirements</h3>
+			<h4>Must Have</h4>
+			<ul>
+				<li>Better communicate what data is and why it is helpful in decision making</li>
+				<li>Better communicate what D3 is and how it is useful</li>
+				<li>Restructure listing of tools to be comprehensive and scalable</li>
+				<li>Organize the site so important resources are salient for the user</li>
+			</ul>
+			<h4>Should Have</h4>
+			<ul>
+				<li>Remove data jargon to make the site understandable</li>
+			</ul>
+			<h4>Nice to Have</h4>
+			<ul>
+				<li>Improve the visual design of the site</li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>Design Phase</h3>
+			<h4>Brainstorming</h4>
+			<p>We began our design phase by listing and organizing ideas on how to address each of the four "Must Have" design requirements that we identified based on our research.</p>
+			<img src="static/brainstorming-01.png" alt="D3 Brainstorming">
+		</div>
+
+		<div>
 
 			<h3>Next Steps</h3>
 			<h4>Visit Detroit</h4>
-			<p>We are currently coordinating a trip with our counterparts from the School of Business and the School of Social Work in the coming weeks to conduct further usability tests, interviews, and card sorting exercises in Detroit. We are currently in the process of scheduling this trip and contacting current and potential users to align possible meeting times.</p>
+			<p>We are currently coordinating a trip with our counterparts from the School of Business and the School of Social Work in the coming weeks to test prototypes of our designs and run interviews with stakeholders and current/potential users of the D3 site.</p>
 
 			<p>With the findings we collect from Detroit, we plan to revise our personas and create user journeys in order to better assist our decision making in the design phase of this project.</p>
 
-			<h4>Address Our Core Issues</h4>
-			<p>What is data? How does data inform decision making? How does this affect Detroit? How would you expect to use data? What does a data tool look like? How would you find a data tool?</p>
-			<p>These seemingly simple questions can give great insight into the core issues that we need to create solutions for. Not everybody what data looks like, how it is used, or even what it is at a fundamental level. So far, our team has neglected to understand these core issues. We have been operating under the assumption that people know what data is and how it can be used. This is not a good assumption.</p>
-			<p>To better understand how to design our solutions, we must ask users these questions before they even touch a D3 website. We need to understand what people do and do not understand about the concept of data and informed decision making. We must then design to clear up any confusion and misunderstanding about data and how to use it beneficially.</p>
-
-			<h4>Design Phase</h4>
-			<p>Throughout the process of our UX research, we have been brainstorming design solutions at a very basic and broad level. In the coming days, we plan to begin the first concrete steps of the design phase: sketching solutions. This will allow us to contemplate many different ideas and move further into low fidelity prototypes. Weeks from now, we will have developed numerous lo-fi prototypes, received feedback on these prototypes from potential users, and began creating hi-fi prototypes that we intend to hand over to D3 as deliverables for them to possibly implement into their new website.</p>
-
-			<p>While we have not started this design phase yet, our primary workflow plan is to follow an agile workflow. This will ensure that we constantly take user and stakeholder feedback into account and continually revise our designs in order to produce the best product possible within our time constraints.</p>
-
-			<h5>Initial Design Requirements</h5>
-			<p>
-				<ul>
-					<li>Answer the question, "what is data and how can it help me?"</li>
-					<li>Answer the question, "what is D3 and how can it help me?</li>
-					<li>Comprehensive, scalable organization of tools and datasets</li>
-					<li>Important information obvious and clear</li>
-				</ul>
-			</p>
+			<h4>Narrow Down Design Choices</h4>
+			<p>In moving forward with our design phase, we will need to choose specific ideas from brainstorming that we would like to further explore. We will then proceed with sketching, wireframing, lo-fi prototypes, and hi-fi prototypes while constantly looking for user and stakeholder feedback. We are working to implement an agile workflow for our design phase that relies heavily on feedback in order to refine our ideas and solutions.</p>
 		</div>
 
 		<div>
