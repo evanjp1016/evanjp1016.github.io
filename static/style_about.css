@@ -150,9 +150,9 @@ body {
 	margin-left: 9%;
 	margin-top: 7vh;
 	font-family: 'Rubik', sans-serif;
-	font-weight: 500;
-	font-size: 4.45em;
-	line-height: 1.1em;
+	font-weight: 400;
+	font-size: 3.3em;
+	line-height: 1.3em;
 	width: 80%;
 	padding-bottom: 2vh;
 	/*padding-left: 50px;*/
@@ -165,7 +165,7 @@ body {
 }
 
 .content .jumbotron .i_want{
-	font-size: 3.8em;
+	font-size: 3.3em;
 }
 
 .content .jumbotron .extra_info {
@@ -305,13 +305,13 @@ body {
 }
 
 .arrows i {
-	font-size: 1.8em;
+	font-size: 3em;
 	color: #ffffff;
 	margin: 0;
-	margin-right: 5px;
-	padding: 10px 18px 10px 18px;
+	margin-right: 40px;
+	/*padding: 10px 18px 10px 18px;
 	border: 1px solid #ffffff;
-	border-radius: 50px;
+	border-radius: 50px;*/
 	text-align:center;
     vertical-align:middle;
 	transition: 0.3s;
@@ -322,8 +322,7 @@ body {
 }
 
 .arrows i:hover {
-	color: #0026c4;
-	background-color: #ffffff;
+	opacity: 0.5;
 	transition: 0.3s;
 
 }
@@ -350,7 +349,7 @@ body {
 	/*margin-top: 9vh;*/
 	color: #ffffff;
 	font-family: 'Rubik', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 1.3em;
 	opacity: 0;
 	animation:opac 1s;

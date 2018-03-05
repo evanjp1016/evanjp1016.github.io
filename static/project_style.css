@@ -134,7 +134,7 @@ body {
 
 .title h2 {
 	font-size: 4em;
-	font-weight: 500;
+	font-weight: 400;
 	text-align: left;
 	padding-bottom: 0;
 	opacity: 0;
@@ -159,7 +159,7 @@ body {
 
 .project_content h3 {
 	font-size: 1.7em;
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 0.03em;
 	text-align: left;
 	margin-top: 0;
