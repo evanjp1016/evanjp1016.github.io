@@ -12,7 +12,7 @@ body {
 	}
 
 .wrapper {
-  min-height: 75vh;
+  min-height: 80vh;
   margin: 2vh;
   background-color: #f4f3ed;
 }
@@ -161,7 +161,7 @@ body {
 	color: #383838;
 	margin-left: 9%;
 	padding-top: 12vh;
-	padding-bottom: 18vh;
+	/*padding-bottom: 18vh;*/
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
 	font-size: 3.3em;
@@ -547,6 +547,21 @@ body {
 
 /*#########################################################################################################*/
 /*Animations*/
+
+@keyframes color {
+	0% {background-color: #ffffff;}
+	100% {background-color: #f4f3ed;}
+}
+
+@-moz-keyframes color {
+	0% {background-color: #ffffff;}
+	100% {background-color: #f4f3ed;}
+}
+
+@-webkit-keyframes color {
+	0% {background-color: #ffffff;}
+	100% {background-color: #f4f3ed;}
+}
 
 @keyframes opac {
   0% {opacity:0;}
