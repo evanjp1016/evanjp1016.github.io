@@ -893,6 +893,10 @@ body {
 		background-color: #ffffff;
 	}
 
+	.wrapper {
+		min-height: 90vh;
+	}
+
 	.content .jumbotron p{
 		font-size: 3em;
 		letter-spacing: 0em;
@@ -976,7 +980,7 @@ body {
 
 	.wrapper {
 		margin: 1.5vh;
-		min-height: 70vh;
+		min-height: 90vh;
 	}
 
 	.header .site-title {
