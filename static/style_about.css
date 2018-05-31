@@ -13,10 +13,7 @@ body {
 
 .wrapper {
   min-height: 96vh;
-  margin-top: 12vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  /*margin: 2vh;*/
+  margin: 2vh;
   background-color: #0026c4;
 }
 

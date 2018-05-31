@@ -28,88 +28,104 @@
 		</a>
 	</div>
 
+	<div>
+		<div class="overview">
+			<p>AMON <span>is a low-cost, high quality network monitoring application that allows for real-time visualization of traffic intensity and structure over a network interface, identification of heavy-hitters, and detection of high-impact events such as DDoS attacks.</span></p>
+		</div>
+		<img src="static/project-headers/merit-header.png" class="top_image" alt="Merit User Dashboard">
+	</div>
+
 	<div class="project_content">
 		<div class="title">
-			<div class="top_image">
-				<img src="static/merit_top_image-01.png" alt="Merit User Dashboard">
-			</div>
 			<h2>Merit Network Internship</h2>
 		</div>
 
 		<div class="project_info">
-			<p><span>Project Type:</span> Front-end Software Engineering</p>
+			<p><span>Type:</span> Front-end Software Engineering</p>
+			<p><span>Role:</span> Front-end Software Engineer, UX Designer</p>
+			<p><span>Team:</span> 6 software engineers, varying from undergraduate to PhD level experience</p>
 			<p><span>Date:</span> May 2017 - April 2018</p>
-			<p><span>Role:</span> Front-end Software Engineer and UX Designer</p>
-			<p><span>Work Setting:</span> Team of 6</p>
-			<p><span>Tools:</span> Python, Pandas, Bokeh, HTML, CSS, JavaScript</p>
-
 		</div>
 
 		<h3>The Project</h3>
 
 		<div>
-			<h4>Overview</h4>
+			<h4>The Problem</h4>
 			<p>
-			In May of 2017, I started my internship with Merit Network, a nonprofit organization providing high-performance computer networking and related services to educational, government, health care, and nonprofit organizations in Michigan. My first meeting discussed querying MongoDB databases to display source and destination IP addresses using information provided through a Boyer-Moore algorithm. The only command line commands I knew were <i>cd</i> and <i>ls</i> to either change the current directory or list the contents of the current directory. I was stumped when my supervisor asked me to use the <i>ssh</i> command on the first day. Confused and overwhelmed, I tried to figure out how this played into the user experience design role I thought I had signed up for.
+				Many smaller organizations cannot afford other commercial network analysis solutions, some of which cost hundreds of thousands of dollars. With this in mind, our product targets these smaller organizations, providing them with a low-cost, high-quality alternative to other commercial products.
 			</p>
+			<h4>My Role</h4>
 			<p>
-			After a week full of questions, reading, and learning I had a better understanding of what I was actually doing. From front-end software development and data visualization to user experience and graphic design, I realized that I would be wearing many hats during this internship. 
+				My role with AMON was to rapidly develop prototypes of new data visualization and database query applications. Simply put, if we wanted to try out a new feature for the AMON Dashboard, I would create it using Python and its Bokeh and Pandas libraries. With approximately 12 functional, prototyped applications, we decided to turn this “Bokeh Dashboard” into an onboarding dashboard that customers would use as a trial to test and learn how the AMON Dashboard works before purchasing the full software package.
 			</p>
 		</div>
 
-		<h3>Summer Internship Summary</h3>
+		<h3>The Process</h3>
 
 		<div>
 			<p>
-			For the first three months of my internship, I settled into a role as a front-end software engineer where I would be prototyping 10 features for the network monitoring project I would be working on, titled AMON (All-packet MONitor). This entailed creating data visualizations regarding network traffic and anomalies in this traffic (potential cyber attacks). I would create small web applications using the Python programming language, the Pandas data manipulation module for Python, the Bokeh data visualization module for Python, and a bit of general HTML, CSS, and JavaScript. These applications were working prototypes of features that will eventually be built into the official dashboard for AMON.
+				My work pulls data from our AMON databases that collect information on all of our network traffic and visualizes this traffic based on the amount of traffic that is flowing over the network in terms of source and destination IP addresses.
 			</p>
 
-			<img src="static/merit_dev-05.png" alt="Merit Development Bokeh Application">
-			<img src="static/merit_dev-04.png" alt="Merit Development Bokeh Application">
-			<img src="static/merit_dev-02.png" alt="Merit Development Bokeh Application">
+			<p>
+				To better understand this, you can think of it like physical mail/post, such as letters and packages, entering and leaving the state of Michigan. In this case, my work would basically be to look at the sending and receiving address for each piece of mail and the volume of that mail. With this information, I am able to visualize in real-time where mail/post is being sent and received and how much mail is being moved between these addresses.
+			</p>
+
+			<h4>Examples</h4>
+			<p>
+				The visualization that started it all is known as the IP Pair. This displays all the network traffic in a single visualization that updates in real time every three seconds. While this feature was already implemented in PHP on the AMON Dashboard when I joined the team, my first step was to recreate this visualization with Python and Bokeh, the Python visualization library that I mentioned earlier.
+			</p>
+
+			<img src="static/merit/bokeh-app-04.png" alt="Live IP Pair Bokeh Application">
+
+			<p>
+				The next step was to start prototyping new visualizations of the network data. First, I developed an application that allows a user to look at past IP Pair visualization using sliders to change the date and time of data that they are viewing.
+			</p>
+
+			<img src="static/merit/bokeh-app-03.png" alt="Historic Databrick Bokeh Application">
+
+			<p>
+				Next, I developed an application that visualizes the total traffic flowing over the network in real-time.
+			</p>
+
+			<img src="static/merit/bokeh-app-02.png" alt="Live Total Traffic Bokeh Application">
+
+			<p>
+				After implementing numerous other visualization applications, I began working on creating applications that allow for more a granular look at the data, such as listing alert information on possible internet attacks such as DDoS attacks, or visualizations of subnets within the data (to look at network traffic only entering or leaving from a certain sub-network such as the University of Michigan).
+			</p>
+
+			<img src="static/merit/bokeh-app-01.png" alt="Alerts Bokeh Application">
+
 		</div>
 
-		<h3>Fall Internship Extension Summary</h3>
+		<h3>Next Steps</h3>
 
 		<div>
 			<p>
-			In the fall of 2017, my internship was extended with funding from a grant received by the statistics department of the University of Michigan. This portion of my internship was an basically just a continuation of my summer internship with a bit more of a focus on the anomaly detection side of the project. 
+				In total, I have 10 prototyped, functional applications built. The main issue that another intern and I realized was that while my rapid prototyping was working well, the actual AMON dashboard was suffering from its construction using a PHP web development framework. With this in mind, we decided to replicate the AMON Dashboard using a Python web development framework called Flask. Flask is lightweight, allows for easier adoption when this project becomes available as an open-source project, and allows for incorporation of the Bokeh applications that I have built.  
 			</p>
+
 			<p>
-			Some of the backend engineers and statisticians that I was working with on the project over the summer had created software that would detect any anomalies in network traffic and deposit data on the event into a specified database. A related “forensics” database would give more information on the event.
+				Now that we have the skeleton and a few features built using Flask, the next steps are to implement my Bokeh applications, style the AMON Dashboard, and situate everything in a manner that allows for easy hand-off to the next wave of developers that will be working on AMON.
 			</p>
-			<p>
-			My work for the fall internship was focused around using these anomaly detection databases to prototype a few new features that displayed this data in a more user-friendly manner.
-			</p>
-			<img src="static/merit_dev-03.png" alt="Merit Development Bokeh Application">
+
+			<img src="static/merit/new-dashboard-01.png" alt="Flask-based AMON Dashboard">
 		</div>
 
-		<h3>Winter Internship Extension Summary</h3>
-
-		<div>
-			<p>
-			Fortunately, the statistics grant was extended for the winter of 2018 as well. This portion of my internship is focused around two primary areas:
-			</p>
-			<p>
-			1) Completing a few more feature prototypes dealing with subnets within the larger network provided by Merit. (i.e. the user could view incoming network traffic specifically to the University of Michigan)
-			</p>
-			<p>
-			2) Utilizing all of the prototypes I’ve created to develop an onboarding application for organizations that would like to test and learn the AMON software before actually purchasing the full software package. 
-			</p>
-
-			<img src="static/merit_dev-01.png" alt="Merit Development Bokeh Application">
-
-			<p class="caption">
-			Concept of onboarding dashboard (development still in progress)
-			</p>
-		</div>
+		<h3>What Did I Learn?</h3>
 
 	</div>
 
 	<div class="portfolio_categories">
 		<ul>
+			<li><a href="d3_design.html">Data Driven Detroit</a></li>
 			<li><a href="merit_development.html" class="current_category">Merit Network</a></li>
-			<li><a href="umich_art_development.html">Umich + ART</a></li>
+			<li><a href="automate_design.html">AutoMate</a></li>
+			<li><a href="mashf_design.html">AutoMate</a></li>
+			<li><a href="mmb_design.html">MMB</a></li>
+			<li><a href="dailyui_design.html">Daily UI</a></li>
+			<li><a href="solar_design.html">Solar Car</a></li>
+			<li><a href="reimagine_muskegon.html">Reimagine Muskegon</a></li>
 		</ul>
 	</div>
 
