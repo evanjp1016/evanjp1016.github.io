@@ -28,72 +28,105 @@
 		</a>
 	</div>
 
-	<div class="project_content">
-		<div class="title">
-			<div class="top_image">
-				<img src="static/reimagine_cover-01-01.png" alt="Reimagine Muskegon Cover Photo">
-			</div>
-			<h2>Reimagine Muskegon</h2>
+	<div>
+		<img src="static/merit/cover-test-01.png" class="top_image" alt="Merit User Dashboard">
+	</div>
+
+	<div class="project_header">
+		<div class="title mkg-color">
+			<p>May 2017 - Present</p>
+			<h2>
+				Reimagine Muskegon</br>
+				<span class="subtitle">Education and engagement through urban design</span>
+			</h2>
 		</div>
-		
 
 		<div class="project_info">
-			<p><span>Project Type:</span> Urban Design, Social Media, Community Engagement</p>
-			<p><span>Date:</span> 2014 - 2016</p>
-			<p><span>Role:</span> Co Founder, Writer, Designer</p>
-			<p><span>Work Setting:</span> Team of 2</p>
-			<p><span>Goal:</span> Educate the general public of complex urban planning and design issues in Muskegon, Michigan</p>
+			<div class="infobit-context">
+				<span>Context:</span>
+				<p>Reimagine Muskegon was a social media based project founded by myself and one other</p>
+			</div>
+
+			<div class="infobit">
+				<span>Role:</span>
+				<p>Research</br>
+				Writing</br>
+				Graphic Design</p>
+			</div>
+
+			<div class="infobit">
+				<span>Team:</span>
+				<p>1 Designer (me)</br>
+				1 Urban Planner</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="project_content">
+
+		<div class="project_section">
+			<h3 class="mkg-color">The Project</h3>
+			<h4>The Problem</h4>
+			<p><i>Residents of Muskegon, Michigan need a convenient way to learn about urban planning/design efforts in the area and a dependable way to provide community input towards these efforts so they can play a valid role in the growth of the city.</i></p>
+
+			<p class="last-p">Aside from personal research or sporadic local news, both of which rarely move beyond surface level analysis, Muskegon residents lack a source of education on urban planning and design efforts in the area. Our solution, Reimagine Muskegon, was a social media-based project promoting community, diversity, and city strength through education and contextualization of urban design in Muskegon.</p>
+
+			<h4>My Role</h4>
+			<p class="last-p">Our role with this project was to educate the general public on the development, form, and function of urban areas in Muskegon, and promote community discussion about these topics. In terms of our educational role, we focused on historic and present day context, social impact, and future growth of these urban areas. In addition to these educational efforts, we also focus on promoting discussion amongst our followers, frequently asking open questions and gauging opinions on topics.</p>
+
+			<h4>Staying Anonymous</h4>
+			<p>While I had sufficient knowledge of urban planning and design concepts and my partner in the project received a degree in Architecture and Urban Planning, the majority of our work with Reimagine Muskegon was based in extensive research on each topic we would cover. With this, we never revealed our identities to the public while the project was active in order to avoid our ages or backgrounds playing any role in the perceived validity of our work.</p>
 		</div>
 
-		<h3>The Project</h3>
+		<div class="project_section">
+			<h3 class="mkg-color">The Process</h3>
+			<h4>Taking Shape</h4>
+			<p class="last-p">With this broad concept of “promoting community, diversity, and city strength through education and contextualization of urban design” we had plenty of options as to how we would actually formulate this project.</p>
+			
+			<h4>What Started it All</h4>
+			<p class="last-p">The visualization that started it all is known as the IP Pair. This displays all the network traffic in a single, real-time visualization that updates every three seconds to show current traffic. While this feature was already implemented in PHP on the AMON Dashboard when I joined the team, my first step was to recreate this visualization for my Python-based, Bokeh Dashboard.</p>
+			<img src="static/merit/bokeh-app-04.png" alt="Live IP Pair Bokeh Application">
 
-		<div>
-			<h4>Overview</h4>
-			<p>
-			Reimagine Muskegon was a social media-based project promoting community, diversity, and city strength through urban design in Muskegon, MI. The general structure of the project involved, identifying topics of discussion - dealing with urban planning/design or urban spaces in Muskegon - and creating social media posts with an accompanying graphic to visualize the context and title of the post. These posts, primarily shared on Facebook, would include basic information on the topic, the history, and our points of discussion. In the comment section, community members would engage with one another other to discuss the post and share ideas and thoughts.
-			</p>
+			<h4>Developing New Features</h4>
+			<p class="last-p">After this small application was complete, the next step was to start prototyping new visualizations of the network data. First, I developed an application that allows a user to look at past IP Pair visualization using sliders to change the date and time of data that they are viewing.</p>
+			<img src="static/merit/bokeh-app-03.png" alt="Historic Databrick Bokeh Application">
 
-			<p>The name was a play on a 2003 community design workshop titled <a href="https://www.muskegon-mi.gov/cresources/imagine-muskegon.pdf" target="_blank" class="in_text_link">“Imagine Muskegon”</a>. This 2003 workshop sought to take advantage of public input over three days and create a plan for a reimagined downtown Muskegon, MI.</p>
-			<p>This was the third social media-based project we created. Our earlier initiatives included Western Avenue Soccer Project, a proposal to create a small soccer field on one of the numerous vacant lots in downtown Muskegon, and Skee Town Ship Shop, a concept for a  mobile pop-up-shop venue in Muskegon based out of a refurbished shipping container. Both of these earlier projects received interest by city affiliated organizations, but both projects faded as the officials and organizations lost interest when they realized we were no more experienced than college students.</p>
-			<p>We decided to remain anonymous for Reimagine Muskegon and let our work speak for itself.</p>
+			<p class="last-p">Next, I developed an application that visualizes the total traffic flowing over the network in real-time as well as multiple other simple applications to visualize similar network traffic data.</p>
 
-			<p><a href="https://www.facebook.com/reimaginemuskegon/" target="_blank" class="in_text_link">Visit Reimagine Muskegon on Facebook</a></p>
-			<p><a href="https://twitter.com/reimagine_mkg?lang=en" target="_blank" class="in_text_link">Visit Reimagine Muskegon on Twitter</a></p>
+			<img src="static/merit/bokeh-app-02.png" alt="Live Total Traffic Bokeh Application">
+
+			<h4>More Advanced Applications</h4>
+			<p class="last-p">After implementing numerous other visualization applications, I began working on creating applications that allow for more a granular look at the data, such as listing alert information on possible internet attacks like DDoS attacks, or visualizations of subnets within the data to look at network traffic only entering or leaving from a certain sub-network such as the University of Michigan.</p>
+
+			<img src="static/merit/bokeh-app-01.png" alt="Alerts Bokeh Application">
+
+			<h4>Connecting the Dots</h4>
+			<p class="last-p">In total, I have 10 prototyped, functional applications built. The main issue that another developer and I realized was that while my rapid prototyping was working smoothly, the actual AMON Dashboard was suffering from its construction using a PHP web development framework. With this in mind, we decided to replicate the AMON Dashboard using a Python web development framework called Flask. Flask is lightweight, allows for easier adoption when this project becomes available as an open-source project, and allows for incorporation of the Bokeh applications that I have built.</p>
+			<img src="static/merit/new-dashboard-01.png" alt="Flask-based AMON Dashboard">
+
+			<p>Now that we have the skeleton and a few features built using Flask, the next steps are to implement my Bokeh applications, and situate everything in a manner that allows for easy hand-off to the next wave of developers that will be working on AMON.</p>
 		</div>
 
-		<h3>The Product</h3>
+		<div class="project_section">
+			<h3 class="merit-color">Takeaways</h3>
+			<h4>Asking Questions</h4>
+			<p class="last-p">Coming into the project, I found myself in a position where I had not been throughout my education or other jobs I’ve had: utter confusion. Throughout my education, I could almost always get by without admitting my confusion. I could read a textbook or wait for another student to ask the question that I had. At Merit, however, nobody was there to ask these questions for me, and randomly picking articles and documentation to read about the subject often felt like reading a foreign language. I quickly learned that I had to admit my confusion and ask questions, even about seemingly simple concepts, to ensure that I could move forward in the project.</p>
 
-		<div>
-			<h4>Following</h4>
-			<p>Throughout the course of the project, we reached thousands (9,745 on our most viewed post) of individuals and gained following and support of over 600 users between Facebook and Twitter, including numerous Muskegon city officials and outside organizations.</p>
-
-		</br>
-
-			<h4>Reaching Goals</h4>
-			<p>We succeeded with our goal to educate the general public of complex urban planning and design issues in a simple way that would foster engaged discussion without much guidance or mediation from us as administrators.</p>
-
-			<!-- <h3>Our Followers</h3> -->
-		</div>
-		<div>
-			<img src="static/reimagine_post-03.png" alt="Reimagine Muskegon Post">
-			<img src="static/reimagine_post-02.png" alt="Reimagine Muskegon Post">
-			<img src="static/reimagine_post-01.png" alt="Reimagine Muskegon Post">
+			<h4>Applying Prior Experience to New Fields</h4>
+			<p>Aside from asking for help to understand the field that I was working in, I find myself in a position where I am able to explore the relationship between my experience in design with the work I am doing with internet networks and security. My work at Merit is to not only to develop applications for our AMON software, but also to ensure that what we are building offers a simple interface for people to interact with and understand the data they observe. While the concept of internet networks and security was a new field to me, the way people interact with the applications that let them explore this field ties back to all the experience I have with user experience design and human computer interaction.</p>
 		</div>
 
-
-
-		<!-- <div>
-			<h3>Our Followers</h3>
-			<p>Throughout the course of the project, we reached thousands of individuals and gained following and support of over 600 users between Facebook and Twitter, including numerous Muskegon city officials and outside organizations.</p>
-		</div> -->
 	</div>
 
 	<div class="portfolio_categories">
 		<ul>
+			<li><a href="d3_design.html">Data Driven Detroit</a></li>
+			<li><a href="merit_development.html">Merit Network</a></li>
+			<li><a href="lifework.html">Lifework</a></li>
+			<li><a href="automate_design.html">AutoMate</a></li>
+			<li><a href="mmb_design.html">MMB</a></li>
+			<li><a href="solar_design.html">Solar Car</a></li>
 			<li><a href="reimagine_muskegon.html" class="current_category">Reimagine Muskegon</a></li>
-			<li><a href="short_films.html">Short Films</a></li>
-			<li><a href="young_veggie_music.html">Young Veggie</a></li>
-			<li><a href="tallboys_music.html">Ronnie and the Tallboys</a></li>
 		</ul>
 	</div>
 
@@ -115,7 +148,7 @@
 		</div> -->
 
 		<div class="address">
-			<p>Hit me up!</br><a href="mailto:epesch@umich.edu?Subject=Fresch%20Connection" target="_top">epesch@umich.edu</a></p>
+			<p>Say "Hello"</br><a href="mailto:epesch@umich.edu?Subject=Fresch%20Connection" target="_top">epesch@umich.edu</a></p>
 		</div>
 
 		<!-- footer -->
