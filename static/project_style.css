@@ -120,6 +120,19 @@ body {
 	-webkit-animation-fill-mode: forwards;
 }
 
+.sm_top_image {
+	display: none;
+	padding-bottom: 70px;
+	opacity: 0;
+	width: 100%;
+	animation:opac 1s;
+	-moz-animation:opac 1s; /* Firefox */
+	-webkit-animation:opac 1s; /* Safari and Chrome */
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+	-webkit-animation-fill-mode: forwards;
+}
+
 
 
 @keyframes moveup {
@@ -152,8 +165,8 @@ body {
 }
 
 .project_header {
-	width: 60%;
-	margin-left: 20%;
+	width: 50%;
+	margin-left: 25%;
 	padding: 0;
 	font-family: 'Rubik', sans-serif;
 	opacity: 0;
@@ -176,7 +189,7 @@ body {
 }
 
 .title h2 {
-	font-size: 3em;
+	font-size: 2.7em;
 	font-weight: 300;
 	text-align: left;
 	line-height: 1.2em;
@@ -244,8 +257,8 @@ body {
 }
 
 .project_content {
-	width: 60%;
-	margin-left: 20%;
+	width: 50%;
+	margin-left: 25%;
 	padding-left: 0;
 	font-family: 'Rubik', sans-serif;
 	opacity: 0;
@@ -259,22 +272,31 @@ body {
 
 .project_content img {
 	width: 140%;
-	padding-top: 20px;
-	padding-bottom: 70px;
+	margin-top: 20px;
+	margin-bottom: 70px;
 	margin-left: -20%;
 }
 
-/*
-.project_content .thin {
+.project_content .small-img {
 	width: 100%;
 	margin-left: 0%;
 }
+
+.needs-border {
+	border: 1px solid #cccccc;
+}
+
+
+/*.project_content .thin {
+	width: 100%;
+	margin-left: 0%;
+}*/
 
 
 .project_content div {
 	padding-top: 20px;
 	padding-bottom: 30px;
-}*/
+}
 
 .project_section {
 	padding: 50px 0px 70px 0px;
@@ -330,6 +352,37 @@ body {
 	opacity: 0.5;
 	transition: 0.3s;
 }
+
+.project_content ol li{
+	padding-bottom: 20px;
+	font-size: 1.2em;
+	font-family: "Roboto", sans-serif;
+	color: #707070;
+}
+
+.project_content h5 {
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.listed-info {
+	margin-right: 5%;
+}
+
+.listed-info ul {
+	padding-bottom: 20px;
+	list-style-position: outside;
+	padding-left: 17px;
+}
+
+.listed-info ul li{
+	padding: 0;
+	font-size: 1.1em !important;
+	font-family: "Roboto", sans-serif;
+	color: #707070;
+}
+
 
 /*.project_content h5 {
 	font-size: 1.1em;
@@ -640,42 +693,26 @@ video {
 	color: #9da085;
 }
 
-@media only screen and (max-width: 1350px) {
-	.project_content h4 {
-		margin-left: -35% !important;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	.project_content h4 {
-		margin-left: -40% !important;
-	}
-}
-
 @media only screen and (max-width:1024px) {
+	.project_header {
+		width: 70%;
+		margin-left: 15%;
+		/*padding-bottom: 10vh;*/
+	}
+
 	.project_content {
 		width: 70%;
 		margin-left: 15%;
-		padding-bottom: 10vh;
+		/*padding-bottom: 10vh;*/
 	}
 
 	.project_content h4 {
-	font-size: 1.1em;
-	color: gray;
-	font-weight: 400;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	text-align: left;
-	margin-top: 0;
-	/*padding-top: 30px;*/
-	padding-bottom: 5px;
-	padding-right: 20px;
-	line-height: 2em;
-	opacity: 0;
-	margin-left: 0% !important;
-	float: none;
-	width: 100%;
-}
+		font-size: 1.7em;
+	}
+
+	.infobit-context {
+		width: 50%;
+	}
 
 	.title h2 {
 		font-size: 3em;
@@ -697,21 +734,45 @@ video {
 		text-align: center;
 		padding-bottom: 20px;
 	}
-
-	.footer .site-name {
-		display: none;
-	}
 }
 
-@media only screen and (max-width:580px) {
+@media only screen and (max-width:620px) {
+	.project_header {
+		width: 90%;
+		margin-left: 5%;
+		/*padding-bottom: 10vh;*/
+	}
+
 	.project_content {
 		width: 90%;
 		margin-left: 5%;
 		text-align: left;
 	}
 
+	.project_content p {
+		font-size: 1.1em;
+	}
+
+	.project_content img {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.infobit-context {
+		width: 90%;
+	}
+
 	.go_back a {
+		padding-top: 20px;
 		padding-left: 5%;
+	}
+
+	.top_image {
+		display: none;
+	}
+
+	.sm_top_image {
+		display: block;
 	}
 
 	.title h2 {
@@ -721,41 +782,5 @@ video {
 	iframe {
 		width: 100%;
 		height: 220px;
-	}
-
-	.footer {
-	  margin-bottom: 1.5vh;
-	  margin-left: 1.5vh;
-	  margin-right: 1.5vh;
-	  min-height: 30vh;
-	}
-
-	.footer .site-name {
-		display: none;
-	}
-
-	.footer .social {
-		position: absolute;
-		text-align: center;
-	    margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
-		margin-top: 0vh;
-	}
-
-
-	.footer .fa {
-		font-size: 1.3em;
-	}
-
-	.footer .address a{
-		position: absolute;
-		margin-top: 10vh;
-		text-align: center;
-	    margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
 	}
 }
