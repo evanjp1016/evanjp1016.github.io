@@ -413,9 +413,9 @@ table.t02 tr:nth-child(odd) {
 }
 
 iframe {
-	width: 100%;
-	height: 470px;
-	/*padding-top: 10px*/
+	width: 140%;
+	height: 670px;
+	margin-left: -20%;
 }
 
 iframe:not(:last-child) {
