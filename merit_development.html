@@ -56,7 +56,7 @@
 
 			<div class="infobit">
 				<span>Team</span>
-				<p>6 software engineers</br>
+				<p>6 engineers/data scientists</br>
 					(undergraduate to</br>
 					PhD level experience)</p>
 			</div>
@@ -72,28 +72,28 @@
 
 		<div class="project_section">
 			<h3 class="merit-color">The Project</h3>
-			<span class="summary">Small and medium-sized organizations need a low-cost, high quality network monitoring solution so they can know what is happening in their internet network and stay secure. My role: design and develop prototypes and a trial/onboarding version of this software, known as AMON.</span>
+			<span class="summary">Small internet service organizations need a low-cost, high-quality network security and monitoring solution so they can better understand and monitor their internet networks. My role: rapidly design and develop prototypes for this network monitoring software, known as AMON.</span>
 
 			<h4>The Problem</h4>
-			<p class="last-p">Many small and medium-sized organizations cannot afford other commercial network analysis solutions, some of which cost hundreds of thousands of dollars. Our solution, AMON, is a low-cost, high quality network monitoring application that allows for real-time visualization of traffic intensity and structure over a network interface, identification of heavy-hitters, and detection of high-impact events such as DDoS attacks. AMON targets these smaller organizations, providing them with a low-cost, high-quality alternative to other commercial products.</p>
+			<p class="last-p">Many small and medium-sized organizations cannot afford other commercial network analysis solutions, some of which cost hundreds of thousands of dollars. Our solution, AMON, is a low-cost, high-quality network monitoring application that allows for real-time visualization of traffic intensity and structure over a network interface, identification of heavy-hitters, and detection of high-impact events such as DDoS attacks. AMON targets these smaller organizations, providing them with a low-cost, high-quality alternative to other commercial products.</p>
 
 			<h4>My Role</h4>
-			<p>My role with AMON was to rapidly develop prototypes of new data visualization and database query applications. Simply put, if we wanted to try out a new feature for the AMON User Dashboard, I would create it using Python and its Bokeh and Pandas libraries. With 10+ functional, prototyped applications, we decided to pivot this “Bokeh Dashboard” from an internal prototyping tool into an onboarding dashboard that customers would use as a trial to test and learn how the AMON Dashboard works before purchasing the full software package.</p>
+			<p>My role with AMON was to rapidly develop prototypes of new data visualization and database query applications. Simply put, if we wanted to try out a new feature for the AMON User Dashboard, I would create it using Python and its Bokeh and Pandas libraries. These functional prototypes provide our team of engineers, statisticians, and data scientists with a simple dashboard interface to analyze, visualize, and uncover issues with our algorithms and data collection methods.</p>
 		</div>
 
 		<div class="project_section">
 			<h3 class="merit-color">The Process</h3>
-			<span class="summary">As an Internet Service Provider, Merit Network allows me to build and test applications that examine, explain, and visualize internet traffic flowing to or from IP addresses that fall under Merit’s internet service. </span>
+			<span class="summary">As an Internet Service Provider, Merit Network allows me to build and test applications that examine, explain, and visualize live internet traffic flowing to or from IP addresses that fall under Merit’s internet service.</span>
 
-			<h4>Simplifying Network Traffic</h4>
-			<p class="last-p">My work relies on the fact that Merit Network is an Internet Service Provider. Because of this, our AMON databases collect information on all of the network traffic flowing through Merit’s internet service. With this network information, I build applications to examine, explain, and visualize internet traffic flowing to or from IP addresses that fall under Merit’s internet service.</p>
+			<h4>Access to Live Internet Traffic</h4>
+			<p class="last-p">My work relies on the fact that Merit Network is an Internet Service Provider, which gives me access to live internet network traffic. Our AMON databases collect information on all of the network traffic flowing through Merit’s internet service. With this network information, I build applications to examine, explain, and visualize internet traffic flowing to or from IP addresses that fall under Merit’s internet service.</p>
 			
-			<h4>What Started it All</h4>
-			<p class="last-p">The visualization that started it all is known as the IP Pair. This displays all the network traffic in a single, real-time visualization that updates every three seconds to show current traffic. While this feature was already implemented in PHP on the AMON Dashboard when I joined the team, my first step was to recreate this visualization for my Python-based, Bokeh Dashboard.</p>
+			<h4>Visualizing Network Traffic</h4>
+			<p class="last-p">The primary visualization that displays this traffic is known as the IP Pair. This displays all the network traffic in a single, real-time visualization that updates every three seconds to show current traffic. While this feature was already implemented in PHP on the AMON Dashboard when I joined the team, my first step was to recreate this visualization for my Python-based, "Bokeh Dashboard".</p>
 			<img src="static/merit/bokeh-app-04.png" alt="Live IP Pair Bokeh Application" class="last-img">
 
 			<h4>Developing New Features</h4>
-			<p class="last-p">After this small application was complete, the next step was to start prototyping new visualizations of the network data. First, I developed an application that allows a user to look at past IP Pair visualization using sliders to change the date and time of data that they are viewing.</p>
+			<p class="last-p">After this small application was complete, the next step was to start prototyping new visualizations of the network data. First, I developed an application that allows a user to look at past IP Pair visualizations using sliders to change the date and time of data that they are viewing.</p>
 			<img src="static/merit/bokeh-app-03.png" alt="Historic Databrick Bokeh Application">
 
 			<p class="last-p">Next, I developed an application that visualizes the total traffic flowing over the network in real-time as well as multiple other simple applications to visualize similar network traffic data.</p>
@@ -101,7 +101,7 @@
 			<img src="static/merit/bokeh-app-02.png" alt="Live Total Traffic Bokeh Application">
 
 			<h4>More Advanced Applications</h4>
-			<p class="last-p">After implementing numerous other visualization applications, I began working on creating applications that allow for more a granular look at the data, such as listing alert information on possible internet attacks like DDoS attacks, or visualizations of subnets within the data to look at network traffic only entering or leaving from a certain sub-network such as the University of Michigan.</p>
+			<p class="last-p">After implementing numerous other visualization applications, I began working on creating applications that allow for more a detailed look at the network data, such as listing alert information on possible internet attacks like DDoS attacks, or visualizations of subnets within the data to look at network traffic only entering or leaving from a certain sub-network such as the University of Michigan.</p>
 
 			<img src="static/merit/bokeh-app-01.png" alt="Alerts Bokeh Application">
 		</div>
@@ -111,7 +111,7 @@
 			<span class="summary">To start building a functional dashboard that connects my applications and provides a cohesive user experience, I used a Python web development framework called Flask.</span>
 
 			<h4>Connecting the Dots</h4>
-			<p class="last-p">In total, I have 10 functional applications built. The main issue that I now had to address was that while each application was working smoothly, it was not yet a “dashboard”. Each application had to be run on it’s own, and communication between each application was very limited due to the restrictions of building strictly with Python, Pandas, and Bokeh.  With this in mind, I decided to move forward and create my dashboard as a web application using a Python web development framework called Flask. Flask is lightweight, allows for easier adoption when this project becomes available as an open-source project, and allows for integration of the Bokeh applications that I have already built.</p>
+			<p class="last-p">At this point, I had 10 functional applications built. The main issue that I now had to address was that while each application was working smoothly, it was not yet a “dashboard”. Each application had to be run on it’s own, and communication between each application was very limited due to the restrictions of building strictly with Python, Pandas, and Bokeh.  With this in mind, I decided to move forward and create my dashboard as a web application using a Python web development framework called Flask. Flask allows simple passing of data and user input between web pages, simple integration of the Bokeh applications that I have already built, and overall easier adoption for future developers that will work on this project.</p>
 			<img src="static/merit/flask-dev-alerts.png" alt="Flask-based AMON Dashboard" class="needs-border">
 			<img src="static/merit/flask-dev-forensics.png" alt="Flask-based AMON Dashboard" class="needs-border">
 
