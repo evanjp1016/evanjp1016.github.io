@@ -341,9 +341,12 @@ body {
 }
 
 .project_content h5 {
-	font-size: 1.1em;
-	font-weight: 400;
-	color: #383838;
+	font-size: 1.4em;
+	font-weight: 500;
+	/*font-style: italic;*/
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 0px;
 }
 
 .listed-info {
@@ -611,6 +614,10 @@ video {
 
 .lifework-color {
 	color: #e1ae2e;
+}
+
+.automate-color {
+	color: #dd8619;
 }
 
 .mmb-color {
