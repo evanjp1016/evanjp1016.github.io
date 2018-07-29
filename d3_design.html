@@ -78,7 +78,6 @@
 
 			<h4>My Role</h4>
 			<p class="last-p">My team’s job: design this Toolbox.</br>
-			My team’s job: design the Toolbox.</br>
 			Made up of four UX students from the University of Michigan School of Information, my team worked directly with D3 to design their Toolbox. We focused on comprehension and scalability in order to help users better understand the function and capabilities of the data and resources that are offered.</p>
 
 			<!-- <h4>Detroit Data Utility</h4>
@@ -87,9 +86,9 @@
 
 		<div class="project_section">
 			<h3 class="d3-color">The Process: Research</h3>
-			<span class="summary">Starting with heuristic, competitive, and user research, we were able to identify key pain points of D3’s existing Toolbox designs to create 3 personas and develop 6 design requirements that would guide our design process.</span>
+			<span class="summary-with-caption">Starting with heuristic, competitive, and user research, we were able to identify key pain points of D3’s existing Toolbox designs to create 3 personas and develop 6 design requirements that would guide our design process.</span>
 
-			<p class="last-p">This reflection will focus on the primary results of our research. See more detailed results of our research <a href="#">here</a>.</p>
+			<p class="summary-caption"><i>This reflection will focus on the primary results of our research. See more detailed information on our research <a href="#">here</a>.</i></p>
 
 			<h4>D3’s Three Toolboxes</h4>
 			<p class="last-p">D3 offered three existing Toolboxes. One was on their public website, the second was on a D3 affiliated site known as D3’s Open Data Portal, and the third was a prototype in development that was shared privately with our team.</p>
@@ -113,33 +112,35 @@
 			</div> -->
 
 			<h4>Pain Point 1: Lack of Relevant Resource Information</h4>
-			<p>D3’s existing designs for their toolbox provided enough relevant information for people to skim the listed resources, but did not provide simple access to more granular information so people could understand each resource further. In addition, resources were not always categorized in a useful manner, resulting in a large, unstructured list of assets.</p>
+			<p class="last-p">D3’s existing designs for their toolbox provided enough relevant information for people to skim the listed resources, but did not provide simple access to more granular information so people could understand each resource further. In addition, resources were not always categorized in a useful manner, resulting in a large, unstructured list of assets.</p>
 
 			<h5>Rationale</h5>
-			<p class="last-p">Based on User testing:</br>
-			- 5 of 5 user testers had trouble quickly finding information they were tasked with searching for.
-			- Average task completion time was over 30 seconds, often due to time spent searching through resource listings without the ability to quickly find necessary information such as resource type (dataset, presentation, maps & infographics, etc.) or resource category (demographic, education, transportation, etc.).</p>
+			<ul class="last-p">
+				<li>5 of 5 user testers had trouble quickly finding information they were tasked with searching for.</li>
+				<li>Average task completion time was over 30 seconds, often due to time spent searching through resource listings without the ability to quickly find necessary information such as resource-type (dataset, presentation, maps & infographics, etc.) or resource category (demographic, education, transportation, etc.).</li>
+			</ul>
 
 			<!-- <h4>D3's Prototype Site</h4> -->
-			<img src="static/d3/resource-listing-02.png">
+			<img src="static/d3/resource-listing-02.png" class="large-img">
 
 			<!-- <h4>D3's Public Site</h4> -->
-			<img src="static/d3/resource-listing-01.png">
+			<img src="static/d3/resource-listing-01.png" class="large-img">
 
 			<!-- <h4>D3's Open Data Portal</h4> -->
-			<img src="static/d3/resource-listing-03.png">
+			<img src="static/d3/resource-listing-03.png" class="large-img">
 
 			<h4>Pain Points: Unseen and Unused Filtering</h4>
-			<p>D3’s existing Toolbox designs either lacked filtering as a whole or provided filtering that was designed in a manner that went unnoticed by users. In turn, users spent more time reading through longs lists of resources rather than simply filtering to see resources relevant to their needs.</p>
+			<p class="last-p">D3’s existing Toolbox designs either lacked filtering as a whole or provided filtering that was designed in a manner that went unnoticed by users. In turn, users spent more time reading through longs lists of resources rather than simply filtering to see resources relevant to their needs.</p>
 
 			<h5>Rationale</h5>
-			<p class="last-p">Based on User testing:</br>
-			- 3 of 5 user testers did not notice search and filtering mechanism in D3’s current or prototype site.
-			- User testing validated this issue, which we had originally noted in our heuristic evaluation.</p>
+			<ul class="last-p">
+				<li>3 of 5 user testers did not notice search and filtering mechanism in D3’s current or prototype site.</li>
+				<li>User testing validated this issue, which we had originally noted in our heuristic evaluation.</li>
+			</ul>
 
-			<img src="static/d3/existing-filtering-02.png">
 			<img src="static/d3/existing-filtering-03.png">
 			<img src="static/d3/existing-filtering-01.png">
+			<img src="static/d3/existing-filtering-02.png">
 
 			<!-- <p>Our team recruited participants for the three user groups, conducting five tests in total:</p>
 
@@ -185,17 +186,29 @@
 			<h4>Building a Hierarchy of Resource Information</h4>
 			<p class="last-p">In order to solve the issue of D3’s designs lacking relevant resource information, we decided to design a resource list that made use of horizontal cards for each resource. For the content of each card, we developed a hierarchy of relevant resource information.</p>
 
+			<img src="static/d3/sketches-02.png" class="small-img">
+			<img src="static/d3/sketches-03.png" class="small-img">
+			<img src="static/d3/resource-wireframe-01.png">
+
 			<!-- <img src="static/d3/brainstorming-01.png" class="small-img"> -->
 
 			<h4>Apparent and Engaging Filtering: First Iteration</h4>
-			<p class="last-p">To solve the issue of neglected filtering, we initially focused on allowing for simple filtering by resource category by providing navigational tabs for each category. With this, we place other filters at the top of the resource listing.</p>
+			<p class="last-p">To solve the issue of neglected filtering, we initially focused on allowing for simple filtering by resource category by providing checkboxes for each category on the left side of the screen. With this, we placed all other filters at the top of the resource listing.</p>
+
+			<img src="static/d3/filtering-sketches-01.png" class="small-img">
+			<img src="static/d3/filtering-sketches-02.png">
+			<img src="static/d3/paper-prototype.png" class="small-img">
+
 
 			<h4>Apparent and Engaging Filtering: Second Iteration</h4>
-			<p>However, feedback from user tests and meetings with other designers showed that our initial design did not actually solve the problem. Instead, people overlooked our filters above the resource list and mistook the category tabs as a some sort of secondary navigation, similar to the issues we found with the filtering on D3’s public site.</p>
+			<p>Feedback from user tests and meetings with other designers showed that our initial design did not actually solve the problem. Instead, people overlooked our filters above the resource list and mistook the category filter as a some sort of secondary navigation, similar to the issues we found with the filtering on D3’s public site.</p>
 
-			<p>Our second iteration aimed to pull inspiration from online retail interfaces and the D3 Open Data Portal. Placing the more complex filters, such as resource type and location, on the left side of the screen, similar to how many online retail interfaces are often designed, resulted more apparent filtering that less resembled some sort of navigation. With this, we decided to move the category tabs above the resource list and reshape those as large buttons, similar to the forced category filtering in D3’s Open Data Portal.</p>
+			<p>Our second iteration aimed to pull inspiration from online retail interfaces and the D3 Open Data Portal. Placing the more complex filters, such as resource-type and location, on the left side of the screen, similar to how many online retail interfaces are often designed, resulted more apparent filtering that less resembled some sort of navigation. With this, we decided to move the category tabs above the resource list and reshape those as large buttons, similar to the forced category filtering in D3’s Open Data Portal.</p>
 
 			<p class="last-p">Based on informal user testing, this solution resulted in more use of the filtering mechanisms.</p>
+
+			<img src="static/d3/first-iteration.png" class="small-img needs-border">
+
 
 			<!-- <img src="static/d3/sketches-01.png" class="small-img"> -->
 			<!-- <img src="static/d3/sketches-02.png" class="small-img">
@@ -242,22 +255,21 @@
 			<h3 class="d3-color">The Product</h3>
 			<span class="summary">With the solutions for the resource information hierarchy and filtering, our final step was to put this all together in a full Toolbox interface and test it in comparison to D3’s existing Toolbox designs.</span>
 
-			<h4>First Iteration</h4>
+			<h4>Final Product and Prototype</h4>
+			<p>Our final product was a prototype that incorparted our design solutions to the pain points we identified along with solutions to further feedback we received from user testing and meetings with our client and other designers. These final changes included color coordination between the resource-type filter and the colored resource-type component of the resource cards, a display of the total amount of resources that are listed, and more engaging visual design.</p>
 
-			<img src="#">
+			<p class="last-p">Interact with the prototype <a href="#">here</a>.</p>
 
-			<p>Our first prototype tested well against D3’s existing sites in terms of average time to complete user testing tasks. </p>
+			<img src="static/d3/second-iteration.png" class="needs-border">
 
-			<img src="#">
+			<h4>Validation</h4>
+			<p>Our final prototype was tested with 8 users against the three Toolbox designs that were offered by D3. Tasks were given for each test. Specific tasks were given based on whether the user was experienced with data analytics, inexperienced with data analytics, or experienced in urban planning. Completion time and perceived difficulty (based on a Likert Scale from 1 - very easy to 5 - very difficult) was recorded for each task.</p>
 
-			<p class="last-p">However, our design did not do very well in terms of qualitative feedback. 5 of the 8 people we tested noted that our design was easier to use, but less aesthetically pleasing. Multiple users noted that they would prefer to use D3’s existing sites over our prototype strictly due to the visual appeal.</p>
+			<p class="last-p">In the end, our prototype had lower average completion times and lower average difficulty than D3's existing designs for each task.</p>
 
-			<h4>Second Iteration and Prototype</h4>
-			<p>Based on the feedback from our first prototype iteration, we created a second iteration that evolved the visual design of our Toolbox interface.</p>
+			<img src="static/d3/validation-01.png" class="large-img">
 
-			<p>Interact with the prototype <a href="#">here</a>.</p>
-
-			<img src="#">
+			<p class="last-p">Qualitative results notified us that 6 of the 8 testers preferred our prototype over D3's existing Toolboxes. The 2 users that preferred one of D3's Toolboxes noted that they preferred the visual design of D3's Toolbox over ours. Based on our discussion with D3, improved visual design was not a necessary design requirement as they planned to incorporate primarily structural design changes into their product rather than aesthetic changes.</p>
 
 		</div>
 
