@@ -1525,6 +1525,10 @@ a
 		border-bottom: none;
 	}
 
+	.gallery-B:not(:last-child) {
+		border-bottom: none;
+	}
+
 	.gallery-B .project h2{
 		font-size: 1.3em;
 	}
