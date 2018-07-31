@@ -238,7 +238,7 @@ body {
 .project_content img {
 	width: 140%;
 	margin-top: 0px;
-	margin-bottom: 90px;
+	margin-bottom: 70px;
 	margin-left: -20%;
 }
 
@@ -672,7 +672,7 @@ video {
 	}
 
 	.infobit-context {
-		width: 50%;
+		width: 20%;
 	}
 
 	.title h2 {
@@ -720,7 +720,25 @@ video {
 	}
 
 	.infobit-context {
-		width: 90%;
+		width: 60%;
+	}
+
+	.infobit {
+		display: block;
+	}
+
+	.project_content .summary {
+		font-size: 1.4em;
+	}
+
+	.project_content .large-img {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.project_content .small-img {
+		width: 100%;
+		margin-left: 0%;
 	}
 
 	.go_back a {
