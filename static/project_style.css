@@ -496,7 +496,7 @@ video {
 .portfolio_categories ul li a {
 	text-decoration: none;
 	color: #383838;
-	opacity: 0.3;
+	opacity: 0.5;
 	transition: 0.3s;
 }
 
