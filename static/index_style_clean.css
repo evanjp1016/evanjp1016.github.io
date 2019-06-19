@@ -1,0 +1,277 @@
+/*
+Description: Style for portolfio home page
+Author: Evan Pesch
+Last Updated: June 15, 2019;
+*/
+
+
+/*FONTS*/
+
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/circular/CircularStd-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/circular/CircularStd-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/circular/CircularStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: 900;
+    font-style: normal;
+    src: url('fonts/circular/CircularStd-Black.otf') format('opentype');
+}
+
+
+/* HTML & BODY */
+
+html {
+  scroll-behavior: smooth;
+  background-color: #1C2327;
+}
+
+body, * {
+	padding: 0;
+	margin: 0;
+	font-family: 'CircularStd', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1em;
+	color: #ffffff;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* NAVIGATION */
+
+.page-navigation {
+	position: fixed;
+	width: 100%;
+	height: 85px;
+	z-index: 3000;
+	background-color: #1C2327;
+}
+
+.nav-left {
+	display: inline-block;
+	margin-top: 45px;
+	margin-left: 15%;
+	opacity: 1;
+}
+
+.nav-right {
+	display: inline-block;
+	float: right;
+	margin-right: 15%;
+	margin-top: 45px;
+
+}
+
+.nav-left a, .nav-right a {
+	text-decoration: none;
+}
+
+.nav-right a:not(:first-child) {
+	margin-left: 30px
+}
+
+.nav-left a:hover, .nav-right a:hover {
+	opacity: 0.5;
+	text-decoration: underline;
+}
+
+.nav-left a:focus, .nav-right a:focus {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+
+/* TO TOP BUTTON */
+
+#toTop {
+  display: block;
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 1.5%;
+  z-index: 100;
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: default;
+  padding: 13px 18px 15px 18px;
+  border-radius: 100px;
+}
+
+#toTop:hover {
+  background-color: #2a3235;
+}
+
+
+/* PAGE HEADER */
+
+.page-header {
+
+}
+
+.header-content{
+	margin-left: 15%;
+	width: 60%;
+}
+
+.header-introduction {
+	padding-top: 205px;
+	padding-bottom: 200px;
+}
+
+.header-introduction-text {
+	width: 70%;
+	font-size: 20px;
+	line-height: 1.4em;
+	/*font-weight: 400;*/
+	color: #A4A7A9;
+	
+}
+
+.header-introduction-text span {
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+/* WORK CONTENT */
+
+.work-content {
+	padding-bottom: 110px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.work-project:not(:last-child) {
+	padding-bottom: 110px;
+}
+
+.lg-thumbnail {
+	background-image: url("thumbnails/d3-large.png");
+	height: 500px;
+	background-size: 100% 100%;
+	background-position: center;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.lg-thumbnail:nth-child(2) {
+	background-image: url("thumbnails/merit-large-sm.png");
+}
+
+.lg-thumbnail:nth-child(3) {
+	background-image: url("thumbnails/merit-large-sm.png");
+}
+
+.lg-thumbnail:nth-child(4) {
+	background-image: url("thumbnails/michigan-large.png");
+}
+
+.lg-thumbnail:nth-child(5) {
+	background-image: url("thumbnails/merit-large-sm.png");
+}
+
+.lg-thumbnail:hover {
+	background-size: 102% 102%;
+    transition: 0.5s;
+}
+
+.project-info-a {
+	text-decoration: none;
+}
+
+.project-info {
+	padding-top: 30px;
+}
+
+.project-title {
+	padding-bottom: 5px;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 5%;
+}
+
+.project-company {
+	font-size: 18px;
+	font-weight: 400;
+	opacity: 0.5;
+	margin-left: 5%;
+}
+
+/* FOOTER */
+
+.footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.copyright-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	margin-left: 15%;
+}
+
+.email-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	margin-right: 15%;
+}
+
+.copyright-column {
+	display: inline-block;
+}
+
+.copyright-column p {
+	display: inline-block;
+	opacity: 0.7;
+}
+
+.copyright-column span {
+	opacity: 1;
+	display: inline-block;
+}
+
+.email-column p {
+	text-align: right;
+}
+
+.email-column p a {
+	color: #82C5F6;
+	text-decoration: none;
+}
+
+.copyright-column p a:hover, .email-column p a:hover{
+	text-decoration: underline;
+}
+
+
