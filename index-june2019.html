@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Portfolio</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.typekit.net/tvz1ecg.css">
+	<link rel="stylesheet" type="text/css" href="static/index_style_clean.css">
+</head>
+
+<!-- 
+
+✌️ Site designed and built by Evan Pesch 
+
+-->
+
+<body>
+
+<div class="mobile-sitename">
+	<div><a href="index-june2019.html">Evan Pesch</a></div>
+</div>
+
+<div class="mobile-menu">
+	<div class="mobile-menu-content">
+	    <div><a href="index-june2019.html">work</a></div>
+	    <div><a href="about.html">about</a></div>
+	    <div><a href="static/evan-pesch-resume.pdf" target="_blank">resume</a></div>
+   </div>
+</div>
+	
+<div id="page-navigation">
+	<div id="nav-left">
+		<a href="index-june2019.html" id="sitename">Evan Pesch</a>
+	</div>
+	<!-- <div class="nav-right-mobile">
+		<a onclick="openNav()" style="cursor: pointer;">menu</a>
+	</div> -->
+	<div id="nav-right">
+		<a href="index-june2019.html#work" id="work-tab">work</a>
+		<a href="about.html" id="about-tab">about</a>
+		<a href="static/evan-pesch-resume.pdf" target="_blank" id="resum-tab">resume</a>
+	</div>
+</div>
+
+<i onclick="topFunction()" class="toTop material-icons">arrow_upward</i>
+
+
+<div class="background-wrapper">
+
+	<div class="page-header">
+		<div class="header-text">
+			<div class="intro">
+				<h3 class="intro-text current-intro" id="intro">I'm <span class="subject-bold">Evan Pesch</span>,</br>a designer, developer, and some other stuff, too. But <span class="italic">mostly</span> a designer.</h3>
+				<h3 class="intro-text long-intro">Well, I’m a designer. That’s what enjoy most, and that’s what I went to school for.<br><br>But I’ve worked as a developer as well, and I make music and films and I write. I don’t want to discredit that stuff, you know? It’s important to how I think as a designer.</h3>
+				<h3 class="intro-text long-intro">Nobody needs to hear some blanket statement about how I <span>~improve peoples’ lives through seamless user experiences.~</span><br><br>Besides, everybody already says that stuff. All those “How to Build a Portfolio” Medium articles told me I need to stand out.</h3>
+				<h3 class="intro-text">I’m Evan Pesch. I improve peoples’ lives through seamless user experiences.</h3>
+				<h3 class="intro-text">Alright, I guess just check out my work below.</h3>
+			</div>
+			<div class="button" onclick="changeIntroText()">
+				<span class="intro-button current-button">That's a bit vague, no? <i class="material-icons">arrow_forward</i></span>
+				<span class="intro-button">Button 1<i class="material-icons">arrow_forward</i></span>
+				<span class="intro-button">Button 2<i class="material-icons">arrow_forward</i></span>
+				<span class="intro-button">Button 3<i class="material-icons">arrow_forward</i></span>
+				<span class="intro-button">Button 4<!-- <i class="material-icons loop">arrow_forward</i> --></span>
+			</div>
+		</div>
+
+		<div class="header-character">
+			<img id="homegif"> <!-- src is defined by play-gif.js -->
+		</div>
+	</div>
+
+	<a name="work" class="top"></a>
+
+	<div class="work-content">
+
+		<p class="scroll-note">Skip the banter and see my work below, if you're in a hurry.</p>
+
+		<div class="work-row-single-first">
+			<div  class="project">
+				<a href="d3-new-layout.html">
+					<div class="project-thumbnail">
+						<img src="static/images/project-thumbnails/blue-placeholder-long.png" alt="">
+					</div>
+					<div class="project-info">
+						<h2>Redesigning a library of open data for Detroit, Michigan</h2>
+						<h1>Data Driven Detroit</h1>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="work-row-double">
+			<div class="project">
+				<a href="merit-new-layout.html">
+					<div class="project-thumbnail">
+						<img src="static/images/project-thumbnails/blue-placeholder.png" alt="">
+					</div>
+					<div class="project-info">
+						<h2>Prototyping and developing a cybersecurity dashboard</h2>
+						<h1>Merit Network</h1>
+					</div>
+				</a>
+			</div>
+
+			<div class="project">
+				<a href="sample-project.html">
+					<div class="project-thumbnail">
+						<img src="static/images/project-thumbnails/blue-placeholder.png" alt="">
+					</div>
+					<div class="project-info">
+						<h2>Designing an accessible solution for impaired hearing</h2>
+						<h1>Hearbud</h1>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="work-row-single">
+			<div class="project">
+				<a href="sample-project.html">
+					<div class="project-thumbnail">
+						<img src="static/images/project-thumbnails/blue-placeholder-long.png" alt="">
+					</div>
+					<div class="project-info">
+						<h2>Leading design for the Michigan Marching Band</h2>
+						<h1>Michigan Marching Band Marketing and Information Staff</h1>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="work-row-double">
+			<div class="project">
+				<a href="sample-project.html" class="project-info-a">
+					<div class="project-thumbnail">
+						<img src="static/images/project-thumbnails/blue-placeholder.png" alt="">
+					</div>
+					<div class="project-info">
+						<h2>Educating a community about urban design</h2>
+						<h1>Reimagine Muskegon</h1>
+					</div>
+				</a>
+			</div>
+			<div></div>
+		</div>
+	</div>
+
+</div>
+
+<div class="email-box">
+	<div class="email-img">
+		<img src="static/images/gifs/get-in-touch-real.gif">
+	</div>
+	<div class="email-text">
+		<h4>Get in Touch</h4>
+		<p>Feel free to reach out if you’d like to talk! Not to mention, I'm looking to join a design team in 2020.</p>
+		<a href="mailto:evanjpesch@gmail.com?Subject=Fresch%20Connection" target="_top">evanjpesch@gmail.com</a>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="footer-col">
+		<div>
+			<p class="copyright">&copy; Evan Pesch <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+		</div>
+	</div>
+	<div class="footer-col">
+		<div>
+			<p>Made by me</p>
+		</div>
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="static/js/play-gif.js"></script>
+<script type="text/javascript" src="static/js/index-header.js"></script>
+<script type="text/javascript" src="static/js/to-top.js"></script>
+<script type="text/javascript" src="static/js/nav-height-scroll.js"></script>
+
+</html>

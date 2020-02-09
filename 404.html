@@ -4,59 +4,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Epesch</title>
-	<link rel="shortcut icon" href="static/favicon-01.png" type="image/x-icon">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	<title>404 Page Not Found</title>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:300,300i,400,400i,500,700|Questrial|Muli:300,400,600,700,800|Rubik:300,400,500,700,900" rel="stylesheet">
-	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" type="text/css" href="static/style_test.css">
+	<link rel="stylesheet" href="https://use.typekit.net/tvz1ecg.css">
+	<link rel="stylesheet" type="text/css" href="static/404_style.css">
 </head>
+
+<!-- 
+
+✌️ Site designed and built by Evan Pesch 
+
+-->
+
 <body>
 
-<!--
-________________________________________________________________________________________________
-_____/\\\\\\\\\\\____/\\\\\\\\\\\\____/\\\\\\\\\\\\____/\\\\\\\\\\\____/\\\______/\\\___________
-_____\/\\\/////\\\___\/\\\////////____\/\\\////////____\/\\\///////____\/\\\_____\/\\\__________
-______\/\\\___\/\\\___\/\\\____________\/\\\____________\/\\\___________\/\\\_____\/\\\_________
-_______\/\\\\\\\\\\\___\/\\\\\\\\\\\\___\/\\\\\\\\\\\\___\/\\\___________\/\\\\\\\\\\\\\________
-________\/\\\///////____\/\\\////////____\//////////\\\___\/\\\___________\/\\\///////\\\_______
-_________\/\\\___________\/\\\_____________________\/\\\___\/\\\___________\/\\\_____\/\\\______
-__________\/\\\___________\/\\\\\\\\\\\\____/\\\\\\\\\\\\___\/\\\\\\\\\\\\__\/\\\_____\/\\\_____
-___________\///____________\////////////____\////////////____\////////////___\///______\///_____
-________________________________________________________________________________________________
+<div class="mobile-sitename">
+	<div><a href="index-january2020.html">epesch</a></div>
+</div>
 
- -->
-
-
-<div class="header">
-	<div class="site-title">
-		<h2><a href="index.html">epesch</a></h2>
+<div class="mobile-menu">
+	<div class="mobile-menu-content">
+	    <div><a href="index-january2020.html">work</a></div>
+	    <div><a href="about.html">about</a></div>
+	    <div><a href="static/evan-pesch-resume.pdf" target="_blank">resume</a></div>
+   </div>
+</div>
+	
+<div id="page-navigation">
+	<div id="nav-left">
+		<a href="index-january2020.html" id="sitename">epesch</a>
+	</div>
+	<!-- <div class="nav-right-mobile">
+		<a onclick="openNav()" style="cursor: pointer;">menu</a>
+	</div> -->
+	<div id="nav-right">
+		<a href="index-january2020.html" id="work-tab">work</a>
+		<a href="about.html" id="about-tab">about</a>
+		<a href="static/evan-pesch-resume.pdf" target="_blank" id="resum-tab">resume</a>
 	</div>
 </div>
- 
-<div class="wrapper">
-	<div class="content">
-		<div class="jumbotron">
-			<p>Whoops!</br><span class="light_header">The page you are looking for does not exist.</span></p>
+
+<i onclick="topFunction()" class="toTop material-icons">arrow_upward</i>
+
+
+<div class="background-wrapper">
+
+	<div class="page-header">
+		<h3 class="intro-text"><span class="subject-bold">Hello stranger</span>, the page you are looking for doesn't seem to exist.</h3>
+		<div class="back-button">
+			<a href="index-january2020.html">Go back home</a>
 		</div>
 	</div>
 
-	<div class="carousel">
-		<a href="index.html" id="more_about_me" style="padding-left: 0px;">Go Back Home<i class="fa fa-angle-right home" aria-hidden="true"></i></a>
+</div>
+
+<div class="footer">
+	<div class="footer-col">
+		<div>
+			<p class="copyright">&copy; Evan Pesch <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+		</div>
 	</div>
-</div> <!-- Close .wrapper -->
+	<div class="footer-col">
+		<div>
+			<p>Made by me</p>
+		</div>
+	</div>
+</div>
 
 </body>
+
+<script type="text/javascript" src="static/js/to-top.js"></script>
+<script type="text/javascript" src="static/js/nav-height-scroll.js"></script>
+
 </html>

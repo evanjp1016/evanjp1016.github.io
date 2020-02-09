@@ -1,0 +1,545 @@
+/*
+Description: Style for portolfio home page
+Author: Evan Pesch
+Last Updated: June 15, 2019;
+*/
+
+
+/* CHUNKY TOMATO BISQUE FONT */
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fonts/graphik/chunky-tomato-bisque-light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 700;
+    font-style: italic;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-bold-italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lentil-vegetable';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/lentil-vegetable/lentil-vegetable-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lentil-vegetable';
+    font-weight: 400;
+    font-style: italic;
+    src: url('fonts/lentil-vegetable/lentil-vegetable-italic.ttf') format('truetype');
+}
+
+
+
+/* HTML & BODY */
+
+html {
+	scroll-behavior: smooth;
+	background-color: #1B1F2A;
+}
+
+body, * {
+	padding: 0;
+	margin: 0;
+	font-family: 'Chunky-tomato-bisque', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1em;
+	color: #ffffff;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-underline-offset: 5px;
+}
+
+
+/* Add margin on top of anchor tags */
+a.top {
+	position: relative;
+	top:-100px;
+	display: block;
+	height: 0;
+	width:0;
+}
+
+/* MOBILE NAV */
+
+.mobile-sitename {
+	display: none;
+	height: 85px;
+	background-color: #1B1F2A;
+	width: 100%;
+}
+
+.mobile-sitename div {
+	padding-top: 40px;
+	margin-left: 10%;
+}
+
+.mobile-sitename div a {
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.mobile-menu {
+	z-index: 3000;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	height: 70px;
+	background-color: #1B1F2A;
+	width: 100%;
+}
+
+.mobile-menu-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.mobile-menu-content div {
+	padding-top: 25px;
+	transition: 0.1s;
+}
+
+.mobile-menu-content div:hover {
+	background-color: #1B1F2A;
+}
+
+.mobile-menu-content div a {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+
+/* NAVIGATION */
+
+#page-navigation {
+	position: fixed;
+	width: 100%;
+	height: 85px;
+	z-index: 3000;
+	background-color: #1B1F2A;
+	/*align-items: center;*/
+	/*border-bottom: 1px solid rgba(255,255,255,0.2);*/
+	transition: 0.2s;
+}
+
+#nav-left {
+	margin-left: 18%;
+	display: inline-block;
+	margin-top: 40px;
+	transition: 0.2s;
+}
+
+#nav-left a {
+	font-family: 'Chunky-tomato-bisque', serif;
+	font-weight: 600;
+	opacity: 1;
+	text-decoration: none;
+}
+
+#nav-left a:hover {
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+#nav-left a:focus {
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+#nav-right {
+	margin-right: 18%;
+	display: inline-block;
+	float: right;
+	margin-top: 40px;
+	transition: 0.2s;
+
+}
+
+#nav-right a {
+	font-family: 'Chunky-tomato-bisque', serif;
+	font-weight: 400;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+#nav-right a:not(:first-child) {
+	margin-left: 30px
+}
+
+#nav-right a:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+#nav-right a:focus {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+#work-tab {
+}
+
+#about-tab {
+
+}
+
+#resume-tab {
+
+}
+
+/* TO TOP BUTTON */
+
+.toTop {
+  display: block;
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  cursor: default;
+  color: #000000;
+  padding: 10px;
+  transition: 0.2s;
+  border-radius: 100px;
+}
+
+.fade-in-element {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#toTop:hover {
+  color: #A4A7A9;
+}
+
+
+/* PAGE HEADER */
+
+.background-wrapper {
+	min-height: 95vh;
+}
+
+.page-header {
+	margin-left: 18%;
+	width: 64%;
+	padding-top: 200px;	
+}
+
+.page-header .intro-text {
+	font-family: "Lentil-vegetable", serif;
+	font-weight: 400;
+	width: 80%;
+	font-size: 2.2em;
+	line-height: 1.10em;
+	color: #F4F4F4;
+}
+
+.intro-text .subject-bold {
+	font-family: "Chunky-tomato-bisque", sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.intro-text .italic {
+	font-family: "Lentil-vegetable", serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1em;
+	color: #F4F4F4;
+}
+
+.summary {
+	margin-left: 18%;
+	width: 64%;
+	padding-top: 150px;
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	grid-gap: 50px;
+}
+
+.summary div img {
+	width: 100%;
+}
+
+.summary div p:not(:first-child) {
+	margin-top: 30px;
+}
+.summary div p {
+	font-size: 1em;
+	line-height: 1.4em;
+	opacity: 0.9;
+}
+
+.summary div p a {
+	color: #C8C7C1;
+	text-decoration: underline;
+}
+
+.summary div p a:hover {
+	text-decoration: none;
+}
+
+.resume {
+	margin-left: 18%;
+	width: 64%;
+	margin-top: 150px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	padding-top: 150px;
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	grid-gap: 50px;
+}
+
+.resume h3 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.resume p {
+	margin-top: 30px;
+	opacity: 0.9;
+	font-size: 1em;
+	line-height: 1.4em;
+
+}
+
+.resume p span {
+	font-weight: 700;
+}
+
+.resume-button {
+	margin-left: 18%;
+	width: 64%;
+	margin-top: 150px;
+}
+
+.resume-button a {
+	color: #C8C7C1;
+	text-decoration: underline;
+}
+
+.resume-button a:hover {
+	text-decoration: none;
+}
+
+/* EMAIL BOX */
+
+.email-box {
+	margin-left: 18%;
+	width: 64%;
+	min-height: 400px;
+	background-color: #13141C;
+	margin-top: 200px;
+	border-radius: 4px;
+	display: grid;
+	grid-template-columns: 0.9fr 1.1fr;
+	align-items: center;
+}
+
+.email-text {
+	width: 75%;
+	/*margin-top: -20px;*/
+}
+
+.email-text p {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	opacity: 0.9;
+	line-height: 1.3em;
+}
+
+.email-text h4 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.email-text a {
+	margin-top: 30px;
+	text-decoration: underline;
+}
+
+.email-text a:hover {
+	text-decoration: none;
+}
+
+@supports (mix-blend-mode: screen) {
+  .email-img img {
+  	margin-top: 25px;
+  	margin-left: 5%;
+	width: 100%;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+    mix-blend-mode: screen
+  }
+}
+@supports not (mix-blend-mode: screen) {
+  .email-img img {
+  	width: 130%;
+	margin-left:-15%;
+    display: none;
+  }
+}
+
+/* FOOTER SMALL */
+
+.footer {
+	width: 64%;
+	margin-left: 18%;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	background-color: #1B1F2A;
+	margin-top: 70px;
+	min-height: 85px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+}
+
+.footer .footer-col {
+	display: grid;
+	align-items: center;
+}
+
+.footer .footer-col:last-child {
+	text-align: right;
+}
+
+.footer .footer-col .copyright {
+	opacity: 0.7;
+}
+
+
+/* For tablets: */
+@media only screen and (max-width: 1000px) {
+
+	#nav-left {
+		margin-left: 10%;
+	}
+
+	#nav-right {
+		margin-right: 10%;
+	}
+
+	.page-header{
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	.header-introduction-text {
+		width: 80%;		
+	}
+
+	.work-content {
+		padding-bottom: 170px;
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.email-box {
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	.email-img img{
+		margin-left: 15%;
+		height: 170px;
+	}
+
+	.footer {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+/* For phone */
+@media only screen and (max-width: 600px) {
+
+	#page-navigation {
+		display: none;
+	}
+
+	.mobile-sitename {
+		display: block;
+	}
+
+	.mobile-menu {
+		display: block;
+	}
+
+	.header-introduction {
+		padding-top: 100px;
+		margin-bottom: 150px;
+	}
+
+	.header-introduction-text {
+		width: 100%;
+		font-size: 1.2em;		
+	}
+
+	.email-box {
+		grid-template-columns: auto;
+		align-items: center;
+	}
+
+	.email-text {
+		padding: 50px 0px;
+		margin-left: 15%;
+		text-align: center;
+		width: 70%;
+	}
+
+	.email-img {
+		padding-top: 50px;
+		margin-left: 20%;
+	}
+
+	.footer {
+		margin-bottom: 70px;
+	}
+}
+
+

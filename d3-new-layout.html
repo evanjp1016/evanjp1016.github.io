@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Data Driven Detroit</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/new-project-layout.css">
+	<!-- <link rel="stylesheet" href="https://use.typekit.net/tvz1ecg.css"> -->
+</head>
+
+<!-- 
+
+✌️ Site designed and built by Evan Pesch 
+
+-->
+<body>
+<div id="page-navigation">
+	<div id="nav-left">
+		<a href="index-january2020.html"><i class="material-icons">arrow_back</i>back</a>
+	</div>
+
+	<div id="nav-right">
+		<a href="index-january2020.html">work</a>
+		<a href="about.html">about</a>
+		<a href="static/evan-pesch-resume.pdf" target="_blank">resume</a>
+	</div>
+</div>
+
+<i onclick="topFunction()" class="toTop material-icons">arrow_upward</i>
+
+
+<!-- ############################################################################################################################## --> 
+
+
+<div id="tableOfContents" onmouseover="openContents()">
+	<i class="tableOfContents material-icons">notes</i>
+</div>
+
+<div id="mySidenav" class="sidenav"  onmouseleave="closeContents()">
+	<a href="#" class="contentSectionHeader" onclick="topFunction()">Title</a>
+	<a href="#overview" class="contentSectionHeader">Overview</a>
+	<a href="#research" class="contentSectionHeader">Research</a>
+	<a href="#problems" class="contentSectionHeader">Problems with the existing Toolboxes</a>
+	<a href="#solutions" class="contentSectionHeader">Solutions in the redesign</a>
+	<a href="#evaluation-and-final-dliverables" class="contentSectionHeader">Evaluation and final deliverables</a>
+	<a href="#reflection" class="contentSectionHeader">Reflection</a>
+</div>
+
+
+<!-- ############################################################################################################################## -->
+
+
+<div class="project-wrapper">
+
+	<div class="project-header">
+		<div class="project-title">
+			<h4 class="project-date">January 2018 - April 2018</h4>
+			<h2 class="project-description">Redesigning a library of open data for Detroit, Michigan <span class="italic">with</span> <span class="subject-bold">Data Driven Detroit</span></h2>
+			<!-- <h1 class="project-company">Data Driven Detroit</h1> -->
+		</div>
+
+		<div class="project-thumbnail" alt="Alt Text Here">
+			<img src="static/thumbnails/d3-large.png">
+		</div>
+	</div>
+
+
+<!-- ############################################################################################################################## -->
+
+
+	<div class="project-body">
+
+		<div class="project-brief">
+			<div class="brief-title">
+				<h4>Client</h4>
+			</div>
+			<div class="brief-body">
+				<p><span class="subject-bold">Data Driven Detroit (D3)</span> is a data hub for Detroit, Michigan and its surrounding communities. They collect, analyze, interpret, and share accurate and unbiased, <span class="tooltip">community-centric data<span class="tooltiptext" onclick="showTooltip()">Data regarding education, neighborhoods, businesses, demographics, etc.</span></span> to combat uninformed decision-making towards development and projects in the area.</p>
+			</div>
+		</div>
+
+
+<!-- ############################################################################################################################## -->
+
+		<a href="#" name="overview"></a>
+		<div class="chapter-break"></div>
+
+
+<!-- ############################################################################################################################## -->
+
+
+
+		<div class="project-chapter">
+				<div class="chapter-title">
+					<div></div>
+					<div>
+						<h3>Overview</h3>
+					</div>
+				</div>
+
+				<div class="chapter-section">
+					<div></div>
+					<div>
+						<div class="info-row">
+							<h5>Context</h5>
+							<p>Client project and <span class="tooltip">UMSI<span class="tooltiptext" onclick="showTooltip()">University of Michigan School of Information</span></span> capstone project</p>
+						</div>
+
+						<div class="info-row">
+							<h5>Duties</h5>
+							<p>UX research, UX design, visual design</p>
+						</div>
+
+						<div class="info-row">
+							<h5>Team</h5>
+							<p>Four UX Design students, two D3 team members</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="chapter-section">
+					<div class="section-title">
+						<h4>Problem</h4>
+					</div>
+					<div class="section-body">
+						<p>D3 offers over 1,500 open-data resources about the Detroit area in a digital library known as their Toolbox. However, inadequate organization and display of these resources hinders peoples’ ability and desire to find useful data resources, resulting in uninformed decision making towards projects that can negatively affect Detroit communities.</p>
+					</div>
+				</div>
+
+				<div class="chapter-section">
+					<div class="section-title">
+						<h4>Goal</h4>
+					</div>
+					<div class="section-body">
+						<p>My team’s goal was to <span class="bold">redesign D3’s Toolbox</span> to introduce an organizational system for data resources that is <span class="bold">simple</span>, helping people quickly and easily find resources useful to them, and <span class="bold">scalable</span>, remaining easy to use as the Toolbox grows with more resources.</p>
+					</div>
+				</div>
+
+				<div class="chapter-section">
+					<div class="section-title">
+						<h4>My Role</h4>
+					</div>
+					<div class="section-body">
+						<p>While my teammates and I shared the general roles of UX researchers and UX designers, my personal role with on the team also included leading the outward communication of our project. I often lead meetings, discussions, and presentations with our client, <span class="tooltip">UMSI<span class="tooltiptext" onclick="showTooltip()">University of Michigan School of Information</span></span> faculty members, and others who assisted us throughout the project.</p>
+					</div>
+				</div>
+		</div>
+
+
+<!-- ############################################################################################################################## -->
+
+		<a href="#" name="research"></a>
+		<div class="chapter-break"></div>
+
+
+<!-- ############################################################################################################################## -->
+
+
+
+		<div class="project-chapter">
+
+				<div class="chapter-title">
+					<div></div>
+					<div>
+						<h3>Research</h3>
+					</div>
+				</div>
+
+				<div class="chapter-section">
+					<div class="section-title">
+						<h4>Three existing Toolbox designs</h4>
+					</div>
+					<div class="section-body">
+						<p>The first month of this project entailed researching pain points within D3’s existing Toolbox. As it turned out, D3 actually had three separate versions of the Toolbox: their original Toolbox on their live website, a prototyped Toolbox which they had built prior to our involvement, and a Toolbox on an affiliated website known as the Open Data Portal.</p>
+
+						<div class="large-img">
+							<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+							<p>Caption</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="chapter-section">
+					<div class="section-title">
+						<h4>Defining our audience and testing</h4>
+					</div>
+
+					<div class="section-body">
+						<p>Starting with heuristic evaluation and competitive analysis, we later shifted our research to focus on interviews and usability testing. With this, we defined our target audience as people from three general groups:</p>
+
+						<ol>
+							<li>People with data analysis experience</li>
+							<li>Detroit community members without data analysis experience</li>
+							<li>Urban Planners</li>
+						</ol>
+
+						<p>From here, we worked to test the three existing Toolbox designs with people from each of these three groups. Each tester used a single version of D3’s existing Toolboxes to complete tasks within that Toolbox. What we found is outlined below:</p>
+					</div>
+				</div>
+
+		</div> <!-- Close Project Chapter -->
+
+		
+<!-- ############################################################################################################################## -->
+
+		<a href="#" name="problems"></a>
+		<div class="chapter-break"></div> <!-- Close Section Break -->
+
+
+<!-- ############################################################################################################################## -->
+
+
+		<div class="project-chapter">
+
+			<div class="chapter-title">
+				<div></div>
+				<div>
+					<h3>Problems with the existing Toolboxes</h3>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class="section-title">
+					<h4>Insufficient resource information</h4>
+				</div>
+
+				<div class="section-body">
+					<p>While searching through the Toolbox, <span class="bold">5 of 5 usability testers felt each resource lacked enough descriptive information to know wether or not it would be useful to them</span>.</p>
+
+					<p>In addition to covering a variety of different subjects, D3’s data resources come in a variety of different mediums, cover different time spans, and correspond with different locations. Despite having access to this information, D3 only included a few of these informative details in each Toolbox, significantly hindering peoples’ ability to find useful resources while skimming through the list.</p>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class="section-title">
+					<h4>Unintentionally Camouflaged Filters</h4>
+				</div>
+
+				<div class="section-body">
+					<p>While D3’s existing Toolbox designs did include search boxes and/or filters, <span class="bold">3 of 5 usability testers did not use or notice available search and filter mechanisms in D3’s existing Toolboxes</span>, instead opting to read each resource’s title or description in order to find what they wanted.</p>
+
+					<p>With so many different data resources, search and filter mechanisms become necessary for people to quickly find resources useful to them. However, we found in D3’s original and prototyped Toolbox, these existing search and filter elements were unintentionally camouflaged on the page, often resembling menus or navigation, while Open Data Portal users were forced to filter by category, then given limited filters beyond that point.</p>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class="section-title">
+					<h4>Note:</h4>
+				</div>
+				<div class="section-body">
+					<p>There were more issues than just these two pain points, but for brevity, we’ll just focus on these two as they seemed to be the root of most problems with the existing Toolbox designs.</p>
+				</div>
+			</div>
+		</div>
+
+
+<!-- ############################################################################################################################## -->
+
+		<a href="#" name="solutions"></a>
+		<div class="chapter-break"></div> <!-- Close Section Break -->
+
+
+<!-- ############################################################################################################################## -->
+
+
+		<div class="project-chapter">
+
+			<div class="chapter-title">
+				<div></div>
+				<div>
+					<h3>Solutions in the redesign</h3>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class="section-title">
+					<h4>Building a hierarchy of resource information</h4>
+				</div>
+
+				<div class="section-body">
+					<div class="small-img no-top-margin">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>As noted above, <span class="bold">a lack of descriptive information displayed about each resource slowed peoples’ attempts at finding useful resources</span>. Feedback from our earlier usability testers and discussion with D3 allowed us to specify 10 pieces of desired resource information that should be included for each resource:</p>
+
+					<ul>
+						<li>Title</li>
+						<li>Description</li>
+						<li>Category</li>
+						<li>Resource Type</li>
+						<li>Thumbnail Image</li>
+						<li>Date/timeframe</li>
+						<li>Popularity Badge (if applicable)</li>
+						<li>Download button (if applicable)</li>
+						<li>Metadata (location, filetype, file size)</li>
+						<li>Project partners (if applicable)</li>
+					</ul>
+
+					<p>The challenge now was to design a skimmable way to convey all of this information in a small space for each resource in the Toolbox.</p>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>Early ideas took inspiration from job-posting websites by creating a new card-based layout for the resources listed within the Toolbox to give room for more resource information as well as consolidate each resource on the page into a clear, individual element.</p>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>With these early iterations we found that horizontal cards offered good skimmability and ample space for the 10 pieces of desired resource information listed above. <span class="bold">For the content of each card, we developed a hierarchy of this desired resource information to guide peoples’ eyes from visual identification elements to broad text elements to detailed text elements</span>.</p>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>Informal usability testing with low-fidelity prototypes confirmed that our new card-based resource design offered more informative skimming than D3’s existing Toolbox designs.</p>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class="section-title">
+					<h4>Filtering similar to <span style="white-space:nowrap; font-weight:600;">e-commerce</span></h4>
+				</div>
+
+				<div class="section-body">
+					<div class="small-img no-top-margin">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>As we discovered, unintentionally camouflaged filters slowed attempts at finding useful resources. Early iterations to address this aimed to allow broad filtering by resource category by providing checkboxes for each resource category (kids & education, housing & neighborhood, demographics, etc.) on the left side of the screen and more narrow filters (resource-type, location, timeframe) at the top of the resource listing.</p>
+
+					<div class="small-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>These early iterations did not perform well in informal usability testing. Again, people did not use the filters, often noting that they mistook them for some type of navigation menu.</p>
+
+					<p>Our later iterations of filter mechanisms pulled inspiration from conventional online retail interfaces.</p>
+
+					<div class="double-img">
+						<div>
+							<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+							<p>Caption</p>
+						</div>
+						<div>
+							<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+							<p>Caption</p>
+						</div>
+					</div>
+
+					<p>We decided to place our more granular filters (resource-type, location, timeframe) in a panel on the left side of the screen. With this, we reshaped our broad resource category tabs as large buttons and placed them above the resource list with multiple rows to make this a more obvious filtering step before browsing the full list of resources.</p>
+
+					<div class="large-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>Again, informal usability testing with low-fidelity prototypes confirmed that our filter layout generally offered more noticeable filters that better resembled what people were used to seeing from other websites.</p>
+				</div>
+			</div>
+
+		</div> <!-- Close Project Chapter -->
+
+
+
+<!-- ############################################################################################################################## -->
+
+		<a href="#" name="evaluation-and-final-dliverables"></a>
+		<div class="chapter-break"></div> <!-- Close Section Break -->
+
+
+<!-- ############################################################################################################################## -->
+
+
+		<div class="project-chapter">
+
+			<div class="chapter-title">
+				<div></div>
+				<div>
+					<h3>Evaluation and final deliverables</h3>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class='section-title'>
+					<h4>Formally testing our design</h4>
+				</div>
+
+				<div class="section-body">
+					<p>A prototype with our design changes was tested with 8 new usability testers against D3’s three existing Toolbox designs. Specific tasks were given based on whether the testers were experienced with data analysis, inexperienced with data analysis, or experienced in urban planning. After discussion with D3, we decided to record completion time and perceived difficulty (based on a Likert scale from 1 - very easy to 5 - very difficult) as well as gather any qualitative feedback for each task.</p>
+
+					<div class="large-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p>While <span class="bold">our prototype had lower average completion times and lower average difficulty for each task</span>, 2 of the 8 testers noted that they preferred the visual design of D3's prototyped Toolbox over ours. Knowing this, D3 did not see it necessary for us to revise our visual design choices as they planned to incorporate primarily structural design changes into their product.</p>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class='section-title'>
+					<h4>Final Deliverables</h4>
+				</div>
+
+				<div class="section-body">
+					<p>Our final deliverables included high fidelity mockups, a functional prototype, and a written report that described our research findings and design solutions.</p>
+
+					<div class="large-img">
+						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<p>Caption</p>
+					</div>
+
+					<p><a href="https://invis.io/HNNDQFI8CBA#/312962014_All-Categories">Interact with the prototype here.</a></p>
+				</div>
+			</div>
+		</div>
+
+
+
+<!-- ############################################################################################################################## -->
+
+		<a href="#" name="reflection"></a>
+		<div class="chapter-break"></div> <!-- Close Section Break -->
+
+
+<!-- ############################################################################################################################## -->
+
+
+		<div class="project-chapter">
+
+			<div class="chapter-title">
+				<div></div>
+				<div>
+					<h3>Reflection</h3>
+				</div>
+			</div>
+
+			<div class="chapter-section">
+				<div class='section-title'>
+					<h4>Adapting to Business Needs and Technical Constraints</h4>
+				</div>
+
+				<div class="section-body">
+					<p>Amongst the many insights about client projects that I realized, this project illustrated one of the most important that I had not put much thought into before: even if I, as an outside designer, outline the business needs and technical constraints at the start of a project, I constantly learn what I can and can’t do as a designer as I go. Adapting to these business needs and technical constraints can make or break a project.</p>
+
+					<p>Had we not outlined the business needs and technical constraints in the beginning, our project would have most likely followed a constant cycle of pursuing a solution, learning that solution is not feasible or beneficial to the business, and redesigning the solution.</p>
+
+					<p>Even outlining these factors from the start did not save us from running into this issue a few times along the way. “Accept and Adapt” became the mentality of our team throughout this project and has shaped how I think as a designer nowadays.</p>
+				</div>
+			</div>
+		</div>
+
+	</div> <!-- Close Project Body -->
+</div> <!-- Close Project Wrapper -->
+
+
+<!-- ############################################################################################################################## -->
+
+
+<div class="footer">
+	<div class="previous-project">
+	</div>
+	<div class="next-project">
+		<a href="merit-new-layout.html">Next project <span class="italic">with</span> <span class="subject-bold">Merit Network</span><i class="material-icons">arrow_forward</i></a>
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="static/js/carousel-fade.js"></script>
+<script type="text/javascript" src="static/js/table-of-contents.js"></script>
+<script type="text/javascript" src="static/js/to-top.js"></script>
+<script type="text/javascript" src="static/js/nav-height-scroll.js"></script>
+
+</html>
