@@ -203,6 +203,8 @@ a.top {
 
 #nav-right a:hover {
 	opacity: 1;
+	font-family: "Lentil-vegetable", serif;
+	letter-spacing: .035em;
 	text-decoration: underline;
 }
 

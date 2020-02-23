@@ -276,6 +276,22 @@ body, * {
 	transition: 0.1s;
 }
 
+.sidenav p {
+	display: none;
+	position: absolute;
+	font-size: 1em;
+	line-height: 1.3em;
+	bottom: 40px;
+	left: 50%;
+    transform: translate(-50%, 0);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.sidenav p:hover {
+	text-decoration: none;
+}
+
 
 /* TO TOP BUTTON */
 
@@ -678,5 +694,148 @@ body, * {
 	padding-left: 15px;
 	margin-right: -5px;
 	transition: 0.1s;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 1000px) {
+
+	/*body {
+		background-color: blue;
+	}*/
+
+	.project-title {
+		width: 100%;
+	}
+
+	#nav-left {
+		margin-left: 15%;
+	}
+
+	#nav-right {
+		margin-right: 15%;
+	}
+
+	.project-wrapper {
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	/* PROJECT BRIEF */
+
+	.project-brief {
+		display: block;
+	}
+
+	.brief-title {
+		text-align: left;
+	}
+
+	.brief-body p {
+		margin-top: 30px;
+	}
+
+
+	/* PROJECT BODY */
+
+	.info-row {
+		display: block;
+	}
+
+	.info-row h5 {
+		margin-top: 30px;
+	}
+
+	.info-row p{
+		margin-top: 15px;
+	}
+
+	.chapter-title {
+		display: block;
+	}
+
+	.chapter-section {
+		display: block;
+	}
+
+	.section-title {
+		text-align: left;
+	}
+
+	.section-body p {
+		margin-top: 30px;
+	}
+
+	.section-body .large-img {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.section-body .small-img {
+		margin-top: 45px;
+		width: 100%;
+	}
+
+	.section-body .small-img img {
+		width: 100%;
+	}
+
+	.section-body .small-img p {
+		margin-top: 10px;
+		line-height: 1.6em;
+		width: 100%;
+		color: #808080;
+	}
+
+	.section-body .double-img {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.section-body .double-img div:last-child {
+		margin-top: 45px;
+	}
+
+}
+
+/* For phone */
+@media only screen and (max-width: 600px) {
+/*
+	body {
+		background-color: red;
+	}*/
+
+	#nav-left {
+		margin-left: 5%;
+	}
+
+	#nav-right {
+		margin-right: 5%;
+	}
+
+	/* TABLE OF CONTENTS */
+
+	.sidenav {
+		bottom: 0px;
+		left: -20px;
+		min-width: 100%;
+		height: 100vh;
+		border-radius: 0px;
+		text-align: center;
+		padding-top: 50%;
+	}
+
+	.sidenav p {
+		display: block;
+	}
+
+	.project-wrapper {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	ol li {
+		list-style-position: inside;
+	}
 }
 
