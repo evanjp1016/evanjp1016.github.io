@@ -42,7 +42,7 @@
 	<i class="tableOfContents material-icons">notes</i>
 </div>
 
-<div id="mySidenav" class="sidenav"  onmouseleave="closeContents()">
+<div id="mySidenav" class="sidenav"  onmouseleave="closeContents()" onclick="closeContents()">
 	<a href="#" class="contentSectionHeader" onclick="topFunction()">Title</a>
 	<a href="#overview" class="contentSectionHeader">Overview</a>
 	<a href="#research" class="contentSectionHeader">Research</a>
@@ -84,6 +84,10 @@
 			<div class="brief-body">
 				<p><span class="subject-bold">Data Driven Detroit (D3)</span> is a data hub for Detroit, Michigan and its surrounding communities. They collect, analyze, interpret, and share accurate and unbiased, <span class="tooltip">community-centric data<span class="tooltiptext" onclick="showTooltip()">Data regarding education, neighborhoods, businesses, demographics, etc.</span></span> to combat uninformed decision-making towards development and projects in the area.</p>
 			</div>
+
+			<script type="text/javascript">
+				$('.tooltip').addClass('hover');
+			</script>
 		</div>
 
 
@@ -453,7 +457,7 @@
 					<p>Our final deliverables included high fidelity mockups, a functional prototype, and a written report that described our research findings and design solutions.</p>
 
 					<div class="large-img">
-						<img src="static/light-grey.jpg" alt="Data Driven Detroit's three existing Toolbox designs">
+						<img src="static/images/data-driven-detroit/final-mockup.png" alt="Data Driven Detroit's three existing Toolbox designs">
 						<p>Caption</p>
 					</div>
 
