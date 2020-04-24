@@ -1,0 +1,72 @@
+/*
+Description: Font face declarations for Evan Pesch's Portfolio
+Author: Evan Pesch
+Last Updated: April 23, 2020;
+*/
+
+/*---------------------------------*/
+/*----- Chunky Tomato Bisque ------*/
+/*---------------------------------*/
+
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fonts/graphik/chunky-tomato-bisque-light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Chunky-tomato-bisque';
+    font-weight: 700;
+    font-style: italic;
+    src: url('fonts/chunky-tomato-bisque/chunky-tomato-bisque-bold-italic.otf') format('opentype');
+}
+
+
+/*---------------------------------*/
+/*----- Lentil Vegetable Font -----*/
+/*---------------------------------*/
+
+
+@font-face {
+    font-family: 'Lentil-vegetable';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/lentil-vegetable/lentil-vegetable-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lentil-vegetable';
+    font-weight: 400;
+    font-style: italic;
+    src: url('fonts/lentil-vegetable/lentil-vegetable-italic.ttf') format('truetype');
+}

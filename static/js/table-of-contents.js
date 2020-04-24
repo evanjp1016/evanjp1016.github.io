@@ -1,13 +1,19 @@
 function openContents() {
-	document.getElementById("mySidenav").style.marginLeft = "20px";
-	document.getElementById("mySidenav").style.visibility = "visible";
-	document.getElementById("mySidenav").style.opacity = "1";
-	document.getElementById("tableOfContents").style.opacity = "0";
+	var toc = document.getElementsByClassName("table-of-contents");
+	toc[0].style.marginLeft = "20px";
+	toc[0].style.visibility = "visible";
+	toc[0].style.opacity = "1";
+
+	var tocIcon = document.getElementsByClassName("toc-icon");
+	tocIcon[0].style.opacity = "0";
 }
 
 function closeContents() {
-	document.getElementById("mySidenav").style.marginLeft = "0px";
-	document.getElementById("mySidenav").style.visibility = "hidden";
-	document.getElementById("mySidenav").style.opacity = "0";
-	document.getElementById("tableOfContents").style.opacity = "1";
+	var toc = document.getElementsByClassName("table-of-contents");
+	toc[0].style.marginLeft = "0px";
+	toc[0].style.visibility = "hidden";
+	toc[0].style.opacity = "0";
+
+	var tocIcon = document.getElementsByClassName("toc-icon");
+	tocIcon[0].style.opacity = "1";
 }

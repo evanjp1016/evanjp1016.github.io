@@ -2,10 +2,10 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     if (scroll > 50) {
-        $(".toTop").addClass("fade-in-element");
+        $(".toTop").addClass("fade-in");
     }
     else {
-    	$(".toTop").removeClass("fade-in-element");
+    	$(".toTop").removeClass("fade-in");
     }
 });
 
