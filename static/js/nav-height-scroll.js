@@ -3,12 +3,22 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("page-navigation").style.height = "70px";
-    document.getElementById("nav-left").style.marginTop = "25px";
-    document.getElementById("nav-right").style.marginTop = "25px";
+  	var navContainer = document.getElementsByClassName("nav-container");
+  	navContainer[0].style.height = "70px";
+
+  	var navLeft = document.getElementsByClassName("nav-left");
+  	navLeft[0].style.marginTop = "0";
+
+  	var navRight = document.getElementsByClassName("nav-right");
+  	navRight[0].style.marginTop = "0";
   } else {
-    document.getElementById("page-navigation").style.height = "140px";
-    document.getElementById("nav-left").style.marginTop = "100px";
-    document.getElementById("nav-right").style.marginTop = "100px";
+  	var navContainer = document.getElementsByClassName("nav-container");
+  	navContainer[0].style.height = "140px";
+  	
+  	var navLeft = document.getElementsByClassName("nav-left");
+  	navLeft[0].style.marginTop = "30px";
+
+  	var navRight = document.getElementsByClassName("nav-right");
+  	navRight[0].style.marginTop = "30px";
   }
 }
