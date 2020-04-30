@@ -1,0 +1,53 @@
+@import "fonts.css";
+
+html {
+  background-color: #1B1F2A;
+  scroll-behavior: smooth;
+}
+
+body, * {
+  box-sizing: border-box;
+  color: #fff;
+  font: normal 400 18px/1 'Chunky-tomato-bisque', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+}
+
+.subject-bold {
+  font: 700 1em "Chunky-tomato-bisque", sans-serif;
+}
+
+.container {
+  width: 30%;
+  margin: 0 35%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  font: 400 2em/1.1 "Lentil-vegetable", serif;
+  bottom: 0;
+}
+
+img {
+  width: 100%;
+  margin: 70px 0 0 0;
+}
+
+
+/*---------------------------------*/
+/*------------ Tablets ------------*/
+/*---------------------------------*/
+
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 70%;
+    margin: 0 15%;
+  }
+}

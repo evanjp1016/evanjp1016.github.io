@@ -48,7 +48,7 @@ body, * {
 }
 
 .table-of-contents {
-  background-color: #FFFFFF;
+  background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   bottom: 20px;
@@ -162,7 +162,7 @@ body, * {
   top: 0;
   width: 100%;
   z-index: 1;
-  transition: .2s;
+  transition: .1s;
 }
 
 .nav-left {
