@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<!-- "What is today but yesterday's tomorrow?" - Mr. Krabs -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Merit Network</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="static/project-style-grid.css">
+</head>
+
+<body>
+
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- To Top -------------- -->
+  <!-- ----------------------------------- -->
+
+
+  <i onclick="topFunction()" class="toTop material-icons">arrow_upward</i>
+
+
+  <!-- ----------------------------------- -->
+  <!-- --------  Table of Contents -------- -->
+  <!-- ----------------------------------- -->
+
+  <i class="toc-icon material-icons" onmouseover="openContents()" onclick="openContents()">notes</i>
+
+  <div class="table-of-contents" onmouseleave="closeContents()" onclick="closeContents()">
+    <ol>
+      <li><a href="#" onclick="topFunction()">Title</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#prototyping">Prototyping</a></li>
+      <li><a href="#alpha">AMON’s Alpha phase</a></li>
+      <li><a href="#beta">AMON’s Beta phase</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+    </ol>
+  	<p onclick="closeContents()">Close</p>
+  </div>
+
+
+  <!-- ----------------------------------- -->
+  <!-- --------------- Nav --------------- -->
+  <!-- ----------------------------------- -->
+
+
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="index-may2020.html"><i class="material-icons">arrow_back</i>back</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="index-may2020.html">work</a>
+      <a href="about.html">about</a>
+      <a href="static/evan-pesch-resume.pdf" target="_blank">resume</a>
+    </div>
+  </div>
+
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- Project ------------- -->
+  <!-- ----------------------------------- -->
+
+
+  <div class="project-wrapper">
+
+
+  <!-- ----------------------------------- -->
+  <!-- --------- Project Header ---------- -->
+  <!-- ----------------------------------- -->
+
+
+    <div class="header-container">
+    	<div class="header">
+    		<h4 class="header-date">2017 - 2019</h4>
+    		<h2 class="header-title">Prototyping and developing a cybersecurity dashboard <span class="italic">with</span> <span class="subject-bold">Merit Network</span></h2>
+    	</div>
+
+    	<div class="thumbnail" alt="Alt Text Here">
+    		<img src="static/thumbnails/d3-large.png" alt="Data Driven Detroit Toolbox on laptop screen">
+    	</div>
+
+    	<div class="brief">
+    		<p><span class="subject-bold">AMON (All-packet Monitor)</span> is a project of <span class="tooltip">Merit Network’s<span class="popup" onclick="showTooltip()">A non-profit organization that provides computer networking services to educational, government, health care, and non-profit organizations primarily in Michigan</span></span> Research & Development team. AMON is low-cost, high-quality network monitoring software that allows network operators to observe real-time internet traffic from their network and mitigate potential cyber attacks as they occur.</p>
+    	</div>
+    </div>
+
+    <!-- ----------------------------------- -->
+    <!-- --------- Ch 1. Overview ---------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="overview"></a>
+    <div class="chapter-container">
+    	<div class="title">
+    			<h3>Overview</h3>
+    	</div>
+
+    	<div class="overview-info">
+        <div class="info-row">
+          <h5>Context</h5>
+          <p>Full-time internship, and later part-time position</p>
+        </div>
+
+        <div class="info-row">
+          <h5>Duties</h5>
+          <p>Prototyping, front-end development</p>
+        </div>
+
+        <div class="info-row">
+          <h5>Team</h5>
+          <p>6-8 software engineers and researchers</p>
+        </div>
+      </div>
+
+    	<div class="subtitle">
+    		<h4>Problem</h4>
+    	</div>
+
+    	<div class="paragraph">
+    		<p>To monitor the status and activity of devices connected to a <span class="tooltip">computer network<span class="popup" onclick="showTooltip()">A collection of connected computers and devices which can share resource like an internet connection, printer, or application all linked together wirelessly or via communication devices and transmission media <a href="https://www.guru99.com/difference-between-network-and-internet.html" target="_blank">[source]</a></span></span>, a <span class="tooltip">network operator<span class="popup" onclick="showTooltip()">The entity that has administrative rights to manage a network</span></span> uses network monitoring tools.</p>
+
+        <p>With many standard network monitoring tools, malicious network activity, such as a cyber attack, is often not noticed until after the damage has been done. This is due to a multi-minute delay introduced while these tools sample and compress internet packets to analyze traffic before network engineers can see any <span class="tooltip">network activity data<span class="popup" onclick="showTooltip()">Recorded data regarding activity to and from computers and devices within a network, including internet traffic data between source and destination IP addresses</span></span>.</p>
+    	</div>
+
+    	<div class="subtitle">
+    		<h4>Goal</h4>
+    	</div>
+
+    	<div class="paragraph">
+        <p>Prior to my arrival, the team developed back-end network monitoring software, known as AMON, that collects, analyzes, and sorts all incoming internet packets from a network in real-time to eliminate the multi-minute delay before viewing network activity data.</p>
+
+        <p>Upon my arrival, our team’s goal was to <span class="bold">develop and start testing a client-facing dashboard for AMON</span>. This dashboard was meant to:</p>
+
+        <ol>
+          <li><span>visualize real-time network activity data</span></li>
+          <li><span>notify network operators of potential cyber attacks as they happen</span></li>
+          <li><span>provide informative data recorded during these potential attacks to help mitigate any damage</span></li>
+        </ol>
+    	</div>
+
+    	<div class="subtitle">
+    		<h4>My role</h4>
+    	</div>
+
+    	<div class="paragraph">
+    		<p>My role was to develop prototypes, data visualizations, and front-end software to help create AMON’s client-facing dashboard as well as write software documentation to help network operators install and begin using AMON.</p>
+    	</div>
+    </div>
+
+    <!-- ----------------------------------- -->
+    <!-- -------- Ch 2. Prototyping -------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="prototyping"></a>
+    <div class="chapter-container">
+    	<div class="title">
+        <h3>Starting with prototypes</h3>
+    	</div>
+
+    	<div class="subtitle">
+    		<h4>Visualizing live network traffic</h4>
+    	</div>
+
+    	<div class="paragraph">
+    		<p>Although I was not a member of the AMON team when it was created, the cornerstone for this project was the IP Pair, a data visualization of real-time internet traffic within a network as well as an identifier for potential malicious activity.</p>
+
+        <p>The IP Pair functions as a heat-map which updates every three seconds visualizing internet traffic volume shared between source IP addresses and destination <span class="tooltip">IP addresses<span class="popup" onclick="showTooltip()">Internet Protocol address is a “numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication" <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank">[source]</a></span></span> (where at least the source or destination is within the network being monitored). The x-axis displays source <span class="tooltip">bins<span class="popup" onclick="showTooltip()">sorted and hashed collections of source or destination IP addresses</span></span> and the y-axis displays destination bins, while red, yellow, and green tiles correspond to high, medium, and low traffic between these source-destination pairs.</p>
+    	</div>
+
+      <div class="double-image">
+        <div>
+          <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+          <p>Caption</p>
+        </div>
+
+        <div>
+          <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+          <p>Caption</p>
+        </div>
+      </div>
+
+      <div class="paragraph">
+        <p>A red horizontal line across the heat-map indicates a high impact event where many source IP addresses target a single destination IP, likely a <span class="tooltip">DDoS attack<span class="popup" onclick="showTooltip()">A cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable by flooding the targeted machine or resource with superfluous requests from many different sources in an attempt to overload systems and prevent legitimate requests from being fulfilled <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack" target="_blank">[source]</a></span></span>. When this phenomenon is seen, network operators can begin to address the issue without delay in order to prevent further damage.</p>
+      </div>
+
+
+    	<div class="subtitle">
+    			<h4>Prototyping new features (where I start)</h4>
+    	</div>
+
+    	<div class="paragraph">
+    		<p>While the IP Pair could help network operators mitigate malicious activity, it had some limitations. While you could hover over tiles to see the source and destination IP’s and traffic volume, the available data did not go further than that, leaving room for misidentification of malicious activity. In addition, the IP Pair was basically useless if somebody wasn’t watching it at all times.</p>
+
+    		<p>My early role on the AMON team was to prototype new features that our team worked together to ideate. The prototypes I created worked to address the IP Pair’s limitations, often taking the shape of new interactive data visualizations, data tables, or adaptations of the existing IP Pair.</p>
+    	</div>
+
+      <div class="subtitle">
+          <h4>Rapidly coding live prototypes</h4>
+      </div>
+
+      <div class="paragraph">
+        <p>The most effective way for us to learn how new features would perform with real data was to actually use real data. Being a team within Merit Network, an Internet Service Provider and network operator, we were able to populate our prototypes with real, live internet traffic data from our own network.</p>
+
+        <p>This, however, eliminated the possibility of using standard design prototyping tools like InVision or Adobe XD. Instead, I chose to code functional prototypes with Python and two accompanying Python libraries, Pandas and Bokeh.</p>
+
+        <p>These prototypes were tested within our team to answer a simple question: does this feature help me understand what is happening within the network? In total, I built 10 feature prototypes; 3 are shown below.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="subtitle">
+        <h4>Early dashboard prototypes and mockups</h4>
+      </div>
+
+      <div class="paragraph">
+        <p>The programmatic construction of these prototypes paved the way for me to quickly build early versions of AMON’s dashboard. After testing each prototype, we chose our best new features and I created a Python-based web application that allowed us to play with each feature in the context of a client-facing dashboard.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="paragraph">
+        <p>As I developed a dashboard prototype, I also created high-fidelity, conceptual mockups of AMON’s dashboard to help guide us in thinking about user experience and accessibility as we moved forward.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- ----------- Ch 3. Alpha ----------- -->
+    <!-- ----------------------------------- -->
+
+
+    <a href="#" name="alpha"></a>
+    <div class="chapter-container">
+    	<div class="title">
+    		<h3>AMON’s Alpha phase</h3>
+    	</div>
+
+    	<div class="subtitle">
+    		<h4>Developing the Alpha phase</h4>
+    	</div>
+
+    	<div class="paragraph">
+        <p>My earlier prototypes cleared the way for the next phase of our project: simplifying AMON’s dashboard to a few key features and developing AMON’s Alpha phase software. This was built as a lightweight, prototypical version of our software meant for testing and feedback purposes rather than a full representation of the final product.</p>
+
+    		<p>Our back-end developers refined our data collection and analytics foundation while I designed and developed the front-end system atop their work to construct a cohesive dashboard interface.</p>
+      </div>
+
+    	<div class="subtitle">
+    		<h4>Three key features</h4>
+    	</div>
+
+    	<div class="paragraph">
+    		<p><span class="bold">1. IP Pair (including history)</span></p>
+
+    		<p>Addressing our goal to visualize real-time network activity, our earliest data visualization, the IP Pair, remained the cornerstone of the project. As before, it offered real-time, heat-map visualization of network activity and it clearly visualized potential DDoS attacks.</p>
+
+        <p>Adapted from my earlier prototypes, a new feature of the IP Pair was the ability to adjust sliders in order to go “back in time” and view internet activity from the past.</p>
+      </div>
+
+    	<div class="small-image">
+    		<img src="static/images/data-driven-detroit/problems-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
+    		<p>Caption</p>
+    	</div>
+
+      <div class="paragraph">
+        <p><span class="bold">2. Alerts</span></p>
+
+        <p>Addressing our goal to identify high-impact events (potential malicious activity) as they happen, the Alerts feature offered a data table where network operators could view a list of high-impact events. This included events where internet traffic was significantly higher than usual between source and destination IP addresses. Each event was recorded with its corresponding source or destination bin number, its start and end times, its total duration in seconds, an intensity metric, and an Event ID number.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/problems-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="paragraph">
+        <p><span class="bold">3. Forensics</span></p>
+
+        <p>Addressing our goal to provide more information about potential attacks, the Forensics feature allowed network operators to further inspect the events recorded by the Alerts feature. By either selecting particular events on the alerts page or searching for events using their Event ID, network operators could view the data collected from that event. This included information about which IP addresses were involved, the volume of traffic they exchanged, the ports they used, as well as the protocols they used. This information would help determine whether or not the event was likely malicious as well as where it came from and who it targeted.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/problems-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="subtitle">
+        <h4>Launching the Alpha phase</h4>
+      </div>
+
+      <div class="paragraph">
+        <p>The first shared version of AMON was made available to selected clients and open-source developers in the summer of 2018. After its release, we began work on AMON’s Beta phase, rebuilding the dashboard with a more conventional structure, a focus on necessary security features, and any changes based on feedback from the Alpha release.</p>
+
+        <p>This version of AMON is available <a href="https://github.com/Merit-Research/AMON" target="_blank">here on Github</a>.</p>
+      </div>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- ----------- Ch 4. Beta ------------ -->
+    <!-- ----------------------------------- -->
+
+
+    <a href="#" name="beta"></a>
+    <div class="chapter-container">
+    	<div class="title">
+    			<h3>AMON’s Beta phase</h3>
+    	</div>
+
+    	<div class="subtitle">
+    		<h4>Focusing on structure and security</h4>
+    	</div>
+
+      <div class="paragraph">
+    		<p>Starting from scratch and rebuilding AMON as a full Flask-based web application allowed us to follow a more conventional Model-View-Controller structure while also focusing on security and privacy necessities.</p>
+
+        <p>While other team members tackled the security enhancements to our new dashboard, I worked to develop official versions of our three key features.</p>
+      </div>
+
+      <div class="subtitle">
+        <h4>Lean UX: cleaning the interface</h4>
+      </div>
+
+      <div class="paragraph">
+    		<p>The first thing we had to consider was how the dashboard interface would change from its prototypical predecessors. As this project adopted a lean approach to UX design early on, moving into the Beta phase meant cleaning and organizing the interface to simplify the user experience without spending much time on usability testing or other UX research. For me, this meant quickly creating hi-fidelity mockups of each of our key features to guide our development efforts.</p>
+      </div>
+
+    	<div class="large-image">
+    		<img src="static/images/data-driven-detroit/solutions-03.png" alt="Data Driven Detroit's three existing Toolbox designs">
+    		<p>Caption</p>
+    	</div>
+
+      <div class="large-image">
+        <img src="static/images/data-driven-detroit/solutions-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="large-image">
+        <img src="static/images/data-driven-detroit/solutions-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="subtitle">
+        <h4>Building dynamic data visualizations with d3.js</h4>
+      </div>
+
+      <div class="paragraph">
+    		<p>Aligning with feedback from our Alpha release, our Beta phase data visualizations had to take on a more robust form. To do this we switched from Python data visualizations to, d3.js, a javascript visualization tool.</p>
+
+        <p>While Bokeh, our Python-based visualization library, offered prefabricated chart-types with limited visual design control and user interactions, d3.js works by binding data to a Document Object Model (DOM). This meant that as long as we had data to visualize, we had complete control in building and styling our charts, developing how the user could interact with them, and animating how they would change upon user input or addition of new data.</p>
+
+        <p>This freedom allowed us to better tailor our visualizations and interactions to the needs of network engineers as well as improve their performance, visual accessibility, and viewport responsiveness.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/data-driven-detroit/solutions-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+    	<div class="subtitle">
+    		<h4>Data retrieval and open source development with a RESTful API</h4>
+    	</div>
+
+      <div class="paragraph">
+    		<p>To populate our features and visualizations with live network data, we decided to build a RESTful API to retrieve data from our back-end databases. This eliminated the need for our data visualizations to connect directly to back-end databases and instead allowed them to retrieve JSON data from simple web URL’s with custom parameters.</p>
+
+        <p>This not only made my work creating interactive features and visualizations easier, it also opened the door to open-source development of new features. With the AMON API, anybody with a valid AMON account could retrieve network data and build their own applications and data visualizations.</p>
+      </div>
+
+    	<div class="small-image">
+    		<img src="static/images/data-driven-detroit/solutions-06.png" alt="Data Driven Detroit's three existing Toolbox designs">
+    		<p>Caption</p>
+    	</div>
+
+      <div class="subtitle">
+        <h4>Leaving the project before completion</h4>
+      </div>
+
+      <div class="paragraph">
+    		<p>Most of AMON’s contributors were either university-funded research students, interns, or part-time workers; all of which, including myself, would most-likely not be working on the project for more than a year or two due to limited grant-funded compensation. Knowing this, we wanted to be sure that new contributors would be able to easily pick up where we left off.</p>
+
+        <p>I left Merit in April 2019. While we did not have AMON’s Beta phase complete, we had made it a point throughout the entire process to ensure that clear, abundant documentation and clean, understandable code were at the foundation of how this project would continue as team members changed.</p>
+      </div>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- -------- Ch 4. Reflection --------- -->
+    <!-- ----------------------------------- -->
+
+
+    <a href="#" name="reflection"></a>
+    <div class="chapter-container">
+    	<div class="title">
+    			<h3>Reflection</h3>
+    	</div>
+
+    	<div class='subtitle'>
+    		<h4>What I learned from this project</h4>
+    	</div>
+
+    	<div class="paragraph">
+    		<p>Text</p>
+
+    		<p>Text</p>
+
+    		<p>Text</p>
+    	</div>
+    </div>
+  </div>
+
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- Footer -------------- -->
+  <!-- ----------------------------------- -->
+
+
+  <div class="footer">
+  	<div class="previous-project">
+      <a href="d3-new-layout.html"><i class="material-icons">arrow_back</i>Previous project <span class="italic">with</span> <span class="subject-bold">Data Driven Detroit</span></a>
+  	</div>
+  	<div class="next-project">
+  		<a href="hearbud.html">Next project <span class="italic">called</span> <span class="subject-bold">Hearbud</span><i class="material-icons">arrow_forward</i></a>
+  	</div>
+  </div>
+
+</body>
+
+
+<!-- ----------------------------------- -->
+<!-- ------------ Scripts -------------- -->
+<!-- ----------------------------------- -->
+
+
+<script src="static/js/table-of-contents.js"></script>
+<script src="static/js/to-top.js"></script>
+<script src="static/js/tooltip.js"></script>
+<script src="static/js/nav-height-scroll.js"></script>
+
+</html>

@@ -16,9 +16,9 @@ function scrollFunction() {
   	navContainer[0].style.height = "140px";
   	
   	var navLeft = document.getElementsByClassName("nav-left");
-  	navLeft[0].style.marginTop = "30px";
+  	navLeft[0].style.marginTop = "70px";
 
   	var navRight = document.getElementsByClassName("nav-right");
-  	navRight[0].style.marginTop = "30px";
+  	navRight[0].style.marginTop = "70px";
   }
 }
