@@ -167,23 +167,21 @@
     	<div class="paragraph">
     		<p>Although I was not a member of the AMON team when it was created, the cornerstone for this project was the IP Pair, a data visualization of real-time internet traffic within a network as well as an identifier for potential malicious activity.</p>
 
-        <p>The IP Pair functions as a heat-map which updates every three seconds visualizing internet traffic volume shared between source IP addresses and destination <span class="tooltip">IP addresses<span class="popup" onclick="showTooltip()">Internet Protocol address is a “numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication" <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank">[source]</a></span></span> (where at least the source or destination is within the network being monitored). The x-axis displays source <span class="tooltip">bins<span class="popup" onclick="showTooltip()">sorted and hashed collections of source or destination IP addresses</span></span> and the y-axis displays destination bins, while red, yellow, and green tiles correspond to high, medium, and low traffic between these source-destination pairs.</p>
+        <p>The IP Pair functions as a heat-map which updates every three seconds visualizing internet traffic volume shared between source <span class="tooltip">IP addresses<span class="popup" onclick="showTooltip()">Internet Protocol address is a “numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication" <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank">[source]</a></span></span> and destination IP addresses (where at least the source or destination is within the network being monitored). The x-axis displays source <span class="tooltip">bins<span class="popup" onclick="showTooltip()">sorted and hashed collections of source or destination IP addresses</span></span> and the y-axis displays destination bins, while lighter and darker tiles correspond to lower and higher traffic between these source-destination pairs.</p>
     	</div>
 
-      <div class="double-image">
-        <div>
-          <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <div class="small-image">
+          <img src="static/images/merit/prototypes-01.gif" alt="Data Driven Detroit's three existing Toolbox designs">
           <p>Caption</p>
         </div>
-
-        <div>
-          <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
-          <p>Caption</p>
-        </div>
-      </div>
 
       <div class="paragraph">
-        <p>A red horizontal line across the heat-map indicates a high impact event where many source IP addresses target a single destination IP, likely a <span class="tooltip">DDoS attack<span class="popup" onclick="showTooltip()">A cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable by flooding the targeted machine or resource with superfluous requests from many different sources in an attempt to overload systems and prevent legitimate requests from being fulfilled <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack" target="_blank">[source]</a></span></span>. When this phenomenon is seen, network operators can begin to address the issue without delay in order to prevent further damage.</p>
+        <p>Shown below, a dark horizontal line across the IP Pair indicates a high impact event where many source IP's target a single destination IP, likely a <span class="tooltip">DDoS attack<span class="popup" onclick="showTooltip()">A cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable by flooding the targeted machine or resource with superfluous requests from many different sources in an attempt to overload systems and prevent legitimate requests from being fulfilled <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack" target="_blank">[source]</a></span></span>. When this phenomenon is seen, network operators can begin to address the issue without delay in order to prevent further damage.</p>
+      </div>
+
+      <div class="small-image">
+        <img src="static/images/merit/prototypes-02.gif" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
       </div>
 
 
@@ -192,7 +190,7 @@
     	</div>
 
     	<div class="paragraph">
-    		<p>While the IP Pair could help network operators mitigate malicious activity, it had some limitations. While you could hover over tiles to see the source and destination IP’s and traffic volume, the available data did not go further than that, leaving room for misidentification of malicious activity. In addition, the IP Pair was basically useless if somebody wasn’t watching it at all times.</p>
+    		<p>The IP Pair did have limitations. The only readable data was the source IP, destination IP, and traffic volume displayed while hovering over a tile on the IP Pair. This left room for misidentification of malicious activity. In addition, the IP Pair was basically useless if somebody wasn’t watching it at all times.</p>
 
     		<p>My early role on the AMON team was to prototype new features that our team worked together to ideate. The prototypes I created worked to address the IP Pair’s limitations, often taking the shape of new interactive data visualizations, data tables, or adaptations of the existing IP Pair.</p>
     	</div>
@@ -206,40 +204,50 @@
 
         <p>This, however, eliminated the possibility of using standard design prototyping tools like InVision or Adobe XD. Instead, I chose to code functional prototypes with Python and two accompanying Python libraries, Pandas and Bokeh.</p>
 
-        <p>These prototypes were tested within our team to answer a simple question: does this feature help me understand what is happening within the network? In total, I built 10 feature prototypes; 3 are shown below.</p>
+        <p>These prototypes were tested within our team to answer a simple question: does this feature help me understand what is happening within the network? In total, I built 10 feature prototypes; 4 are shown below.</p>
       </div>
 
-      <div class="small-image">
-        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+      <div class="large-image">
+        <img src="static/images/merit/images/prototype-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="large-image">
+        <img src="static/images/merit/images/prototype-03.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="large-image">
+        <img src="static/images/merit/images/prototype-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+      <div class="large-image">
+        <img src="static/images/merit/images/prototype-05.png" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
       </div>
 
       <div class="subtitle">
-        <h4>Early dashboard prototypes and mockups</h4>
+        <h4>Early dashboard prototype</h4>
       </div>
 
       <div class="paragraph">
         <p>The programmatic construction of these prototypes paved the way for me to quickly build early versions of AMON’s dashboard. After testing each prototype, we chose our best new features and I created a Python-based web application that allowed us to play with each feature in the context of a client-facing dashboard.</p>
       </div>
 
-      <div class="small-image">
-        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+      <div class="large-image">
+        <img src="static/images/merit/gifs/lo-fi-dashboard-sm-2.gif" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
       </div>
 
-      <div class="paragraph">
+      <!-- <div class="paragraph">
         <p>As I developed a dashboard prototype, I also created high-fidelity, conceptual mockups of AMON’s dashboard to help guide us in thinking about user experience and accessibility as we moved forward.</p>
       </div>
 
       <div class="small-image">
         <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
-      </div>
-
-      <div class="small-image">
-        <img src="static/images/data-driven-detroit/research-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
-        <p>Caption</p>
-      </div>
+      </div> -->
     </div>
 
 
@@ -276,10 +284,10 @@
         <p>Adapted from my earlier prototypes, a new feature of the IP Pair was the ability to adjust sliders in order to go “back in time” and view internet activity from the past.</p>
       </div>
 
-    	<div class="small-image">
-    		<img src="static/images/data-driven-detroit/problems-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
-    		<p>Caption</p>
-    	</div>
+    	<div class="large-image">
+        <img src="static/images/merit/images/alpha-01.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
 
       <div class="paragraph">
         <p><span class="bold">2. Alerts</span></p>
@@ -287,19 +295,21 @@
         <p>Addressing our goal to identify high-impact events (potential malicious activity) as they happen, the Alerts feature offered a data table where network operators could view a list of high-impact events. This included events where internet traffic was significantly higher than usual between source and destination IP addresses. Each event was recorded with its corresponding source or destination bin number, its start and end times, its total duration in seconds, an intensity metric, and an Event ID number.</p>
       </div>
 
-      <div class="small-image">
-        <img src="static/images/data-driven-detroit/problems-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
+      <div class="large-image">
+        <img src="static/images/merit/images/alpha-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
       </div>
 
       <div class="paragraph">
         <p><span class="bold">3. Forensics</span></p>
 
-        <p>Addressing our goal to provide more information about potential attacks, the Forensics feature allowed network operators to further inspect the events recorded by the Alerts feature. By either selecting particular events on the alerts page or searching for events using their Event ID, network operators could view the data collected from that event. This included information about which IP addresses were involved, the volume of traffic they exchanged, the ports they used, as well as the protocols they used. This information would help determine whether or not the event was likely malicious as well as where it came from and who it targeted.</p>
+        <p>Addressing our goal to provide more information about potential attacks, the Forensics feature allowed network operators to further inspect the events recorded by the Alerts feature. By either selecting particular events on the alerts page or searching for events using their Event ID, network operators could view the data collected from that event.</p>
+
+        <p>Using large toggle buttons, the Forensics feature is able to display information about which IP addresses were involved in the event, the volume of traffic they exchanged, the ports they used, as well as the protocols they used. This information would help determine whether or not the event was likely malicious as well as where it came from and who it targeted.</p>
       </div>
 
-      <div class="small-image">
-        <img src="static/images/data-driven-detroit/problems-02.png" alt="Data Driven Detroit's three existing Toolbox designs">
+      <div class="large-image">
+        <img src="static/images/merit/images/alpha-03.png" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
       </div>
 
@@ -344,18 +354,18 @@
     		<p>The first thing we had to consider was how the dashboard interface would change from its prototypical predecessors. As this project adopted a lean approach to UX design early on, moving into the Beta phase meant cleaning and organizing the interface to simplify the user experience without spending much time on usability testing or other UX research. For me, this meant quickly creating hi-fidelity mockups of each of our key features to guide our development efforts.</p>
       </div>
 
-    	<div class="large-image">
-    		<img src="static/images/data-driven-detroit/solutions-03.png" alt="Data Driven Detroit's three existing Toolbox designs">
-    		<p>Caption</p>
-    	</div>
-
       <div class="large-image">
-        <img src="static/images/data-driven-detroit/solutions-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <img src="static/images/merit/images/ip-pair-beta-mockup.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <p>Caption</p>
+      </div>
+
+    	<div class="large-image">
+        <img src="static/images/merit/images/ip-pair-beta-mockup.png" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
       </div>
 
       <div class="large-image">
-        <img src="static/images/data-driven-detroit/solutions-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
+        <img src="static/images/merit/images/ip-pair-beta-mockup.png" alt="Data Driven Detroit's three existing Toolbox designs">
         <p>Caption</p>
       </div>
 
@@ -371,11 +381,6 @@
         <p>This freedom allowed us to better tailor our visualizations and interactions to the needs of network engineers as well as improve their performance, visual accessibility, and viewport responsiveness.</p>
       </div>
 
-      <div class="small-image">
-        <img src="static/images/data-driven-detroit/solutions-04.png" alt="Data Driven Detroit's three existing Toolbox designs">
-        <p>Caption</p>
-      </div>
-
     	<div class="subtitle">
     		<h4>Data retrieval and open source development with a RESTful API</h4>
     	</div>
@@ -385,11 +390,6 @@
 
         <p>This not only made my work creating interactive features and visualizations easier, it also opened the door to open-source development of new features. With the AMON API, anybody with a valid AMON account could retrieve network data and build their own applications and data visualizations.</p>
       </div>
-
-    	<div class="small-image">
-    		<img src="static/images/data-driven-detroit/solutions-06.png" alt="Data Driven Detroit's three existing Toolbox designs">
-    		<p>Caption</p>
-    	</div>
 
       <div class="subtitle">
         <h4>Leaving the project before completion</h4>
