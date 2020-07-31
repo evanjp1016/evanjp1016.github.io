@@ -4,7 +4,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
   	var navContainer = document.getElementsByClassName("nav-container");
-  	navContainer[0].style.height = "70px";
+  	navContainer[0].style.height = "60px";
 
   	var navLeft = document.getElementsByClassName("nav-left");
   	navLeft[0].style.marginTop = "0";
@@ -13,12 +13,12 @@ function scrollFunction() {
   	navRight[0].style.marginTop = "0";
   } else {
   	var navContainer = document.getElementsByClassName("nav-container");
-  	navContainer[0].style.height = "140px";
+  	navContainer[0].style.height = "90px";
   	
   	var navLeft = document.getElementsByClassName("nav-left");
-  	navLeft[0].style.marginTop = "70px";
+  	navLeft[0].style.marginTop = "20px";
 
   	var navRight = document.getElementsByClassName("nav-right");
-  	navRight[0].style.marginTop = "70px";
+  	navRight[0].style.marginTop = "20px";
   }
 }

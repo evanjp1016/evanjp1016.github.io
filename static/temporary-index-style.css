@@ -20,6 +20,10 @@ body, * {
   font: 700 1em "Chunky-tomato-bisque", sans-serif;
 }
 
+.subject-bold s {
+  font: 700 1em "Chunky-tomato-bisque", sans-serif;
+}
+
 .container {
   width: 30%;
   margin: 0 35%;

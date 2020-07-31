@@ -16,7 +16,6 @@
 
 
 
-
   <!-- ----------------------------------- -->
   <!-- ------------- To Top -------------- -->
   <!-- ----------------------------------- -->
@@ -36,9 +35,10 @@
     </div>
 
     <div class="nav-right">
-      <a href="#work">work</a>
-      <a href="about.html">about</a>
-      <a href="static/evan-pesch-resume.pdf" target="_blank">resume</a>
+      <a href="#work" class="current-page">work</a>
+      <a href="about-grid.html">about</a>
+      <a href="contact.html">contact</a>
+      <a href="static/resume/evan-pesch-resume.pdf" target="_blank">resume</a>
     </div>
   </div>
 
@@ -62,8 +62,12 @@
     </div>
 
     <div class="gif">
-      <img id="homegif" loading="lazy"> <!-- src is defined by play-gif.js -->
+      <img src="static/images/index/beatmaker.png" loading="lazy">
     </div>
+
+    <!-- <div class="gif"> -->
+      <!-- <img id="homegif" loading="lazy"> --> <!-- src is defined by play-gif.js -->
+    <!-- </div> -->
   </div>
 
 
@@ -74,36 +78,33 @@
 
 	<a name="work" class="top"></a>
   <div class="scroll-arrow">
-  	<p>work</p>
-  	<i class="material-icons">arrow_downward</i>
+  	<p>see my work below</p>
   </div>
 
   <div class="single-row first-project">
   	<div class="thumbnail">
-  		<a href="d3-new-layout.html"><img src="static/images/project-thumbnails/tropical.png" loading="lazy" alt=""></a>
+  		<a href="d3-new-layout.html"><img src="static/images/project-thumbnails/data-driven-detroit.png" loading="lazy" alt=""></a>
   	</div>
   	<div class="title">
   		<a href="d3-new-layout.html"><h2>Redesigning a library of open data for Detroit, Michigan <span class="italic">with</span> <span class="subject-bold">Data Driven Detroit</span></h2></a>
   	</div>
   </div>
 
-  <div class="double-row">
-    <div class="double-row-column">
-    	<div class="thumbnail">
-    		<a href="merit.html"><img src="static/images/project-thumbnails/blue-placeholder.png" loading="lazy" alt=""></a>
-    	</div>
-    	<div class="title">
-    		<a href="merit.html"><h2>Prototyping and developing a cybersecurity dashboard <span class="italic">with</span> <span class="subject-bold">Merit Network</span></h2></a>
-    	</div>
+  <div class="single-row">
+    <div class="thumbnail">
+    	<a href="merit.html"><img src="static/images/project-thumbnails/blue-placeholder-long.png" loading="lazy" alt=""></a>
     </div>
+    <div class="title">
+    	<a href="merit.html"><h2>Prototyping and developing a cybersecurity dashboard <span class="italic">with</span> <span class="subject-bold">Merit Network</span></h2></a>
+    </div>
+  </div>
 
-    <div class="double-row-column">
-      <div class="thumbnail">
-        <a href="#"><img src="static/images/project-thumbnails/blue-placeholder.png" loading="lazy" alt=""></a>
-      </div>
-      <div class="title">
-        <a href="#"><h2>Designing an accessible solution for impaired hearing <span class="italic">called</span> <span class="subject-bold">Hearbud</span></h2></a>
-      </div>
+  <div class="single-row">
+    <div class="thumbnail">
+      <a href="#"><img src="static/images/project-thumbnails/blue-placeholder-long.png" loading="lazy" alt=""></a>
+    </div>
+    <div class="title">
+      <a href="#"><h2>Designing an accessible solution for impaired hearing <span class="italic">called</span> <span class="subject-bold">Hearbud</span></h2></a>
     </div>
   </div>
 
@@ -116,38 +117,40 @@
     </div>
   </div>
 
-  <div class="double-row">
-    <div class="double-row-column">
-      <div class="thumbnail">
-        <a href="merit-new-layout.html"><img src="static/images/project-thumbnails/blue-placeholder.png" loading="lazy" alt=""></a>
-      </div>
-      <div class="title">
-        <a href="merit-new-layout.html"><h2>Educating a community about urban design <span class="italic">with</span> <span class="subject-bold">Reimagine Muskegon</span></h2></a>
-      </div>
+  <div class="single-row">
+    <div class="thumbnail">
+      <a href="merit-new-layout.html"><img src="static/images/project-thumbnails/blue-placeholder-long.png" loading="lazy" alt=""></a>
     </div>
-
-    <div class="double-row-column">
-      <div class="more-work">
-        <a href="#" class="more-work-button">See more work</a>
-      </div>
+    <div class="title">
+      <a href="merit-new-layout.html"><h2>Educating a community about urban design <span class="italic">with</span> <span class="subject-bold">Reimagine Muskegon</span></h2></a>
     </div>
   </div>
 
-
+  <!-- <div class="more-work">
+    <a href="#" class="more-work-button">See more work</a>
+  </div>
+ -->
   <!-- ----------------------------------- -->
   <!-- -------------- Email -------------- -->
   <!-- ----------------------------------- -->
 
 
   <div class="email-container">
-  	<div class="email-gif">
-  		<img src="static/images/gifs/get-in-touch-real.gif" loading="lazy">
+  	<div class="email-header">
+  		<h4>Feel free to reach out and say hi.</h4>
   	</div>
-  	<div class="email-text">
-  		<h4><span class="subject-bold">Reach out</span> and say hello.</h4>
-  		<p>Feel free to get in touch if you’d like to talk! Not to mention, I'm looking to join a design team in 2020.</p>
-  		<p><a href="mailto:evanjpesch@gmail.com?Subject=Fresch%20Connection" target="_top">evanjpesch@gmail.com</a></p>
-  	</div>
+
+    <div class="email-gif">
+      <img src="static/images/footer/laptop-mug.png" loading="lazy">
+    </div>
+
+    <div class="email-text">
+      <p><a href="mailto:evanjpesch@gmail.com?Subject=Fresch%20Connection" target="_top">evanjpesch@gmail.com</a></p>
+    </div>
+
+    <div class="email-heart">
+      <p><span class="tooltip">&#9829;<span class=popup onclick="showTooltip()">Designed, coded, illustrated, and animated by me.</span></span></p>
+    </div>
   </div>
 </div>
 
@@ -155,20 +158,21 @@
 <!-- ------------- Footer -------------- -->
 <!-- ----------------------------------- -->
 
-<div class="footer">
+<!-- <div class="footer">
   <div class="left">
     <p class="copyright"><span class="dark">&copy; Evan Pesch <script type="text/javascript">document.write(new Date().getFullYear());</script></span></p>
   </div>
   <div class="right">
     <p><span class="tooltip">Made<span class=popup onclick="showTooltip()">Designed, coded, illustrated, animated. The works.</span></span> <span class="dark">by me</span></p>
   </div>
-</div>
+</div> -->
 
 </body>
 
 <script type="text/javascript" src="static/js/play-gif.js"></script>
-<script type="text/javascript" src="static/js/index-header.js"></script>
 <script type="text/javascript" src="static/js/to-top.js"></script>
 <script type="text/javascript" src="static/js/nav-height-scroll.js"></script>
+<!-- <script type="text/javascript" src="static/js/combined-home.js"></script> -->
+
 
 </html>
