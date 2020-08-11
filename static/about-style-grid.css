@@ -1,13 +1,13 @@
 @import "fonts.css";
 
 html {
-  background-color: #1b1f2a;
+  background-color: #f1f3ec;
   scroll-behavior: smooth;
 }
 
 body, * {
   box-sizing: border-box;
-  color: #fff;
+  color: #2b3348;
   font: normal 400 18px/1 'Chunky-tomato-bisque', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@ body, * {
 }
 
 .bold {
-  color: #fff;
+  color: #2b3348;
   font-weight: 700;
 }
 
@@ -44,11 +44,10 @@ body, * {
 
 
 .toTop {
-  background-color: #fff;
+  background-color: #2b3348;
   border-radius: 100px;
   bottom: 20px;
-  box-shadow:  0px 5px 7px rgba(0,0,0,.2);
-  color: #000;
+  color: #fff;
   cursor: default;
   display: block;
   font-size: 1.4em;
@@ -56,7 +55,6 @@ body, * {
   padding: 10px;
   position: fixed;
   right: 20px;
-  transition: .2s;
   visibility: hidden;
 }
 
@@ -76,52 +74,48 @@ body, * {
 /*---------------------------------*/
 
 
-.nav-container {
-  align-items: center;
-  animation-name: fade;
-  animation-duration: 2s;
-  background-color: #1b1f2a;
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
+.nav {
+  background-color: #f1f3ec;
   height: 90px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
   transition: .1s;
+  display: grid;
+  align-items: center;
 }
 
-.nav-left {
-  margin: 20px 0 0 40%; /*36% margin because this element is only 50% of the full screen width,
-                       hence 36% of 50% screen width equals 18% of 100% screen width.*/
+.nav-container {
+  align-items: center;
+  animation-name: fade;
+  animation-duration: 2s;
+  margin: 20px 18% 0 18%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  transition: .1s;
 }
 
 .nav-left a {
-  font: 700 1em 'Chunky-tomato-bisque', sans-serif;
+  font: 700 1.2em 'Chunky-tomato-bisque', sans-serif;
   padding: 0 0 2px 0;
   text-decoration: none;
 }
 
-.nav-left a i { /*back arrow*/
+/*
+BACK ARROW
+.nav-left a i {
   padding:0 10px 4px 0;
-  transition: .1s;
   vertical-align: middle;
 }
 
 .nav-left a:hover > i {
-  color: #fff;
+  color: #2b3348;
   margin: 0 0 0 -5px;
   padding: 0 15px 4px 0;
-  transition: .1s;
-}
-
-.nav-left a:hover, 
-.nav-left a:focus {
-  border-bottom: 1px solid #fff;
-}
+}*/
 
 .nav-right {
-  margin: 20px 40% 0 0;
   text-align: right;
 }
 
@@ -130,26 +124,25 @@ body, * {
 }
 
 .nav-right a {
-  color: #fff;
   padding: 0 0 2px 0;
-  opacity: .7;
   text-decoration: none;
 }
 
+.nav-right .current-page {
+  border-bottom: 1px solid #2b3348;
+}
+
+.nav-left a:hover, 
+.nav-left a:focus,
 .nav-right a:hover,
 .nav-right a:focus {
-  border-bottom: 1px solid white;
-  opacity: 1;
+  border-bottom: 1px solid #2b3348;
+  text-decoration: none;
 }
 
 .nav-left a:active,
 .nav-right a:active {
-  opacity: .5;
-}
-
-.nav-right .current-page {
-  border-bottom: 1px solid white;
-  opacity: 1;
+  opacity: .7;
 }
 
 
@@ -161,8 +154,8 @@ body, * {
 .page-wrapper {
   animation-name: fade;
   animation-duration: 2s;
-  margin: 0 20%;
-  width: 60%;
+  margin: 0 18%;
+  width: 64%;
 }
 
 
@@ -177,7 +170,7 @@ body, * {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 260px 0 0 0;
+  margin: 170px 0 0 0;
 }
 
 .header {
@@ -200,7 +193,7 @@ body, * {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 40px;
-  margin: 140px 0;
+  margin: 120px 0;
 }
 
 .portrait {
@@ -233,7 +226,7 @@ body, * {
 
 
 .resume-container {
-  border-top: 1px solid rgba(255, 255, 255,.2);
+  border-top: 1px solid rgba(43, 51, 72, .5);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 40px;
@@ -270,7 +263,7 @@ body, * {
 }
 
 .resume-button a {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #2b3348;
   padding: 0 0 3px 0;
   text-decoration: none
 }
@@ -288,7 +281,7 @@ body, * {
 
 
 .tooltip {
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #2b3348;
   color: inherit;
   cursor: pointer;
   display: inline-block;
@@ -297,7 +290,7 @@ body, * {
 }
 
 .tooltip .popup {
-  background-color: #12131d;
+  background-color: #2b3348;
   border-radius: 5px;
   bottom: calc(100% + 5px);
   color: #fff;
@@ -339,18 +332,30 @@ body, * {
 
 .email-container {
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255,.2);
+  border-top: 1px solid rgba(43, 51, 72, .5);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 180px 0 0 0;
+  padding: 140px 0 0 0;
+}
+
+.email-header {
+  text-align: center;
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.email-header h4 {
+  font: 400 1.5em/1.1 "Lentil-vegetable", serif;
+  margin: 0 0 30px 0;
 }
 
 .email-gif {
-  background-color: #1b1f2a;
+  background-color: #f1f3ec;
   grid-column-start: 5;
   grid-column-end: 9;
   width: 70%;
-  margin: 50px 15% 70px 15%;
+  margin: 10px 15% 40px 15%;
 }
 
 @supports (mix-blend-mode: screen) {
@@ -365,43 +370,32 @@ body, * {
     width: 100%;
     display: none;
   }
-
-  .header-container {
-    margin: 230px 0 100px 0;
-  }
 }
 
 .email-text {
   text-align: center;
-  grid-column-start: 4;
-  grid-column-end: 10;
-  width: 110%;
-  margin: 0 0 0 -5%;
-}
-
-.email-text p {
-  font: 400 1em/1.5 "Chunky-tomato-bisque", serif;
-  margin: 70px 0 0 0;
+  grid-column-start: 5;
+  grid-column-end: 9;
 }
 
 .email-text p a {
   font: 400 1em/1.4 "Chunky-tomato-bisque", serif;
-  opacity: .7;
   padding: 0 0 5px 0;
   text-decoration: none;
-  border-bottom: 1px solid #fffs;
+  border-bottom: 1px solid #2b3348;
 }
 
-.email-text a:hover {
+.email-text p a:hover {
+  border-bottom: none;
   font: 400 1em/1.4 "Chunky-tomato-bisque", serif;
-  opacity: 1;
+  opacity: .7;
 }
 
 .email-heart {
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 13;
-  margin: 0 0 20px 0;
+  margin: 100px 0 30px 0;
 }
 
 

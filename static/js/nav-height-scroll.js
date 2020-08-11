@@ -3,22 +3,16 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  	var nav = document.getElementsByClassName("nav");
+  	nav[0].style.height = "60px";
+
   	var navContainer = document.getElementsByClassName("nav-container");
-  	navContainer[0].style.height = "60px";
-
-  	var navLeft = document.getElementsByClassName("nav-left");
-  	navLeft[0].style.marginTop = "0";
-
-  	var navRight = document.getElementsByClassName("nav-right");
-  	navRight[0].style.marginTop = "0";
+  	navContainer[0].style.marginTop = "0";
   } else {
-  	var navContainer = document.getElementsByClassName("nav-container");
-  	navContainer[0].style.height = "90px";
+  	var nav = document.getElementsByClassName("nav");
+  	nav[0].style.height = "90px";
   	
-  	var navLeft = document.getElementsByClassName("nav-left");
-  	navLeft[0].style.marginTop = "20px";
-
-  	var navRight = document.getElementsByClassName("nav-right");
-  	navRight[0].style.marginTop = "20px";
+  	var navContainer = document.getElementsByClassName("nav-container");
+  	navContainer[0].style.marginTop = "20px";
   }
 }
