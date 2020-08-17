@@ -117,19 +117,6 @@ a.top {
   text-decoration: none;
 }
 
-/*
-BACK ARROW
-.nav-left a i {
-  padding:0 10px 4px 0;
-  vertical-align: middle;
-}
-
-.nav-left a:hover > i {
-  color: #2b3348;
-  margin: 0 0 0 -5px;
-  padding: 0 15px 4px 0;
-}*/
-
 .nav-right {
   text-align: right;
 }
@@ -199,11 +186,11 @@ BACK ARROW
 /* TOP AND BOTTOM */
 .header {
   grid-column-start: 2;
-  grid-column-end: 11;
+  grid-column-end: 12;
   text-align: center;
-  z-index: 1;
   width: 84%;
-  margin: 0 12%;
+  margin: 0 8%;
+  z-index: 1;
 }
 
 .header h3 {
@@ -233,7 +220,6 @@ BACK ARROW
 
 /* TOP AND BOTTOM */
 .gif {
-  background-color: #f1f3ec;
   grid-column-start: 4;
   grid-column-end: 9;
   width: 100%;
@@ -273,14 +259,14 @@ BACK ARROW
 
 
 .scroll-arrow {
-  opacity: .5;
   display: grid;
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-gap: 5px;
+  opacity: .5;
+  padding: 0 0 20px 0; /* TOP AND BOTTOM */
   text-align: center;
   /*padding: 40px 0 20px 0;*/ /* LEFT AND RIGHT */
-  padding: 0 0 20px 0; /* TOP AND BOTTOM */
 }
 
 .single-row {
@@ -304,19 +290,19 @@ BACK ARROW
 }
 
 .thumbnail {
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .thumbnail img {
+  border-radius: 3px;
   object-fit: cover;
   width: 100%;
-  border-radius: 3px;
 }
 
 .title {
-  text-decoration: none;
   margin: 20px 0 0 0;
+  text-decoration: none;
 }
 
 .title h2 {
@@ -333,15 +319,15 @@ BACK ARROW
 }
 
 .more-work a {
-    border-bottom: 1px solid #2b3348;
-    padding: 0 0 3px 0;
-    text-decoration: none;
+  border-bottom: 1px solid #2b3348;
+  padding: 0 0 3px 0;
+  text-decoration: none;
 }
 
 .more-work a:hover {
-    border-bottom: none;
-    opacity: .7;
-    text-decoration: none;
+  border-bottom: none;
+  opacity: .7;
+  text-decoration: none;
 }
 
 .first-project {
@@ -383,16 +369,16 @@ BACK ARROW
 }
 
 .tooltip:hover .popup {
-  visibility: visible;
   margin: 0 0 0 -150px;
   opacity: 1;
   transition-delay: .2s;
+  visibility: visible;
 }
 
 .tooltip .popup a {
   color: #FFFFFF;
-  text-decoration: underline;
   font: 400 1em/1.3 "Chunky-tomato-bisque", sans-serif;
+  text-decoration: underline;
 }
 
 .tooltip .popup a:hover{
@@ -415,9 +401,9 @@ BACK ARROW
 }
 
 .email-header {
-  text-align: center;
   grid-column-start: 5;
   grid-column-end: 9;
+  text-align: center;
 }
 
 .email-header h4 {
@@ -429,35 +415,35 @@ BACK ARROW
   background-color: #f1f3ec;
   grid-column-start: 5;
   grid-column-end: 9;
-  width: 70%;
   margin: 10px 15% 40px 15%;
+  width: 70%;
 }
 
 @supports (mix-blend-mode: screen) {
   .email-gif img {
-    width: 100%;
     mix-blend-mode: screen;
+    width: 100%;
   }
 }
 
 @supports not (mix-blend-mode: screen) {
   .email-gif img {
-    width: 100%;
     display: none;
+    width: 100%;
   }
 }
 
 .email-text {
-  text-align: center;
   grid-column-start: 5;
   grid-column-end: 9;
+  text-align: center;
 }
 
 .email-text p a {
+  border-bottom: 1px solid #2b3348;
   font: 400 1em/1.4 "Chunky-tomato-bisque", serif;
   padding: 0 0 5px 0;
   text-decoration: none;
-  border-bottom: 1px solid #2b3348;
 }
 
 .email-text p a:hover {
@@ -467,59 +453,28 @@ BACK ARROW
 }
 
 .email-heart {
-  text-align: center;
   grid-column-start: 1;
   grid-column-end: 13;
   margin: 100px 0 30px 0;
+  text-align: center;
 }
-
 
 /*---------------------------------*/
-/*------------ Footer -------------*/
+/*---------- Thicc Bois -----------*/
 /*---------------------------------*/
 
 
-.footer {
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255,.2);
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  height: 70px;
-  margin: 70px 18% 0 18%;
-  width: 64%;
-}
+@media only screen and (min-width: 1600px) {
 
-.footer div a {
-  font: 400 1em "Lentil-vegetable", serif;
-  text-decoration: none;
-}
+  body {
+    max-width: 1280px;
+    margin: auto;
+  }
 
-.footer div a .italic{
-  font: italic 400 1em "Lentil-vegetable", serif;
-}
+  .nav {
+    width: 1280px;
+  }
 
-.footer div a:hover,
-.footer div a:focus {
-  opacity: .7;
-  text-decoration: underline;
-}
-
-.footer div a:active {
-  opacity: .3;
-  text-decoration: none;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
-.left .dark,
-.right .dark {
-  opacity: .7;
 }
 
 
@@ -539,9 +494,25 @@ BACK ARROW
     width: 90%;
   }
 
+  .header-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*margin: 100px 0 0 0;*/ /* LEFT AND RIGHT */
+    margin: 170px 0 0 0; /* TOP AND BOTTOM */
+  }
+
   .header {
     width: 90%;
     margin: 0 10%;
+  }
+
+  .gif {
+    margin: 0 0 0 0;
+  }
+
+  .single-row .title {
+    width: 100%;
   }
 
   .tooltip .popup {
@@ -562,4 +533,39 @@ BACK ARROW
     display: none;
   }
 
+  .header {
+    margin: 0;
+    width: 100%;
+  }
+
+  .header h3 {
+    font: 400 1.4em/1.3 "Lentil-vegetable", serif;
+  }
+
+  .gif {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    margin: 0 0 0 0;
+  }
+
+  .title h2 {
+    font: 400 1.2em/1.4 "Lentil-vegetable", serif;
+  }
+
+  .email-header {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .email-gif {
+    grid-column-start: 3;
+    grid-column-end: 11;
+  }
+
+  .email-text {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
 }
+

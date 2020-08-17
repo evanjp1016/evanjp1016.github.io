@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<!--
+"What is today but yesterday's tomorrow?" - Mr. Krabs
+I built this website, by the way.
+ -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="static/index-grid-clean.css">
+</head>
+
+<body>
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- To Top -------------- -->
+  <!-- ----------------------------------- -->
+  <div class="top">
+    <i onclick="topFunction()" class="toTop material-icons">arrow_upward</i>
+  </div>
+
+  <!-- ----------------------------------- -->
+  <!-- --------------- Nav --------------- -->
+  <!-- ----------------------------------- -->
+
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="index-may2020.html">epesch</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#work" class="current">Work</a>
+      <a href="about-grid.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="static/resume/evan-pesch-resume.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- Wrapper ------------- -->
+  <!-- ----------------------------------- -->
+
+  <div class="page-wrapper">
+
+    <!-- ----------------------------------- -->
+    <!-- -------------  Header ------------- -->
+    <!-- ----------------------------------- -->
+
+    <div class="header-container">
+      <h3>I'm <span class="subject-bold">Evan Pesch</span>, a <span class="gif-hover">designer</span>, <span class="gif-hover">beatmaker</span>, or <span class="gif-hover">bum</span> depending on who you ask.</h3>
+
+      <img src="static/images/index/beatmaker-color-new.png" loading="lazy">
+      <!-- <img id="homegif" loading="lazy"> --> <!-- src is defined by play-gif.js -->
+      
+      <p>See my work below</p>
+    </div>
+
+    <!-- ----------------------------------- -->
+    <!-- ------------  Projects ------------ -->
+    <!-- ----------------------------------- -->
+
+    <a name="work" class="top"></a>
+    <div class="work-container">
+
+      <div class="project">
+        <a href="d3-new-layout.html">
+      		<img src="static/images/index/thumbnails/placeholder-thumbnail.png" loading="lazy" alt="">
+      		<h2>Redesigning a library of open data for Detroit, Michigan <span class="italic">with</span> <span class="subject-bold">Data Driven Detroit</span></h2>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="merit.html">
+        	<img src="static/images/project-thumbnails/data-driven-detroit.png" loading="lazy" alt="">
+        	<h2>Prototyping and developing a cybersecurity dashboard <span class="italic">with</span> <span class="subject-bold">Merit Network</span></h2>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="d3-new-layout.html">
+          <img src="static/images/project-thumbnails/blue-placeholder-long.png" loading="lazy" alt="">
+          <h2>Designing an accessible solution for impaired hearing <span class="italic">called</span> <span class="subject-bold">Hearbud</span></h2>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="d3-new-layout.html">
+          <img src="static/images/project-thumbnails/blue-placeholder-long.png" loading="lazy" alt="">
+          <h2>Revitalizing a 120 year old brand <span class="italic">with the</span> <span class="subject-bold">Michigan Marching Band</span></h2>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="d3-new-layout.html">
+        <img src="static/images/project-thumbnails/blue-placeholder-long.png" loading="lazy" alt="">
+        <h2>Educating a community about urban design <span class="italic">with</span> <span class="subject-bold">Reimagine Muskegon</span></h2>
+        </a>
+      </div>
+
+   </div>
+
+    <!-- ----------------------------------- -->
+    <!-- -------------- Email -------------- -->
+    <!-- ----------------------------------- -->
+
+    <div class="footer-container">
+    		<h4>Feel free to <span class="subject-bold">reach out</span> and say hi.</h4>
+        <img src="static/images/index/beatmaker-color-new.png" loading="lazy">
+        <p><a href="mailto:evanjpesch@gmail.com?Subject=Fresch%20Connection" target="_top">evanjpesch@gmail.com</a></p>
+        <div class="footer-heart">
+          <p><span class="tooltip">&#9829;<span class=popup onclick="showTooltip()">Designed, coded, illustrated, and animated by me.</span></span></p>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="static/js/play-gif.js"></script>
+<script type="text/javascript" src="static/js/to-top.js"></script>
+<script type="text/javascript" src="static/js/nav-height-scroll.js"></script>
+
+</html>
