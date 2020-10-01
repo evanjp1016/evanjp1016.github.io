@@ -1,7 +1,7 @@
 @import "fonts.css";
 
 html {
-  background-color: #f1f3ec;
+  background-color: #f9faf4;
   scroll-behavior: smooth;
 }
 
@@ -75,7 +75,7 @@ body, * {
 
 
 .nav {
-  background-color: #f1f3ec;
+  background-color: #f9faf4;
   height: 90px;
   position: fixed;
   top: 0;
@@ -175,12 +175,12 @@ BACK ARROW
 
 .header {
   grid-column-start: 1;
-  grid-column-end: 9;
+  grid-column-end: 10;
   z-index: 1;
 }
 
 .header h3 {
-  font: 400 1.66em/1.2 "Lentil-vegetable", serif;
+  font: 400 1.66em/1.4 "Lentil-vegetable", serif;
 }
 
 
@@ -210,6 +210,18 @@ BACK ARROW
   grid-column-end: 13;
 }
 
+.bio h3 {
+    font: 400 1.66em/1.4 "Lentil-vegetable", serif;
+}
+
+.bio h4 {
+  font: 700 1.25em/1.5 "Chunky-tomato-bisque", sans-serif;
+}
+
+.bio h4:not(:first-child) {
+  margin: 30px 0 0 0;
+}
+
 .bio p {
   font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
 }
@@ -217,6 +229,10 @@ BACK ARROW
 
 .bio p:not(:first-child) {
   margin: 15px 0 0 0;
+}
+
+.bio p .italic {
+  font: italic 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
 }
 
 
@@ -229,14 +245,14 @@ BACK ARROW
   border-top: 1px solid rgba(43, 51, 72, .5);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 40px;
+  /*grid-column-gap: 40px;*/
   margin: 140px 0;
   padding: 140px 0 0 0;
 }
 
 .skills {
-  grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 13;
 }
 
 .experience {
@@ -245,13 +261,31 @@ BACK ARROW
 }
 
 .resume-container h3 {
-  font: 700 2em/1.2 "Chunky-tomato-bisque", sans-serif;;
+  font: 700 2em/1.2 "Chunky-tomato-bisque", sans-serif;
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
+
+.resume-container h4 {
+  font: 700 1.25em/1.5 "Chunky-tomato-bisque", sans-serif;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  margin: 30px 0 0 0;
+
+}
+
+.resume-container h4:(:first-child) {
+  margin: 70px 0 0 0;
+  grid-column-start: 4;
+  grid-column-end: 13;
 }
 
 .resume-container p {
   font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
-  margin-top: 30px;
+  margin-top: 15px;
   opacity: 0.9;
+  grid-column-start: 4;
+  grid-column-end: 13;
 }
 
 .resume-container p span {
@@ -260,6 +294,8 @@ BACK ARROW
 
 .resume-button {
   margin: 140px 0;
+  grid-column-start: 4;
+  grid-column-end: 13;
 }
 
 .resume-button a {
@@ -314,6 +350,11 @@ BACK ARROW
   transition-delay: .2s;
 }
 
+.tooltip:hover .popup-img {
+  visibility: visible;
+  opacity: 1;
+}
+
 .tooltip .popup a {
   color: #FFFFFF;
   text-decoration: underline;
@@ -324,78 +365,76 @@ BACK ARROW
   opacity: .7;
 }
 
+.tooltip .popup-img {
+  bottom: calc(100% + 5px);
+  left: 50%;
+  margin: 0 0 0 -100px;
+  width: 200px;
+  opacity: 0;
+  position: absolute;
+  /*transition: .2s;*/
+  visibility: hidden;
+  z-index: 2; 
+}
+
+.tooltip .popup-img img {
+  width: 100%;
+}
+
 
 /*---------------------------------*/
-/*----------- Reach Out -----------*/
+/*------------ Footer -------------*/
 /*---------------------------------*/
 
-
-.email-container {
-  align-items: center;
+.footer-container {
   border-top: 1px solid rgba(43, 51, 72, .5);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 180px 0 0 0;
-  padding: 140px 0 0 0;
+  margin: 140px 0 0 0;
 }
 
-.email-header {
-  text-align: center;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}
-
-.email-header h4 {
+.footer-container h4 {
   font: 400 1.5em/1.1 "Lentil-vegetable", serif;
-  margin: 0 0 30px 0;
-}
-
-.email-gif {
-  background-color: #f1f3ec;
   grid-column-start: 5;
   grid-column-end: 9;
-  width: 70%;
-  margin: 10px 15% 40px 15%;
-}
-
-@supports (mix-blend-mode: screen) {
-  .email-gif img {
-    width: 100%;
-    mix-blend-mode: screen;
-  }
-}
-
-@supports not (mix-blend-mode: screen) {
-  .email-gif img {
-    width: 100%;
-    display: none;
-  }
-}
-
-.email-text {
+  margin: 140px 0 0 0;
   text-align: center;
-  grid-column-start: 5;
-  grid-column-end: 9;
 }
 
-.email-text p a {
-  font: 400 1em/1.4 "Chunky-tomato-bisque", serif;
-  padding: 0 0 5px 0;
-  text-decoration: none;
-  border-bottom: 1px solid #2b3348;
-}
-
-.email-text p a:hover {
-  border-bottom: none;
-  font: 400 1em/1.4 "Chunky-tomato-bisque", serif;
-  opacity: .7;
-}
-
-.email-heart {
-  text-align: center;
+.footer-container img {
   grid-column-start: 1;
   grid-column-end: 13;
-  margin: 100px 0 30px 0;
+  max-width: 100%;
+  max-height: 170px;
+  margin: 15px auto 40px auto;
+}
+
+.footer-container p {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-container p a {
+  border-bottom: 1px solid;
+  padding: 0 0 2px 0;
+  text-decoration: none;
+}
+
+.footer-container p a:hover {
+  border-bottom: none;
+}
+
+.footer-heart {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  margin: 70px 0 30px 0;
+  text-align: center;
+}
+
+.footer-heart p {
+  margin: 0;
 }
 
 

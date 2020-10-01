@@ -54,6 +54,89 @@ a.top {
 
 
 /*---------------------------------*/
+/*------- Table of Contents -------*/
+/*---------------------------------*/
+
+
+.toc-icon {
+  animation-name: fade;
+  animation-duration: 2s;
+  background-color: #2b3348;
+  border-radius: 100px;
+  bottom: 20px;
+  color: #fff;
+  cursor: default;
+  display: block;
+  position: fixed;
+  font-size: 1.4em;
+  left: 20px;
+  padding: 11px;
+  transition: .2s;
+}
+
+.table-of-contents {
+  background-color: #f9faf4;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  bottom: 20px;
+  box-shadow:  0px 5px 7px rgba(0,0,0,.05);
+  margin: 0;
+  opacity: 0;
+  overflow-x: hidden;
+  position: fixed;
+  transition: .2s;
+  visibility: hidden;
+  width: auto;
+  z-index: 5000;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  margin: 40px;
+}
+
+.table-of-contents ul li{
+  color: #000;
+  /*margin: 0 0 0 30px;*/
+}
+
+.table-of-contents ul li:not(:first-child) {
+  margin: 10px 0 0 0;
+}
+
+.table-of-contents a {
+  color: #2b3348;
+  display: block;
+  font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
+  text-decoration: underline;
+}
+
+.table-of-contents a:not(:first-child) {
+  margin-top: 20px;
+}
+
+.table-of-contents a:hover {
+  opacity: .8;
+  text-decoration: none;
+}
+
+.table-of-contents p {
+  bottom: 40px;
+  cursor: pointer;
+  display: none;
+  font: 400 1em/1.3 'Chunky-tomato-bisque', sans-serif;
+  left: 50%;
+  position: absolute;
+  text-decoration: underline;
+  transform: translate(-50%, 0);
+}
+
+.table-of-contents p:hover {
+  text-decoration: none;
+}
+
+
+/*---------------------------------*/
 /*------------ To Top -------------*/
 /*---------------------------------*/
 
@@ -130,6 +213,19 @@ a.top {
   text-decoration: none;
 }
 
+.nav-left a i { /*back arrow*/
+  padding:0 10px 4px 0;
+  transition: .1s;
+  vertical-align: middle;
+}
+
+.nav-left a:hover > i {
+  color: #000000;
+  margin: 0 0 0 -5px;
+  padding: 0 15px 4px 0;
+  transition: .1s;
+}
+
 .nav-right a {
   text-decoration: none;
 }
@@ -138,7 +234,6 @@ a.top {
   margin: 0 0 0 20px;
 }
 
-.nav-left a:hover,
 .nav-right a:hover,
 .nav-right .current {
   border-bottom: 1px solid;
@@ -153,6 +248,7 @@ a.top {
 /*---------------------------------*/
 /*----------- Page Wrap -----------*/
 /*---------------------------------*/
+
 
 .page-wrapper {
   animation-name: fade;
@@ -172,128 +268,148 @@ a.top {
   margin: 170px 0 0 0;
 }
 
-.header-container h3 {
-  font: 400 1.78em/1.3 "Lentil-vegetable", serif;
-  grid-column-start: 2;
-  grid-column-end: 12;
-  text-align: center;
+.header-container h2 {
+  font: 400 1.78em/1.2 "Lentil-vegetable", serif;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  margin: 10px 0 0 0;
 }
 
-.header-container .gif-hover{
-  border-bottom: 1px dotted;
-  cursor: s-resize;
-  font: 400 1em/1 "Lentil-vegetable", serif;
+.header-container .italic {
+  font: italic 400 1em/1 "Lentil-vegetable", serif;
+}
+
+.header-container h4 {
+  font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
+  grid-column-start: 1;
+  grid-column-end: 10;
 }
 
 .header-container img {
   grid-column-start: 1;
   grid-column-end: 13;
-  margin: auto;
-  max-width: 100%;
-  height: 400px;
-}
-
-.header-container p {
-  grid-column-start: 1;
-  grid-column-end: 13;
-  text-align: center;
-}
-
-/*---------------------------------*/
-/*------------- Work --------------*/
-/*---------------------------------*/
-
-.work-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin: 20px 0 0 0;
-}
-
-.project {
-  grid-column-start: 1;
-  grid-column-end: 13;
-}
-
-.project:not(:first-child) {
-  margin: 140px 0 0 0;
-}
-
-.project a {
-  text-decoration: none;
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
-
-.project img {
-  overflow: hidden;
+  margin: 70px 0 0 0;
   width: 100%;
 }
 
-.project h2 {
-  font: 400 1.5em/1.25 "Lentil-vegetable", serif;
-  margin: 20px 0 0 0;
-  width: 75%;
-}
-
-.project .italic {
-  font: italic 400 1em/1 "Lentil-vegetable", serif;
+.header-container p {
+  font: 400 1.25em/1.5 "Lentil-vegetable", serif;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  margin: 70px 0 0 0;
 }
 
 /*---------------------------------*/
-/*------------ Footer -------------*/
+/*------------ Header -------------*/
 /*---------------------------------*/
 
-.footer-container {
+.chapter-container {
   border-top: 1px solid rgba(43, 51, 72, .5);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 140px 0 0 0;
 }
 
-.footer-container h4 {
-  font: 400 1.5em/1.1 "Lentil-vegetable", serif;
-  grid-column-start: 5;
-  grid-column-end: 9;
+.chapter-container h3,
+.chapter-container h4,
+.chapter-container p,
+.chapter-container .block-quote {
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
+
+.chapter-container h3 {
+  font: 700 1.78em/1.2 "Chunky-tomato-bisque", sans-serif;
   margin: 140px 0 0 0;
-  text-align: center;
 }
 
-.footer-container img {
+.chapter-container h4 {
+  font: 700 1.25em/1.5 "Chunky-tomato-bisque", sans-serif;
+  margin: 70px 0 0 0;
+}
+
+.chapter-container p {
+  color: #404759;
+  font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
+  margin: 30px 0 0 0;
+}
+
+.chapter-container .images {
+  column-gap: 15px;
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  margin: 70px 0 0 0;
+}
+
+.images img {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.images .caption {
+  font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
+  opacity: .7;
+}
+
+.chapter-container .images-lg {
+  column-gap: 15px;
+  display: grid;
   grid-column-start: 1;
   grid-column-end: 13;
-  max-width: 100%;
-  max-height: 170px;
-  margin: 15px auto 40px auto;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  margin: 70px 0 0 0;
 }
 
-.footer-container p {
-  grid-column-start: 1;
+.images-lg img {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.images-lg .caption {
+  font: 400 1em/1.5 "Chunky-tomato-bisque", sans-serif;
+  opacity: .7;
+}
+
+
+
+.overview-info {
+  grid-column-start: 4;
   grid-column-end: 13;
-  text-align: center;
-  text-decoration: none;
+  margin: 70px 0 0 0;
 }
 
-.footer-container p a {
-  border-bottom: 1px solid;
-  padding: 0 0 2px 0;
-  text-decoration: none;
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 }
 
-.footer-container p a:hover {
-  border-bottom: none;
+.info-row:not(:first-child) {
+  margin: 5px 0 0 0;
 }
 
-.footer-heart {
+.info-row h5 {
+  font: 700 1em/1.5 'Chunky-tomato-bisque', sans-serif;
   grid-column-start: 1;
-  grid-column-end: 13;
-  margin: 70px 0 30px 0;
-  text-align: center;
+  grid-column-end: 3;
 }
 
-.footer-heart p {
+.info-row p {
+  font: 400 1em/1.5 'Chunky-tomato-bisque', sans-serif;
+  grid-column-start: 3;
+  grid-column-end: 10;
   margin: 0;
+  opacity: .9;
+}
+
+.chapter-container .block-quote {
+  border-left: 1px solid rgba(43, 51, 72, .5);;
+  font: 400 1.25em/1.5 "Lentil-vegetable", serif;
+  margin: 70px 0 0 -21px;
+  padding: 0 0 0 20px;
 }
 
 
@@ -325,7 +441,7 @@ a.top {
   text-align: center;
   transition: .2s;
   visibility: hidden;
-  z-index: 2; 
+  /*z-index: 500;*/
 }
 
 .tooltip:hover .popup {
@@ -346,101 +462,3 @@ a.top {
 }
 
 
-/*---------------------------------*/
-/*---------- Thicc Bois -----------*/
-/*---------------------------------*/
-
-
-@media only screen and (min-width: 1600px) {
-
-  body {
-    max-width: 1280px;
-    margin: auto;
-  }
-
-  /*.toTop {
-    right: none;
-    margin: 0 20px 0 0;
-  }*/
-
-  .nav-container {
-    width: 1280px;
-    margin: auto;
-  }
-
-}
-
-
-/*---------------------------------*/
-/*------------ Tablets ------------*/
-/*---------------------------------*/
-
-
-@media only screen and (max-width: 1000px) {
-
-  .nav-container {
-    margin: 0 5%;
-    width: 90%;
-  }
-
-  .page-wrapper {
-    margin: 0 5%;
-    width: 90%;
-  }
-
-  .header-container img {
-    height: 350px;
-  }
-
-  .project h2 {
-    width: 90%;
-  }
-
-  /*.tooltip .popup {
-    display: none;
-  }*/
-
-
-  .footer-container img {
-    grid-column-start: 5;
-    grid-column-end: 9;
-  }
-
-}
-
-
-/*---------------------------------*/
-/*------------ Phones -------------*/
-/*---------------------------------*/
-
-
-@media only screen and (max-width: 600px) {
-
-  .nav-right {
-    display: none;
-    margin: auto;
-  }
-
-  .nav-left {
-    grid-column-start: 1;
-    grid-column-end: 13;
-    text-align: center;
-  }
-
-  .header-container h3 {
-    font: 400 1.5em/1.25 "Lentil-vegetable", serif;
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-  .project h2 {
-    font: 400 1.4em/1.3 "Lentil-vegetable", serif;
-    width: 100%;
-  }
-
-  .footer-container h4 {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-}

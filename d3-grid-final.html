@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<!-- "What is today but yesterday's tomorrow?" - Mr. Krabs -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data Driven Detroit</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="static/project-grid-final.css">
+</head>
+
+<body>
+
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- To Top -------------- -->
+  <!-- ----------------------------------- -->
+  <div class="top">
+    <i onclick="topFunction()" class="toTop material-icons">arrow_upward</i>
+  </div>
+
+
+  <!-- ----------------------------------- -->
+  <!-- --------  Table of Contents -------- -->
+  <!-- ----------------------------------- -->
+
+  <!-- <i class="toc-icon material-icons" onmouseover="openContents()" onclick="openContents()">notes</i>
+
+  <div class="table-of-contents" onmouseleave="closeContents()" onclick="closeContents()">
+    <ul>
+      <li><a href="#" onclick="topFunction()">Title</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#problems">Problems with the existing Toolboxes</a></li>
+      <li><a href="#solutions">Solutions in the redesign</a></li>
+      <li><a href="#final-product">Final Product</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+    </ul>
+  	<p onclick="closeContents()">Close</p>
+  </div> -->
+
+
+  <!-- ----------------------------------- -->
+  <!-- --------------- Nav --------------- -->
+  <!-- ----------------------------------- -->
+
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="index-grid-clean.html"><i class="material-icons">arrow_back</i>back</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="index-grid-clean.html" >Work</a>
+      <a href="about-grid.html">About</a>
+      <a href="static/resume/evan-pesch-resume.pdf">Resume</a>
+      <a href="#" target="_blank">evanjpesch@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- Wrapper ------------- -->
+  <!-- ----------------------------------- -->
+
+  <div class="page-wrapper">
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- Header -------------- -->
+  <!-- ----------------------------------- -->
+
+
+    <div class="header-container">
+  		<h4>January 2018 - April 2018</h4>
+  		<h2>Redesigning a library of open data for Detroit, Michigan <span class="italic">with</span> <span class="subject-bold">Data Driven Detroit</span></h2>
+
+  		<img src="static/images/index/thumbnails/placeholder-thumbnail.png" alt="Data Driven Detroit Toolbox on laptop screen">
+  		<p>In early 2018, I worked with <span class="subject-bold">Data Driven Detroit (D3)</span> and a small student team to redesign D3’s Toolbox, an online library of over 1,500 <span class="tooltip">community-centric data resources<span class="popup" onclick="showTooltip()">Tools, maps, and other collections of data that offer statistical and numerical insights on a variety of different subjects</span></span>, to help their mission of combatting uninformed decision-making towards urban development and community projects around Detroit, Michigan.</p>
+
+      <div class="brief-info">
+        <div class="info-row">
+          <h5>Context</h5>
+          <p>Client project and <span class="tooltip">UMSI<span class="popup" onclick="showTooltip()">University of Michigan School of Information</span></span> capstone project</p>
+        </div>
+
+        <div class="info-row">
+          <h5>Team</h5>
+          <p>Four UX Design students, two D3 team members</p>
+        </div>
+
+        <div class="info-row">
+          <h5>Contribution</h5>
+          <p>UX research, UX design, visual design</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------- -->
+    <!-- --------- Ch 1. Overview ---------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="overview"></a>
+    <div class="chapter-container">
+  		<h3>Overview</h3>
+
+      <h4>Problem</h4>
+      <p>User feedback has indicated that poor structure and a lack of helpful information about the <span class="tooltip">open-data resources<span class="popup" onclick="showTooltip()">Tools, maps, and other collections of data that offer statistical and numerical insights on a variety of different subjects</span></span> in D3's Toolbox has hindered peoples’ ability to find useful data resources and diminished their desire to make data-driven decisions. The results can negatively affect Detroit Communities as people proceed with development and projects that may unknowingly work in opposition to how the surrounding communities actually function socially, economically, or spatially.</p>
+
+      <h4>Goal</h4>
+      <p>My team’s goal was to redesign D3’s Toolbox for simplicity and scalability. Our redesign was intended to help people quickly search through the long list of data resources and identify resources useful to their projects as well as preserve the Toolbox's ease of use the as it grows with more open-data resources.</p>
+
+      <h4>My Role</h4>
+  		<p>While my teammates and I shared the general roles of researchers and designers, my personal role with the team also included leading meetings, discussions, and presentations with our D3 and others who assisted us throughout the project.</p>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- --------- Ch 1. Problems ---------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="overview"></a>
+    <div class="chapter-container">
+      <h3>Problems with D3's existing Toolboxes</h3>
+
+      <!-- <p class="small">To understand pain points in D3's existing Toolboxes, we conducted in-person usability tests with five people that fell into one of three categories: experienced in urban planning, experienced in data analysis, or invested in Detroit communities.</p> -->
+
+      <h4>D3 actually had three existing Toolboxes, which complicated the first step of finding the Toolbox.</h4>
+      <p>The first step to making data-informed decisions was to find the Toolbox. Between their Original Toolbox, a new prototyped Toolbox, and the affiliated Open Data Portal, people didn't know which Toolbox to use.</p>
+
+      <div class="images">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/problems-01.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+      </div>
+
+      <h4>Testing revealed that a lack of descriptive information clouded the usefulness of each resource listed in the Toolboxes.</h4>
+      <p>The next step to help people make informed decisions was to help them easily find useful data resources within the Toolbox. However, people did not know enough about each available resource to know whether or not it was useful to them. To be able to skim long lists and easily identify useful data resources, people would need broad descriptors like a title, a topic, and a short description as well as more detailed descriptors like their corresponding time-spans, locations, and the mediums through which they are available. While D3 had this information stored, the Toolboxes only displayed a portion of it.</p>
+
+      <div class="images-sm">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/problems-03.png">
+          <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span>
+        </div>
+      </div>
+
+      <h4>Search and filter elements were unintentionally camouflaged on the webpage.</h4>
+      <p>Already struggling to find useful data resources, people rarely used the available search and filter elements to narrow their search. Tester feedback noted that filters on D3’s original and prototyped Toolboxes were mistaken for menus or navigation. The Open Data Portal, in a slightly different manner, forced people to filter by category, but then gave limited filters beyond that point.</p>
+
+
+      <div class="images">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/problems-02.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+
+        <!-- <div>
+          <img src="static/light-grey.jpg">
+          <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span>
+        </div> -->
+      </div>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- --------- Ch 1.Solutions ---------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="overview"></a>
+    <div class="chapter-container">
+      <h3>Solutions in the redesign</h3>
+
+      <h4>We designed a hierarchy of descriptive information to help identify usefulness of each resource in order to address their lack of descriptive information.</h4>
+      <p>The first step of this process was to specify 10 pieces of descriptive information that should be displayed for each resource and fit these into a confined space for individual resource listings.</p>
+
+      <p>LISTTTTTTTTTTTTTTTTTTTTTT</p>
+
+      <div class="images">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/solutions-02.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+      </div>
+
+      <p class="after-image">The next step of this process was to develop a hierarchy of information on each card that would promote easy skimming  through long lists of resources. This drew the viewers eyes from visual identification elements to broad text elements to detailed text elements. <!-- Informal usability testing with low-fidelity prototypes confirmed that our new card-based resource list helped people more easily decide whether or not a resource was useful for their needs. --></p>
+
+      <div class="images-sm">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/solutions-01.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+      </div>
+
+      <div class="images">
+        <div>
+          <img src="static/images/data-driven-detroit/sept-2020-rough-drafts/solutions-03.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+      </div>
+
+      <h4>We designed more apparent filtering similar to popular e-commerce websites to address the problem of unintentionally camouflaged filters.</h4>
+      <p>In addition to helping people more easily find useful data resources, visible and helpful filtering ensures that the Toolbox remains usable as the number of resources continued to grow. Early exploration with poor testing results pushed us to look at strong conventions for digital filters that have proven their success; in this case, online retail interfaces.</p>
+
+      <div class="images">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/solutions-04.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+      </div>
+
+      <p class="after-image">Our best performing design in informal usability tests placed two rows of large resource-category buttons above the resource list to make this a more visible filtering step before browsing resources, then placed more granular filters (resource-type, location, timeframe) in a panel on the left side of the screen.</p>
+
+      <div class="images-sm">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/solutions-05.png">
+          <!-- <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span> -->
+        </div>
+      </div>
+
+      <div class="images-lg">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/solutions-06.png">
+        </div>
+      </div>
+
+      <div class="images-lg">
+        <div>
+          <img src="static/images/data-driven-detroit/larger-text/solutions-07.png">
+        </div>
+      </div>
+
+      <p class="after-image">While we identified and addressed more problems that just these, for brevity I'll just be covering these in this study.</p>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- --------- Ch 1.Final Product ---------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="overview"></a>
+    <div class="chapter-container">
+      <h3>Final Product and Outcome</h3>
+
+      <h4>Our final design and prototype incorporated our design solutions along with revamped visual design.</h4>
+      <p>D3 planned to incorporate primarily structural design changes into their product as opposed to visual design changes, though we felt that to reduce bias in our final usability testing, we had to present our prototype as closely to a production website as possible.</p>
+
+      <p>Interact with the prototype below.</p>
+
+      <div class="images">
+        <div>
+          <img src="static/images/data-driven-detroit/sept-2020-rough-drafts/final-01.png">
+          <span class="caption">A lack of descriptive information clouded the usefulness of each resource</span>
+        </div>
+      </div>
+
+      <h4>After outperformed D3's three existing Toolboxes, some of our design suggestions were implemented into D3's Open Data Portal.</h4>
+      <p>With 8 new usability testers, we tested our design against D3's three existing Toolboxes with numerous usability tasks. Both Average Task Completion Time and Percieved Difficulty (based on a Likert scale) were lower for our prototype than each of D3s existing Toolboxes.</p>
+
+      <p>While you won't see a replica of our design on any of D3's websites, many of our structural design changes seem to have impacted the design of the current (2020) resource listings in the <a href="#">Open Data Portal</a>.</p>
+    </div>
+
+
+    <!-- ----------------------------------- -->
+    <!-- --------- Ch 1.Reflection --------- -->
+    <!-- ----------------------------------- -->
+
+    <a href="#" name="overview"></a>
+    <div class="chapter-container">
+      <h3>Reflection</h3>
+
+      <h4>Organization (file structure) as a method of usability</h4>
+    </div>
+  </div>
+
+
+  <!-- ----------------------------------- -->
+  <!-- ------------- Footer -------------- -->
+  <!-- ----------------------------------- -->
+
+
+  <!-- <div class="footer">
+  	<div class="previous-project">
+  	</div>
+  	<div class="next-project">
+  		<a href="merit.html">Next project <span class="italic">with</span> <span class="subject-bold">Merit Network</span><i class="material-icons">arrow_forward</i></a>
+  	</div>
+  </div> -->
+
+</body>
+
+
+<!-- ----------------------------------- -->
+<!-- ------------ Scripts -------------- -->
+<!-- ----------------------------------- -->
+
+
+<script src="static/js/table-of-contents.js"></script>
+<script src="static/js/to-top.js"></script>
+<script src="static/js/tooltip.js"></script>
+<script src="static/js/nav-height-scroll.js"></script>
+
+</html>
